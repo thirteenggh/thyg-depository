@@ -30,7 +30,7 @@
 
 To build the project and generate the template assembly use the included Maven wrapper:
 
-    ./mvnw clean install
+    ./mvnw clean install -DskipTests
 
 ## Running
 
