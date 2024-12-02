@@ -632,8 +632,8 @@ Ext.define('NX.controller.Menu', {
       view: {
         xtype: 'nx-feature-notvisible',
         // FIXME: i18n
-        text: feature.get('text') + ' feature is not available as '
-            + (NX.State.getValue('user') ? ' you do not have the required permissions' : ' you are not logged in')
+        text: feature.get('text') + '功能不可用，因为'
+            + (NX.State.getValue('user') ? '您没有权限' : '您未登录')
       },
       visible: NX.controller.Features.alwaysVisible
     });

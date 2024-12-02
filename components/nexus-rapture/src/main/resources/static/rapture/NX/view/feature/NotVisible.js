@@ -51,7 +51,7 @@ Ext.define('NX.view.feature.NotVisible', {
         xtype: 'label',
         cls: 'description',
         // TODO: i18n
-        text: 'Sorry you are not permitted to use the feature you selected.  Please select another feature.'
+        text: '功能未授权，请选择其他功能'
       }
     ];
 

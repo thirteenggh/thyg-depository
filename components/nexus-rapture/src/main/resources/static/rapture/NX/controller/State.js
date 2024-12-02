@@ -391,11 +391,11 @@ Ext.define('NX.controller.State', {
           // FIXME: i18n
           // Show the UI with a modal dialog error
           NX.Dialogs.showError(
-              'Server disconnected',
-              'There is a problem communicating with the server',
+              '服务器断开连接',
+              '连接到服务器时出错',
               {
                 buttonText: {
-                  ok: 'Retry'
+                  ok: '重试'
                 },
 
                 fn: function () {

@@ -20,7 +20,7 @@ export default function SupportZipForm({params, setParams, submit, clustered, ha
     <div dangerouslySetInnerHTML={{__html: UIStrings.SUPPORT_ZIP.DESCRIPTION}}/>
     <fieldset className="nx-fieldset">
       <legend className="nx-label">
-        Contents:
+        文件:
       </legend>
       <NxCheckbox
         checkboxId='systemInformation'
@@ -105,12 +105,12 @@ export default function SupportZipForm({params, setParams, submit, clustered, ha
     </fieldset>
     <NxButton variant='primary' onClick={submit} type='submit'>
       <NxFontAwesomeIcon icon={faFileArchive}/>
-      <span>Create support ZIP</span>
+      <span>创建支持 ZIP</span>
     </NxButton>
     {clustered &&
       <NxButton variant='primary' onClick={hazips} type='submit'>
         <NxFontAwesomeIcon icon={faFileArchive}/>
-        <span>Create support ZIP (all nodes)</span>
+        <span>创建支持 ZIP(所有节点)</span>
       </NxButton>
     }
   </>;
