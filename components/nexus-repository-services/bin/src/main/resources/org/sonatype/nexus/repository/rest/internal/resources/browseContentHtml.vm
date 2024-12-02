@@ -59,14 +59,14 @@
 
 <table cellspacing="10">
     <tr>
-        <th align="left">Name</th>
-        <th>Last Modified</th>
-        <th>Size</th>
-        <th>Description</th>
+        <th align="left">文件名</th>
+        <th>上次更新</th>
+        <th>大小</th>
+        <th>描述</th>
     </tr>
     #if(! $root)
         <tr>
-            <td><a href="../">Parent Directory</a></td>
+            <td><a href="../">上级</a></td>
         </tr>
     #end
     #foreach( $listItem in $listItems )
