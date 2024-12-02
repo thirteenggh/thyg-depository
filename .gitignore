@@ -26,3 +26,5 @@ out
 .zion/
 variables.properties
 node_modules
+
+bin/
