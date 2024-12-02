@@ -15,454 +15,450 @@ import {UIStrings} from 'nexus-ui-plugin';
 export default {
   ...UIStrings,
 
-  FORMAT_PLACEHOLDER: 'Format',
+  FORMAT_PLACEHOLDER: '格式',
 
   ANONYMOUS_SETTINGS: {
     MENU: {
-      text: 'Anonymous Access',
-      description: 'Configure anonymous access to server contents'
+      text: '匿名访问',
+      description: '配置服务器内容的匿名访问'
     },
-    ENABLED_CHECKBOX_LABEL: 'Access:',
-    ENABLED_CHECKBOX_DESCRIPTION: 'Allow anonymous users to access the server',
-    USERNAME_TEXTFIELD_LABEL: 'Username:',
-    REALM_SELECT_LABEL: 'Realm:',
+    ENABLED_CHECKBOX_LABEL: '访问：',
+    ENABLED_CHECKBOX_DESCRIPTION: '允许匿名用户访问服务器',
+    USERNAME_TEXTFIELD_LABEL: '用户名：',
+    REALM_SELECT_LABEL: '领域：',
     MESSAGES: {
-      LOAD_ERROR: 'An error occurred while loading Anonymous settings, see console for more details',
-      SAVE_SUCCESS: 'Anonymous security settings updated',
-      SAVE_ERROR: 'An error occurred while updating Anonymous settings, see console for more details'
+      LOAD_ERROR: '加载匿名设置时发生错误，请查看控制台以获取更多详细信息',
+      SAVE_SUCCESS: '匿名安全设置已更新',
+      SAVE_ERROR: '更新匿名设置时发生错误，请查看控制台以获取更多详细信息'
     }
   },
 
   CONTENT_SELECTORS: {
     MENU: {
-      text: 'Content Selectors'
+      text: '内容选择器'
     },
 
-    EMPTY_MESSAGE: 'No content selectors were found',
+    EMPTY_MESSAGE: '未找到内容选择器',
 
-    HELP_TITLE: 'What is a content selector?',
+    HELP_TITLE: '什么是内容选择器？',
     HELP_TEXT: `\
-Content selectors provide a means for you to select specific content from your repositories. \
-Repository content is evaluated against expressions written in CSEL (Content Selector Expression Language). \
-For more information, <a href="http://links.sonatype.com/products/nxrm3/docs/content-selector" target="_blank" rel="noopener noreferrer">check the documentation</a>.\
-`,
+内容选择器为您提供从仓库中选择特定内容的方法。\
+仓库内容根据用 CSEL（内容选择表达式语言）编写的表达式进行评估。\
+有关更多信息，<a href="http://links.sonatype.com/products/nxrm3/docs/content-selector" target="_blank" rel="noopener noreferrer">请查看文档</a>。`,
 
-    CREATE_BUTTON: 'Create Selector',
-    FILTER_PLACEHOLDER: 'Filter',
+    CREATE_BUTTON: '创建选择器',
+    FILTER_PLACEHOLDER: '筛选',
 
-    NAME_LABEL: 'Name',
-    TYPE_LABEL: 'Type',
-    DESCRIPTION_LABEL: 'Description',
-    EXPRESSION_LABEL: 'Search Expression',
-    EXPRESSION_DESCRIPTION: 'Use the following query to identify repository content',
+    NAME_LABEL: '名称',
+    TYPE_LABEL: '类型',
+    DESCRIPTION_LABEL: '描述',
+    EXPRESSION_LABEL: '搜索表达式',
+    EXPRESSION_DESCRIPTION: '使用以下查询来识别仓库内容',
 
     PREVIEW: {
-      TITLE: 'Preview Content Selector Results',
-      REPOSITORY_LABEL: 'Preview Repository',
-      REPOSITORY_DESCRIPTION: 'Select a repository to evaluate the content selector and see the content that would be available',
-      BUTTON: 'Preview',
-      RESULTS: 'Preview Results',
-      NAME_COLUMN: 'Name',
-      EMPTY: 'No content in repositories matched the expression'
+      TITLE: '预览内容选择器结果',
+      REPOSITORY_LABEL: '预览仓库',
+      REPOSITORY_DESCRIPTION: '选择一个仓库以评估内容选择器，并查看可用的内容',
+      BUTTON: '预览',
+      RESULTS: '预览结果',
+      NAME_COLUMN: '名称',
+      EMPTY: '仓库中没有内容与表达式匹配'
     },
 
     MESSAGES: {
-      DUPLICATE_ERROR: (name) => `Another content selector named ${name} already exists`,
-      SAVE_ERROR: 'An error occurred while saving the content selector',
-      DELETE_ERROR: (name) => `Content selector ${name} is in use and cannot be deleted`,
+      DUPLICATE_ERROR: (name) => `已存在另一个名为 ${name} 的内容选择器`,
+      SAVE_ERROR: '保存内容选择器时发生错误',
+      DELETE_ERROR: (name) => `内容选择器 ${name} 正在使用中，无法删除`,
 
       CONFIRM_DELETE: {
-        TITLE: 'Delete Content Selector',
-        MESSAGE: (name) => `Delete the content selector named ${name}?`,
-        YES: 'Delete',
-        NO: 'Cancel'
+        TITLE: '删除内容选择器',
+        MESSAGE: (name) => `删除名为 ${name} 的内容选择器？`,
+        YES: '删除',
+        NO: '取消'
       }
     }
   },
 
   LOGGING: {
     MENU: {
-      text: 'Logging',
-      description: 'Control logging levels'
+      text: '日志记录',
+      description: '控制日志级别'
     },
 
-    CREATE_BUTTON: 'Create Logger',
-    RESET_ALL_BUTTON: 'Reset to Default Levels',
-    RESET_BUTTON: 'Reset to Default Level',
+    CREATE_BUTTON: '创建日志记录器',
+    RESET_ALL_BUTTON: '重置为默认级别',
+    RESET_BUTTON: '重置为默认级别',
 
-    FILTER_PLACEHOLDER: 'Filter by Logger Name',
+    FILTER_PLACEHOLDER: '按日志记录器名称筛选',
 
-    NAME_LABEL: 'Logger Name',
-    LEVEL_LABEL: 'Logger Level',
+    NAME_LABEL: '日志记录器名称',
+    LEVEL_LABEL: '日志级别',
 
     MESSAGES: {
-      SAVE_ERROR: 'An error occurred while saving the logger',
-      RESETTING: 'Resetting to Default Level...',
-      RESET_ERROR: 'An error occurred while resetting all loggers, see console for more details'
+      SAVE_ERROR: '保存日志记录器时发生错误',
+      RESETTING: '正在重置为默认级别...',
+      RESET_ERROR: '重置所有日志记录器时发生错误，请查看控制台以获取更多详细信息'
     },
 
     CONFIRM_UPDATE: {
-      TITLE: 'Confirm Update?',
-      MESSAGE: ({name, level}) => `Logger ${name} is already configured. Would you like to update its level to "${level}"?`,
-      CONFIRM_BUTTON: 'Update Logger Level'
+      TITLE: '确认更新？',
+      MESSAGE: ({name, level}) => `日志记录器 ${name} 已配置。是否将其级别更新为 "${level}"？`,
+      CONFIRM_BUTTON: '更新日志级别'
     },
 
     CONFIRM_RESET_ALL: {
-      TITLE: 'Confirm Reset?',
-      MESSAGE: 'Reset all loggers to their default levels?',
-      CONFIRM_BUTTON: 'Reset All Loggers'
+      TITLE: '确认重置？',
+      MESSAGE: '是否将所有日志记录器重置为默认级别？',
+      CONFIRM_BUTTON: '重置所有日志记录器'
     },
 
     CONFIRM_RESET: {
-      TITLE: 'Confirm Reset?',
-      MESSAGE: 'Reset this logger to its default level? If this is a custom logger it will be removed.',
-      CONFIRM_BUTTON: 'Reset Logger'
+      TITLE: '确认重置？',
+      MESSAGE: '是否将此日志记录器重置为默认级别？如果是自定义日志记录器，它将被移除。',
+      CONFIRM_BUTTON: '重置日志记录器'
     }
   },
 
   LOG_VIEWER: {
     MENU: {
-      text: 'Log Viewer',
-      description: 'View the current log contents'
+      text: '日志查看器',
+      description: '查看当前日志内容'
     },
     REFRESH: {
-      TEXT: 'Refresh Interval',
-      MANUAL_ITEM: 'Manual',
-      TWENTY_SECONDS_ITEM: 'Every 20 seconds',
-      MINUTE_ITEM: 'Every minute',
-      TWO_MINUTES_ITEM: 'Every 2 minutes',
-      FIVE_MINUTES_ITEM: 'Every 5 minutes'
+      TEXT: '刷新间隔',
+      MANUAL_ITEM: '手动',
+      TWENTY_SECONDS_ITEM: '每20秒',
+      MINUTE_ITEM: '每分钟',
+      TWO_MINUTES_ITEM: '每2分钟',
+      FIVE_MINUTES_ITEM: '每5分钟'
     },
     SIZE: {
-      LAST25KB_ITEM: 'Last 25KB',
-      LAST50KB_ITEM: 'Last 50KB',
-      LAST100KB_ITEM: 'Last 100KB'
+      LAST25KB_ITEM: '最近25KB',
+      LAST50KB_ITEM: '最近50KB',
+      LAST100KB_ITEM: '最近100KB'
     },
-    DOWNLOAD: 'Download',
-    INSERT_MARK: 'Insert Mark',
-    MARK_PLACEHOLDER: 'Marker to insert into log'
+    DOWNLOAD: '下载',
+    INSERT_MARK: '插入标记',
+    MARK_PLACEHOLDER: '要插入日志的标记'
   },
 
   ROUTING_RULES: {
     MENU: {
-      text: 'Routing Rules',
-      description: 'Restrict which requests are handled by repositories'
+      text: '路由规则',
+      description: '限制哪些请求由仓库处理'
     },
 
     LIST: {
-      PREVIEW_BUTTON: 'Global Routing Preview',
-      CREATE_BUTTON: 'Create Routing Rule',
-      FILTER_PLACEHOLDER: 'Filter by Name or Description',
-      NAME_LABEL: 'Name',
-      DESCRIPTION_LABEL: 'Description',
-      USED_BY_LABEL: 'Used By',
-      NEEDS_ASSIGNMENT: '0 repositories, assign it to a repository',
-      USED_BY: (count) => count === 1 ? '1 repository' : `${count} repositories`,
-      EMPTY_LIST: 'There are no routing rules created yet',
-      HELP_TITLE: 'What is a routing rule?',
+      PREVIEW_BUTTON: '全局路由预览',
+      CREATE_BUTTON: '创建路由规则',
+      FILTER_PLACEHOLDER: '按名称或描述筛选',
+      NAME_LABEL: '名称',
+      DESCRIPTION_LABEL: '描述',
+      USED_BY_LABEL: '使用者',
+      NEEDS_ASSIGNMENT: '0 个仓库，请将其分配给仓库',
+      USED_BY: (count) => count === 1 ? '1 个仓库' : `${count} 个仓库`,
+      EMPTY_LIST: '尚未创建路由规则',
+      HELP_TITLE: '什么是路由规则？',
       HELP_TEXT: `\
-Routes are like filters you can apply to groups in terms of security access and general component retrieval. \
-They can be used to reduce the number of repositories within a group accessed in order to retrieve a component. \
-For more information, <a href="http://links.sonatype.com/products/nxrm3/docs/routing-rule" target="_blank" \
-rel="noopener noreferrer">check the documentation</a>.
-`
+路由规则就像可以应用于组的过滤器，涉及安全访问和组件获取。\
+它们可以减少访问组内仓库的数量，从而获取组件。\
+有关更多信息，<a href="http://links.sonatype.com/products/nxrm3/docs/routing-rule" target="_blank" \
+rel="noopener noreferrer">请查看文档</a>。`
     },
 
     PREVIEW: {
-      TITLE: 'Global Routing Preview',
-      REPOSITORIES_LABEL: 'Repositories',
-      REPOSITORIES_DESCRIPTION: 'Choose a set of repositories to test against',
+      TITLE: '全局路由预览',
+      REPOSITORIES_LABEL: '仓库',
+      REPOSITORIES_DESCRIPTION: '选择一组仓库进行测试',
       REPOSITORIES: {
-        ALL: 'All Repositories',
-        GROUPS: 'All Group Repositories',
-        PROXIES: 'All Proxy Repositories'
+        ALL: '所有仓库',
+        GROUPS: '所有组仓库',
+        PROXIES: '所有代理仓库'
       },
-      PATH_LABEL: 'Path',
-      PATH_DESCRIPTION: 'Enter a request path to check if it would be blocked or allowed. Requests always start with a leading slash.',
+      PATH_LABEL: '路径',
+      PATH_DESCRIPTION: '输入请求路径以检查是否会被阻止或允许。请求始终以斜杠开头。',
       COLUMNS: {
-        REPOSITORY: 'Repository',
-        TYPE: 'Type',
-        FORMAT: 'Format',
-        RULE: 'Routing Rule',
-        STATUS: 'Status'
+        REPOSITORY: '仓库',
+        TYPE: '类型',
+        FORMAT: '格式',
+        RULE: '路由规则',
+        STATUS: '状态'
       },
-      NO_RULE: 'None',
-      EMPTY_PREVIEW: 'No results found or preview was not yet submitted',
-      DETAILS_TITLE: (ruleName) => `Routing Rule Details for ${ruleName}`
+      NO_RULE: '无',
+      EMPTY_PREVIEW: '未找到结果或预览尚未提交',
+      DETAILS_TITLE: (ruleName) => `规则 ${ruleName} 的详细信息`
     },
 
     FORM: {
-      CREATE_TITLE: 'Create Routing Rule',
-      EDIT_TITLE: 'Edit Routing Rule',
-      UNUSED: `To use this rule, <a href="#admin/repository/repositories">assign it to a repository</a>`,
+      CREATE_TITLE: '创建路由规则',
+      EDIT_TITLE: '编辑路由规则',
+      UNUSED: `要使用此规则，<a href="#admin/repository/repositories">请将其分配给仓库</a>`,
       USED_BY: (repositoryNames) => {
         const repositoryLinks = repositoryNames.map(name =>
             `<a href="#admin/repository/repositories:${window.encodeURIComponent(name)}">${name}</a>`);
-        const repository = repositoryNames.length === 1 ? 'repository' : 'repositories';
-        return `This rule is in use by ${repositoryNames.length} ${repository} (${repositoryLinks.join(', ')})`;
+        const repository = repositoryNames.length === 1 ? '仓库' : '仓库';
+        return `此规则正在 ${repositoryNames.length} 个 ${repository} 中使用（${repositoryLinks.join(', ')}）`;
       },
-      SAVE_ERROR: 'An error occured while saving the routing rule',
-      NAME_LABEL: 'Name',
-      DESCRIPTION_LABEL: 'Description',
-      MODE_LABEL: 'Mode',
+      SAVE_ERROR: '保存路由规则时发生错误',
+      NAME_LABEL: '名称',
+      DESCRIPTION_LABEL: '描述',
+      MODE_LABEL: '模式',
       MODE: {
-        ALLOW: 'Allow',
-        BLOCK: 'Block'
+        ALLOW: '允许',
+        BLOCK: '阻止'
       },
       PREVIEW: {
-        ALLOWED: 'This request would be allowed',
-        BLOCKED: 'This request would be blocked'
+        ALLOWED: '此请求将被允许',
+        BLOCKED: '此请求将被阻止'
       },
-      MODE_DESCRIPTION: 'requests when their path matches any of the following matchers',
-      MATCHERS_LABEL: 'Matchers',
-      MATCHER_LABEL: (index) => `Matcher ${index}`,
-      MATCHERS_DESCRIPTION: 'Enter regular expressions that will be used to identify request paths to allow or block (depending on above mode)',
-      NAME_IS_NONE_ERROR: 'Rule must not be named None',
-      DELETE_MATCHER_BUTTON: 'Delete this matcher',
-      ADD_MATCHER_BUTTON: 'Add Another Matcher',
-      CREATE_BUTTON: 'Create Routing Rule',
+      MODE_DESCRIPTION: '当其路径与以下匹配器匹配时的请求',
+      MATCHERS_LABEL: '匹配器',
+      MATCHER_LABEL: (index) => `匹配器 ${index}`,
+      MATCHERS_DESCRIPTION: '输入正则表达式，用于识别要允许或阻止的请求路径（取决于上面的模式）',
+      NAME_IS_NONE_ERROR: '规则不得命名为 None',
+      DELETE_MATCHER_BUTTON: '删除此匹配器',
+      ADD_MATCHER_BUTTON: '添加另一个匹配器',
+      CREATE_BUTTON: '创建路由规则',
       CANNOT_DELETE: (repositoryNames) => `\
-This rule is in use by ${repositoryNames.length} ${repositoryNames.length === 1 ? 'repository' : 'repositories'} \
-(${repositoryNames.join(', ')})`
+此规则正在 ${repositoryNames.length} 个仓库中使用（${repositoryNames.join(', ')}）`
     },
 
     MESSAGES: {
       CONFIRM_DELETE: {
-        TITLE: 'Delete Routing Rule',
-        MESSAGE: (name) => `Delete the routing rule named ${name}`,
-        YES: 'Delete',
-        NO: 'Cancel'
+        TITLE: '删除路由规则',
+        MESSAGE: (name) => `删除名为 ${name} 的路由规则？`,
+        YES: '删除',
+        NO: '取消'
       },
-      DELETE_ERROR: (name) => `Unable to delete routing rule named ${name}`
+      DELETE_ERROR: (name) => `无法删除名为 ${name} 的路由规则`
     },
 
-    ALLOWED: 'Allowed',
-    BLOCKED: 'Blocked',
+    ALLOWED: '允许',
+    BLOCKED: '阻止',
 
-    PATH_LABEL: 'Path',
-    PATH_DESCRIPTION: 'Enter a request path to check if it would be blocked or allowed. Requests always start with a leading slash.',
-    TEST_BUTTON: 'Test'
+    PATH_LABEL: '路径',
+    PATH_DESCRIPTION: '输入请求路径以检查是否会被阻止或允许。请求始终以斜杠开头。',
+    TEST_BUTTON: '测试'
   },
 
   SYSTEM_INFORMATION: {
     MENU: {
-      text: 'System Information'
+      text: '系统信息'
     },
     ACTIONS: {
-      download: 'Download as JSON'
+      download: '下载为 JSON'
     },
-    LOAD_ERROR: 'An error occurred while fetching the system information'
+    LOAD_ERROR: '获取系统信息时发生错误'
   },
 
   SUPPORT_REQUEST: {
     MENU: {
-      text: 'Support Request',
-      description: 'Submit a support request to Sonatype'
+      text: '支持请求',
+      description: '提交 Sonatype 支持请求'
     },
     ACTIONS: {
-      submitRequest: 'Submit Request'
+      submitRequest: '提交请求'
     },
-    DESCRIPTION: `Please include a complete description of your problem and steps to allow us to reproduce the problem (if available).`,
-    ATTACH_SUPPORT_ZIP: `Attaching a support ZIP to your request will help our engineers give you a faster response.`
+    DESCRIPTION: '请提供您问题的完整描述和复现步骤（如果有）。',
+    ATTACH_SUPPORT_ZIP: '附加支持 ZIP 文件将帮助我们的工程师更快地回复您。'
   },
 
   USER_ACCOUNT: {
     MENU: {
-      text: 'Account',
-      description: 'Manage your account',
+      text: '账户',
+      description: '管理您的账户',
     },
     ACTIONS: {
-      changePassword: 'Change password',
-      discardChangePassword: 'Discard password change',
+      changePassword: '更改密码',
+      discardChangePassword: '放弃密码更改',
     },
     MESSAGES: {
-      LOAD_ERROR: 'An error occurred while loading User Account, see console for more details',
-      UPDATE_SUCCESS: 'User account settings updated',
-      UPDATE_ERROR: 'An error occurred while updating user account settings',
-      PASSWORD_NO_MATCH_ERROR: 'Passwords do not match',
-      PASSWORD_MUST_DIFFER_ERROR: 'New password must be different',
+      LOAD_ERROR: '加载用户账户时发生错误，请查看控制台以获取更多详细信息',
+      UPDATE_SUCCESS: '用户账户设置已更新',
+      UPDATE_ERROR: '更新用户账户设置时发生错误',
+      PASSWORD_NO_MATCH_ERROR: '密码不匹配',
+      PASSWORD_MUST_DIFFER_ERROR: '新密码必须不同',
     },
-    ID_FIELD_LABEL: 'Username',
-    FIRST_FIELD_LABEL: 'First Name',
-    LAST_FIELD_LABEL: 'Last Name',
-    EMAIL_FIELD_LABEL: 'Email',
-    PASSWORD_CURRENT_FIELD_LABEL: 'Current Password',
-    PASSWORD_NEW_FIELD_LABEL: 'New Password',
-    PASSWORD_NEW_CONFIRM_FIELD_LABEL: 'New Password (Confirm)',
+    ID_FIELD_LABEL: '用户名',
+    FIRST_FIELD_LABEL: '名字',
+    LAST_FIELD_LABEL: '姓氏',
+    EMAIL_FIELD_LABEL: '电子邮件',
+    PASSWORD_CURRENT_FIELD_LABEL: '当前密码',
+    PASSWORD_NEW_FIELD_LABEL: '新密码',
+    PASSWORD_NEW_CONFIRM_FIELD_LABEL: '确认新密码',
   },
 
   NUGET_API_KEY: {
     MENU: {
-      text: 'NuGet API Key',
-      description: 'Configure credentials for NuGet repositories'
+      text: 'NuGet API 密钥',
+      description: '配置 NuGet 仓库的凭证'
     },
-    INSTRUCTIONS: 'A new API Key will be created the first time it is accessed. Resetting your API Key will invalidate the current key.',
-    AUTH_INSTRUCTIONS: 'Accessing NuGet API Key requires validation of your credentials.',
-    AUTH_ERROR: 'Authentication Failure',
-    CLOSE: 'Close',
+    INSTRUCTIONS: '第一次访问时将创建一个新的 API 密钥。重置 API 密钥将使当前密钥失效。',
+    AUTH_INSTRUCTIONS: '访问 NuGet API 密钥需要验证您的凭证。',
+    AUTH_ERROR: '身份验证失败',
+    CLOSE: '关闭',
     ACCESS: {
-      BUTTON: 'Access API Key',
-      HELP_TEXT: 'Accessing NuGet API Key requires validation of your credentials.',
-      ERROR: 'Failed to access API Key'
+      BUTTON: '访问 API 密钥',
+      HELP_TEXT: '访问 NuGet API 密钥需要验证您的凭证。',
+      ERROR: '访问 API 密钥失败'
     },
     RESET: {
-      BUTTON: 'Reset API Key',
-      HELP_TEXT: 'Resetting NuGet API Key requires validation of your credentials.',
-      ERROR: 'Failed to Reset API Key'
+      BUTTON: '重置 API 密钥',
+      HELP_TEXT: '重置 NuGet API 密钥需要验证您的凭证。',
+      ERROR: '重置 API 密钥失败'
     },
     DETAILS: {
-      MAIN: 'Your NuGet API Key enables pushing packages using nuget.exe.',
-      WARNING: 'Keep this key secret!',
-      API_KEY_TEXT: 'Your NuGet API Key is:',
-      REGISTER_TEXT: 'You can register this key for a given repository with the following command:',
+      MAIN: '您的 NuGet API 密钥允许使用 nuget.exe 推送包。',
+      WARNING: '请保密此密钥！',
+      API_KEY_TEXT: '您的 NuGet API 密钥是：',
+      REGISTER_TEXT: '您可以使用以下命令为给定仓库注册此密钥：',
       REGISTER_COMMAND: 'nuget setapikey {0} -source {1}',
-      AUTO_CLOSE: 'This window will automatically close after one minute.'
+      AUTO_CLOSE: '此窗口将在一分钟后自动关闭。'
     }
   },
 
   METRIC_HEALTH: {
     MENU: {
-      text: 'Status',
-      description: 'System status checks'
+      text: '状态',
+      description: '系统状态检查'
     },
-    NAME_HEADER: 'Name',
-    MESSAGE_HEADER: 'Message',
-    ERROR_HEADER: 'Error',
+    NAME_HEADER: '名称',
+    MESSAGE_HEADER: '消息',
+    ERROR_HEADER: '错误'
   },
 
   SUPPORT_ZIP: {
     MENU: {
-      text: 'Support ZIP',
-      description: 'Creates a ZIP file containing useful support information about your server'
+      text: '支持 ZIP',
+      description: '创建包含有关您的服务器的有用支持信息的 ZIP 文件'
     },
-    DESCRIPTION: '<p>No information will be sent to Sonatype when creating the support ZIP file.</p>' +
-        '<p>Support ZIP creation may take a few minutes to complete.</p>',
-    REPORT_LABEL: 'System information report',
-    DUMP_LABEL: 'JVM thread-dump',
-    CONFIGURATION_LABEL: 'Configuration files',
-    SECURITY_LABEL: 'Security configuration files',
-    LOGFILES_LABEL: 'Log files',
-    TASKLOGFILES_LABEL: 'Task log files',
-    AUDITLOGFILES_LABEL: 'Audit log files',
-    METRICS_LABEL: 'System and component metrics',
-    JMX_LABEL: 'JMX information',
-    LIMITFILESIZES_LABEL: 'Limit files in the ZIP archive to 30 MB apiece',
-    LIMITZIPSIZE_LABEL: 'Limit the ZIP archive to 20 MB',
-    CREATED_TITLE: 'Support ZIP Created',
-    CREATED_DESCRIPTION: 'Support ZIP has been created.<br/>You can reference this file on the filesystem or download the file from your browser.',
-    CREATED_NODEID_LABEL: 'Node:',
-    CREATED_NAME_LABEL: 'Name:',
-    CREATED_SIZE_LABEL: 'Size:',
-    CREATED_PATH_LABEL: 'Path:',
-    CREATED_DOWNLOAD_BUTTON: 'Download',
-    AUTHENTICATE_TEXT: 'Downloading support ZIP requires validation of your credentials.'
+    DESCRIPTION: '<p>创建支持 ZIP 文件时不会向 Sonatype 发送任何信息。</p>' +
+        '<p>创建支持 ZIP 可能需要几分钟时间。</p>',
+    REPORT_LABEL: '系统信息报告',
+    DUMP_LABEL: 'JVM 线程转储',
+    CONFIGURATION_LABEL: '配置文件',
+    SECURITY_LABEL: '安全配置文件',
+    LOGFILES_LABEL: '日志文件',
+    TASKLOGFILES_LABEL: '任务日志文件',
+    AUDITLOGFILES_LABEL: '审计日志文件',
+    METRICS_LABEL: '系统和组件指标',
+    JMX_LABEL: 'JMX 信息',
+    LIMITFILESIZES_LABEL: '将 ZIP 档案中的文件大小限制为每个 30 MB',
+    LIMITZIPSIZE_LABEL: '将 ZIP 档案的大小限制为 20 MB',
+    CREATED_TITLE: '已创建支持 ZIP',
+    CREATED_DESCRIPTION: '支持 ZIP 已创建。<br/>您可以在文件系统中引用此文件或通过浏览器下载文件。',
+    CREATED_NODEID_LABEL: '节点：',
+    CREATED_NAME_LABEL: '名称：',
+    CREATED_SIZE_LABEL: '大小：',
+    CREATED_PATH_LABEL: '路径：',
+    CREATED_DOWNLOAD_BUTTON: '下载',
+    AUTHENTICATE_TEXT: '下载支持 ZIP 需要验证您的凭证。'
   },
 
   HEALTHCHECK_EULA: {
-    HEADER: 'Nexus IQ Server Terms of Use',
+    HEADER: 'Nexus IQ 服务器使用条款',
     BUTTONS: {
-      ACCEPT: 'I accept',
-      DECLINE: 'I do not accept'
+      ACCEPT: '我接受',
+      DECLINE: '我不接受'
     }
   },
 
   ANALYZE_APPLICATION: {
-    HEADER: 'Analyze Application',
-    MAIN: 'Application analysis performs a deep inspection of this application, identifying potential risks.<br/> More information is available here <a href=\"http://links.sonatype.com/products/insight/ac/home\">here</a>',
+    HEADER: '分析应用程序',
+    MAIN: '应用程序分析对该应用程序进行深度检查，识别潜在的风险。<br/>更多信息请访问 <a href="http://links.sonatype.com/products/insight/ac/home">这里</a>',
     EMAIL: {
-      LABEL: 'Email address',
-      DESCRIPTION: 'The address where the summary report will be sent'
+      LABEL: '电子邮件地址',
+      DESCRIPTION: '报告将发送到该地址'
     },
     PASSWORD: {
-      LABEL: 'Report password',
-      DESCRIPTION: 'A password to gain access to the detailed report'
+      LABEL: '报告密码',
+      DESCRIPTION: '访问详细报告的密码'
     },
     PACKAGES: {
-      LABEL: 'Proprietary packages',
-      DESCRIPTION: 'A comma separated list of proprietary packages'
+      LABEL: '专有包',
+      DESCRIPTION: '以逗号分隔的专有包列表'
     },
     REPORT: {
-      LABEL: 'Report label',
-      DESCRIPTION: 'The name the report will be given'
+      LABEL: '报告标签',
+      DESCRIPTION: '报告将使用的名称'
     },
     SELECT_ASSET: {
-      LABEL: 'Select Asset',
-      DESCRIPTION: 'Select an asset to base the analysis on'
+      LABEL: '选择资产',
+      DESCRIPTION: '选择一个资产来进行分析'
     },
     BUTTONS: {
-      ANALYZE: 'Analyze',
-      CANCEL: 'Cancel'
+      ANALYZE: '分析',
+      CANCEL: '取消'
     }
   },
 
   CLEANUP_POLICIES: {
     MENU: {
-      text: 'Cleanup Policies',
-      description: 'Manage component removal configuration'
+      text: '清理策略',
+      description: '管理组件删除配置'
     },
 
-    CREATE_TITLE: 'Create Cleanup Policy',
-    EDIT_TITLE: 'Edit Cleanup Policy',
+    CREATE_TITLE: '创建清理策略',
+    EDIT_TITLE: '编辑清理策略',
 
-    HELP_TITLE: 'What is a cleanup policy?',
+    HELP_TITLE: '什么是清理策略？',
     HELP_TEXT: `\
-Cleanup policies can be used to remove content from your repositories. These policies will execute at the configured frequency. \
-Once created, a cleanup policy must be assigned to a repository from \
-<a href="#admin/repository/repositories">the repository configuration screen</a>. For more information, check \
-<a href="http://links.sonatype.com/products/nxrm3/docs/cleanup-policy" target="_blank" rel="noopener noreferrer">the documentation</a>.\
-`,
-    EMPTY_MESSAGE: 'No cleanup policies were found',
-    CREATE_BUTTON: 'Create Cleanup Policy',
-    FILTER_PLACEHOLDER: 'Filter',
+清理策略可用于从您的仓库中删除内容。这些策略将根据配置的频率执行。\
+创建后，必须将清理策略分配给一个仓库，您可以在\
+<a href="#admin/repository/repositories">仓库配置页面</a>进行分配。更多信息，请查看\
+<a href="http://links.sonatype.com/products/nxrm3/docs/cleanup-policy" target="_blank" rel="noopener noreferrer">文档</a>。`,
+    EMPTY_MESSAGE: '未找到清理策略',
+    CREATE_BUTTON: '创建清理策略',
+    FILTER_PLACEHOLDER: '筛选',
 
-    NAME_LABEL: 'Name',
-    FORMAT_LABEL: 'Format',
-    NOTES_LABEL: 'Notes',
-    CRITERIA_LABEL: 'Cleanup Criteria',
-    LAST_UPDATED_LABEL: 'Component Age',
-    LAST_DOWNLOADED_LABEL: 'Component Usage',
-    RELEASE_TYPE_LABEL: 'Release Type',
-    ASSET_NAME_LABEL: 'Asset Name Matcher',
-    FORMAT_SELECT: 'Select a format...',
-    RELEASE_TYPE_SELECT: 'Select a release type...',
-    REPOSITORY_SELECT: 'Select a repository...',
+    NAME_LABEL: '名称',
+    FORMAT_LABEL: '格式',
+    NOTES_LABEL: '备注',
+    CRITERIA_LABEL: '清理标准',
+    LAST_UPDATED_LABEL: '组件年龄',
+    LAST_DOWNLOADED_LABEL: '组件使用情况',
+    RELEASE_TYPE_LABEL: '发布类型',
+    ASSET_NAME_LABEL: '资产名称匹配器',
+    FORMAT_SELECT: '选择格式...',
+    RELEASE_TYPE_SELECT: '选择发布类型...',
+    REPOSITORY_SELECT: '选择仓库...',
 
-    NAME_DESCRIPTION: 'Use a unique name for the cleanup policy',
-    FORMAT_DESCRIPTION: 'The format that this cleanup policy can be applied to',
-    LAST_UPDATED_DESCRIPTION: 'Remove components that were published over:',
-    LAST_DOWNLOADED_DESCRIPTION: "Remove components that haven't been downloaded in:",
-    RELEASE_TYPE_DESCRIPTION: 'Remove components that are of the following release type:',
-    ASSET_NAME_DESCRIPTION: 'Remove components that have at least one asset name matching the following regular expression pattern:',
+    NAME_DESCRIPTION: '使用唯一名称为清理策略命名',
+    FORMAT_DESCRIPTION: '此清理策略可应用的格式',
+    LAST_UPDATED_DESCRIPTION: '删除发布超过以下天数的组件：',
+    LAST_DOWNLOADED_DESCRIPTION: '删除超过以下天数未下载的组件：',
+    RELEASE_TYPE_DESCRIPTION: '删除以下发布类型的组件：',
+    ASSET_NAME_DESCRIPTION: '删除至少有一个资产名称匹配以下正则表达式模式的组件：',
 
-    LAST_UPDATED_SUFFIX: 'days ago',
-    LAST_DOWNLOADED_SUFFIX: 'days',
+    LAST_UPDATED_SUFFIX: '天前',
+    LAST_DOWNLOADED_SUFFIX: '天',
 
-    RELEASE_TYPE_RELEASE: 'Release Versions',
-    RELEASE_TYPE_PRERELEASE: 'Pre-Release / Snapshot Versions',
+    RELEASE_TYPE_RELEASE: '发布版本',
+    RELEASE_TYPE_PRERELEASE: '预发布/快照版本',
 
     PREVIEW: {
-      TITLE: 'Cleanup policy preview',
-      REPOSITORY_LABEL: 'Preview Repository',
-      REPOSITORY_DESCRIPTION: 'Select a repository to preview what might get cleaned up if this policy was applied',
-      BUTTON: 'Preview',
-      RESULTS: 'Preview Results',
-      NAME_COLUMN: 'Name',
-      GROUP_COLUMN: 'Group',
-      VERSION_COLUMN: 'Version',
-      EMPTY: 'No assets in repository matched the criteria'
+      TITLE: '清理策略预览',
+      REPOSITORY_LABEL: '预览仓库',
+      REPOSITORY_DESCRIPTION: '选择一个仓库来预览如果应用此策略可能被清理的内容',
+      BUTTON: '预览',
+      RESULTS: '预览结果',
+      NAME_COLUMN: '名称',
+      GROUP_COLUMN: '组',
+      VERSION_COLUMN: '版本',
+      EMPTY: '仓库中没有资产符合标准'
     },
 
     MESSAGES: {
-      SAVE_ERROR: 'An error occurred while saving the cleanup policy',
-      DELETE_ERROR: (name) => `Cleanup policy ${name} is in use and cannot be deleted`,
+      SAVE_ERROR: '保存清理策略时发生错误',
+      DELETE_ERROR: (name) => `清理策略 ${name} 正在使用中，无法删除`,
 
       CONFIRM_DELETE: {
-        TITLE: 'Delete cleanup policy',
+        TITLE: '删除清理策略',
         MESSAGE: (inUseCount) => inUseCount ?
-            `This Cleanup Policy is used by ${inUseCount} repositories` :
-            'This Cleanup Policy is not used by any repository',
-        YES: 'Delete',
-        NO: 'Cancel'
+            `此清理策略正在 ${inUseCount} 个仓库中使用` :
+            '此清理策略未被任何仓库使用',
+        YES: '删除',
+        NO: '取消'
       }
     }
   }

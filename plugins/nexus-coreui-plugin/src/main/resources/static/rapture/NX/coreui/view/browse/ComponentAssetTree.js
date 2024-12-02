@@ -108,7 +108,7 @@ Ext.define('NX.coreui.view.browse.ComponentAssetTree', {
           {
             xtype: 'label',
             itemId: 'nx-coreui-component-asset-tree-advanced-search',
-            html: '<a href="#browse/search">Advanced search...</a>'
+            html: '<a href="#browse/search">高级搜索</a>'
           }]
         }]
       }]
