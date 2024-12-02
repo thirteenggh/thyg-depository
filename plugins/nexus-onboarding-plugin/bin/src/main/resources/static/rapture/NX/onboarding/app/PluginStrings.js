@@ -15,48 +15,50 @@
 /**
  * @since 3.17
  */
-Ext.define('NX.onboarding.app.PluginStrings', {
-  '@aggregate_priority': 90,
+Ext.define(
+  "NX.onboarding.app.PluginStrings",
+  {
+    "@aggregate_priority": 90,
 
-  singleton: true,
-  requires: [
-    'NX.I18n'
-  ],
+    singleton: true,
+    requires: ["NX.I18n"],
 
-  keys: {
-    Onboarding_Text: 'Onboarding',
-    Onboarding_Description: 'Configuration changes requiring attention',
-    Onboarding_Authenticate: 'Your <b>admin</b> user password is located in <br><b>{0}</b> on the server.',
-    Onboarding_LoadStepsError: 'Failed to retrieve setup steps from server'
+    keys: {
+      Onboarding_Text: "入门",
+      Onboarding_Description: "需要关注的配置更改",
+      Onboarding_Authenticate:
+        "您的 <b>管理员</b> 用户密码位于 <br><b>{0}</b> 服务器上。",
+      Onboarding_LoadStepsError: "无法从服务器检索设置步骤",
+    },
+
+    bundles: {
+      "NX.onboarding.view.OnboardingStartScreen": {
+        Title: "设置",
+        Description: "<p>本向导将帮助您完成所需的设置任务。</p>",
+      },
+      "NX.onboarding.view.OnboardingCompleteScreen": {
+        Title: "完成",
+        Description:
+          "<p>设置任务已完成，祝您愉快地使用 Nexus Repository Manager！</p>",
+        Finish_Button: "完成",
+      },
+      "NX.onboarding.view.ChangeAdminPasswordScreen": {
+        Title: "请选择管理员用户的密码",
+      },
+      "NX.onboarding.view.ConfigureAnonymousAccessScreen": {
+        Title: "配置匿名访问",
+        Description:
+          "<p><b>启用匿名访问</b> 意味着默认情况下，用户可以无需凭据搜索、浏览和下载存储库中的组件。请 <b>考虑贵组织的安全隐患。</b>" +
+          "<br>" +
+          "<p><b>禁用匿名访问</b> 需要谨慎选择，因为这 <b>将要求所有用户和/或构建工具提供凭据。</b>" +
+          "<br><br>" +
+          '<a href="https://links.sonatype.com/products/nexus/anonymous-access/docs" target="_blank" rel="noopener">更多信息 <span class="x-fa fa-external-link"></span></a></p>',
+        Enable_Label: "启用匿名访问",
+        Disable_Label: "禁用匿名访问",
+      },
+    },
   },
-
-  bundles: {
-    'NX.onboarding.view.OnboardingStartScreen': {
-      Title: 'Setup',
-      Description: '<p>This wizard will help you complete required setup tasks.</p>',
-    },
-    'NX.onboarding.view.OnboardingCompleteScreen': {
-      Title: 'Complete',
-      Description: '<p>The setup tasks have been completed, enjoy using Nexus Repository Manager!</p>',
-      Finish_Button: 'Finish'
-    },
-    'NX.onboarding.view.ChangeAdminPasswordScreen': {
-      Title: 'Please choose a password for the admin user'
-    },
-    'NX.onboarding.view.ConfigureAnonymousAccessScreen': {
-      Title: 'Configure Anonymous Access',
-      Description: '<p><b>Enable anonymous access</b> means that by default, users can search, browse and download  ' +
-      'components from repositories without credentials. Please <b>consider the security implications for your ' +
-      ' organization.</b>' +
-      '<br>' +
-      '<p><b>Disable anonymous access</b> should be chosen with care, as it <b>will require credentials for all</b> ' +
-      'users and/or build tools.'+
-      '<br><br>' +
-      '<a href="https://links.sonatype.com/products/nexus/anonymous-access/docs" target="_blank" rel="noopener">More information <span class="x-fa fa-external-link"></a></p>',
-      Enable_Label: 'Enable anonymous access',
-      Disable_Label: 'Disable anonymous access'
-    }
+  function (obj) {
+    NX.I18n.register(obj);
   }
-}, function(obj) {
-  NX.I18n.register(obj);
-});
+);
