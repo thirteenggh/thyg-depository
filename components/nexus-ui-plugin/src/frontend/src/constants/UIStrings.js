@@ -15,37 +15,37 @@
  */
 export default {
   SETTINGS: {
-    CANCEL_BUTTON_LABEL: 'Cancel',
-    DISCARD_BUTTON_LABEL: 'Discard',
-    SAVE_BUTTON_LABEL: 'Save',
-    DELETE_BUTTON_LABEL: 'Delete'
+    CANCEL_BUTTON_LABEL: '取消',
+    DISCARD_BUTTON_LABEL: '放弃',
+    SAVE_BUTTON_LABEL: '保存',
+    DELETE_BUTTON_LABEL: '删除'
   },
 
-  SAVING: 'Saving...',
-  FILTER: 'Filter',
-  CLOSE: 'Close',
+  SAVING: '保存中...',
+  FILTER: '筛选',
+  CLOSE: '关闭',
 
-  PRISTINE_TOOLTIP: 'There are no changes',
-  INVALID_TOOLTIP: 'Validation errors are present',
+  PRISTINE_TOOLTIP: '没有任何更改',
+  INVALID_TOOLTIP: '存在验证错误',
 
   ERROR: {
-    FIELD_REQUIRED: 'This field is required',
-    NAN: 'This field must contain a numeric value',
-    MIN: (min) => `The minimum value for this field is ${min}`,
-    MAX: (max) => `The maximum value for this field is ${max}`,
-    LOAD_ERROR: 'An error occurred while loading the form',
-    SAVE_ERROR: 'An error occurred while saving the form',
-    INVALID_NAME_CHARS: 'Only letters, digits, underscores(_), hyphens(-), and dots(.) are allowed and may not start with underscore or dot.',
-    MAX_CHARS: (max) => `This field has a limit of ${max} characters`
+    FIELD_REQUIRED: '此字段为必填项',
+    NAN: '此字段必须包含一个数字值',
+    MIN: (min) => `此字段的最小值为 ${min}`,
+    MAX: (max) => `此字段的最大值为 ${max}`,
+    LOAD_ERROR: '加载表单时发生错误',
+    SAVE_ERROR: '保存表单时发生错误',
+    INVALID_NAME_CHARS: '仅允许字母、数字、下划线(_)、连字符(-)和点(.)，且不能以下划线或点开头。',
+    MAX_CHARS: (max) => `此字段的字符限制为 ${max} 个`
   },
 
-  SAVE_SUCCESS: 'The form was saved successfully',
+  SAVE_SUCCESS: '表单已成功保存',
 
   USER_TOKEN: {
     MESSAGES: {
-      ACCESS_ERROR: 'You must authenticate successfully to access your token',
-      RESET_SUCCESS: 'Your user token has been reset',
-      RESET_ERROR: 'You must authenticate successfully to reset your token'
+      ACCESS_ERROR: '您必须成功验证身份才能访问您的令牌',
+      RESET_SUCCESS: '您的用户令牌已重置',
+      RESET_ERROR: '您必须成功验证身份才能重置您的令牌'
     }
   }
 };
