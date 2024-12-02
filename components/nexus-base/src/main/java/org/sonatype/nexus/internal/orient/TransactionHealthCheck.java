@@ -29,7 +29,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  *
  * @since 3.16
  */
-@Named("Transactions")
+@Named("业务")
 @Singleton
 public class TransactionHealthCheck
     extends HealthCheck
@@ -45,7 +45,7 @@ public class TransactionHealthCheck
   protected Result check() {
     long excessiveRetriesInLastHour = retryController.excessiveRetriesInLastHour();
     if (excessiveRetriesInLastHour > 0) {
-      return unhealthy("%d transaction%s with excessive retries in last hour",
+      return unhealthy("%d事务%s在过去一小时内重试次数过多",
           excessiveRetriesInLastHour, excessiveRetriesInLastHour == 1 ? "" : "s");
     }
     else {

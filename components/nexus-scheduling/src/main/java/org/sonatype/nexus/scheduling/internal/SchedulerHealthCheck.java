@@ -32,7 +32,7 @@ import static java.lang.String.format;
  *
  * @since 3.17
  */
-@Named("Scheduler")
+@Named("调度")
 @Singleton
 public class SchedulerHealthCheck
     extends HealthCheck
@@ -52,6 +52,6 @@ public class SchedulerHealthCheck
 
   private String reason(final List<String> missingTaskDescriptions) {
     String taskDescriptions = String.join(", ", missingTaskDescriptions);
-    return format("%s tasks require frequency updates: %s", missingTaskDescriptions.size(), taskDescriptions);
+    return format("由%s设置为只读的任务需要频率更新：%s", missingTaskDescriptions.size(), taskDescriptions);
   }
 }

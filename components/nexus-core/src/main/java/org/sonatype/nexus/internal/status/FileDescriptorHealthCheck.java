@@ -25,7 +25,7 @@ import static java.lang.String.format;
  *
  * @since 3.16
  */
-@Named("File Descriptors")
+@Named("文件描述符")
 @Singleton
 public class FileDescriptorHealthCheck
     extends HealthCheckComponentSupport
@@ -43,7 +43,7 @@ public class FileDescriptorHealthCheck
   }
 
   private String reason() {
-    return format("Recommended file descriptor limit is %d but count is %d",
+    return format("建议的文件描述符限制为%d，但计数为%d",
         fileDescriptorService.getFileDescriptorRecommended(), fileDescriptorService.getFileDescriptorCount());
   }
 

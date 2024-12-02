@@ -26,7 +26,7 @@ import com.google.common.annotations.VisibleForTesting;
  *
  * @since 3.17
  */
-@Named("Available CPUs")
+@Named("可用CPU")
 @Singleton
 public class AvailableCpuHealthCheck
     extends HealthCheckComponentSupport
@@ -36,9 +36,9 @@ public class AvailableCpuHealthCheck
    */
   static final int MIN_RECOMMENDED_CPU_COUNT = 4;
 
-  private static final String HEALTHY_MESSAGE = "The host system is allocating a maximum of %d cores to the application.";
+  private static final String HEALTHY_MESSAGE = "主机系统最多为应用程序分配 %d 个内核。";
 
-  private static final String UNHEALTHY_MESSAGE = HEALTHY_MESSAGE + " A minimum of %d is recommended.";
+  private static final String UNHEALTHY_MESSAGE = HEALTHY_MESSAGE + " 建议至少 %d 个内核";
 
   private Runtime runtime;
 

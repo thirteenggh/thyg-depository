@@ -31,7 +31,7 @@ import static org.sonatype.nexus.security.user.UserManager.DEFAULT_SOURCE;
  *
  * @since 3.22
  */
-@Named("DefaultRoleRealm")
+@Named("默认角色域")
 @Singleton
 public class DefaultRoleHealthCheck
     extends HealthCheck
@@ -56,11 +56,11 @@ public class DefaultRoleHealthCheck
   @Override
   protected Result check() throws Exception {
     if (!realmManager.isRealmEnabled(DefaultRoleRealm.NAME)) {
-      return Result.healthy("Default Role Realm not in use.");
+      return Result.healthy("默认角色域未使用。");
     }
 
     if (defaultRoleRealm.getRole() == null) {
-      return Result.unhealthy("Default Role Realm is enabled but not configured.");
+      return Result.unhealthy("默认角色域已启用，但尚未配置。");
     }
 
     Role matched = securitySystem.listRoles(DEFAULT_SOURCE).stream()
@@ -68,9 +68,9 @@ public class DefaultRoleHealthCheck
 
     if (matched == null) {
       return Result
-          .unhealthy("Default Role Realm configured to use role %s which doesn't exist.", defaultRoleRealm.getRole());
+          .unhealthy("默认角色域配置为使用不存在的角色%s。", defaultRoleRealm.getRole());
     }
 
-    return Result.healthy("Default Role Realm configured to use role %s.", defaultRoleRealm.getRole());
+    return Result.healthy("默认角色域配置为使用角色%s。", defaultRoleRealm.getRole());
   }
 }

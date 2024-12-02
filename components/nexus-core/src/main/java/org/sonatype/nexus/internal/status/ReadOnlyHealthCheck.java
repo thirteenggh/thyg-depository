@@ -27,7 +27,7 @@ import static org.sonatype.nexus.common.text.Strings2.isBlank;
  *
  * @since 3.16
  */
-@Named("Read-Only Detector")
+@Named("只读探测器")
 @Singleton
 public class ReadOnlyHealthCheck
     extends HealthCheckComponentSupport
@@ -49,9 +49,9 @@ public class ReadOnlyHealthCheck
   }
 
   private String describe(final FreezeRequest request) {
-    String description = "Made read-only by: " + request.frozenBy().orElse("SYSTEM");
+    String description = "由 " + request.frozenBy().orElse("SYSTEM");
     if (!isBlank(request.reason())) {
-      description += ", reason: " + request.reason();
+      description += "设为只读, 原因: " + request.reason();
     }
     return description;
   }
