@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Repository - Nexus Repository Manager</title>
+  <title>Repository - 私有弹性云计算软件平台</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
 #* START favicon links and meta
@@ -52,7 +52,7 @@
     </div>
     <div class="product-id">
       <div class="product-id__line-1">
-        <span class="product-name">Nexus Repository Manager</span>
+        <span class="product-name">私有弹性云计算软件平台</span>
       </div>
       <div class="product-id__line-2">
         <span class="product-spec">$nexusBrandedEditionAndVersion</span>

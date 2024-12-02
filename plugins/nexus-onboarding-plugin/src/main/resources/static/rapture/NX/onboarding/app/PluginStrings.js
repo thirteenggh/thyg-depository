@@ -39,7 +39,7 @@ Ext.define(
       "NX.onboarding.view.OnboardingCompleteScreen": {
         Title: "完成",
         Description:
-          "<p>设置任务已完成，祝您愉快地使用 Nexus Repository Manager！</p>",
+          "<p>设置任务已完成，祝您愉快地使用 私有弹性云计算软件平台！</p>",
         Finish_Button: "完成",
       },
       "NX.onboarding.view.ChangeAdminPasswordScreen": {
