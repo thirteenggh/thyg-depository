@@ -94,10 +94,10 @@ Ext.define('NX.view.AboutWindow', {
 
     // populate initial details
     me.down('#aboutInfo').showInfo({
-      'Version': NX.State.getVersion(),
-      'Edition': NX.State.getEdition(),
-      'Build Revision': NX.State.getBuildRevision(),
-      'Build Timestamp': NX.State.getBuildTimestamp()
+      '版本号': NX.State.getVersion(),
+      '版本名': NX.State.getEdition(),
+      '构建版本': NX.State.getBuildRevision(),
+      '构建时间': NX.State.getBuildTimestamp()
     });
   }
 });

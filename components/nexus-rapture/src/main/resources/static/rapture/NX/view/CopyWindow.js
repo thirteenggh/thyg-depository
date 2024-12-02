@@ -42,7 +42,7 @@ Ext.define('NX.view.CopyWindow', {
    * @property
    * The message to use when prompting the user to copy/paste
    */
-  defaultMessage: 'Copy to clipboard: #{key}, Enter',
+  defaultMessage: '复制到剪切板: #{key}, Enter',
 
   /**
    * @override
