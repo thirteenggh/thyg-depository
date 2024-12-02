@@ -34,14 +34,14 @@ import static com.google.common.base.Preconditions.checkNotNull;
 /**
  * Check if the default user can be used to authenticate.
  */
-@Named("Default Admin Credentials")
+@Named("默认管理员凭据")
 @Singleton
 public class DefaultUserHealthCheck
     extends HealthCheck
 {
   private static final Logger log = LoggerFactory.getLogger(DefaultUserHealthCheck.class);
 
-  static final String ERROR_MESSAGE = "The default admin credentials have not been changed. It is strongly recommended that the default admin password be changed.";
+  static final String ERROR_MESSAGE = "默认管理员凭据尚未更改。强烈建议更改默认管理员密码。";
 
   private final RealmManager realmManager;
 
@@ -69,7 +69,7 @@ public class DefaultUserHealthCheck
       }
     }
     catch (AuthenticationException e) {
-      log.trace("Unable to locate admin/admin123 user", e);
+      log.trace("找不到 admin/admin123 用户", e);
     }
     return Result.healthy();
   }

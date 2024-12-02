@@ -46,13 +46,13 @@ import static org.sonatype.nexus.blobstore.file.FileBlobStore.PATH_KEY;
 /**
  * @since 3.29
  */
-@Named("File Blob Stores Path")
+@Named("文件Blob存储路径")
 @Singleton
 public class FileBlobStorePathValidator
     extends HealthCheck
 {
   private static final String DUPLICATES_WARN =
-      "A file blob store must have a unique path, and may not be contained in a sub directory of another blob store. Blob stores with violations: %s";
+      "文件blob存储区必须具有唯一的路径，并且不能包含在另一个blob存储区的子目录中。存在违规的Blob存储：%s";
 
   private final Provider<BlobStoreManager> blobStoreManager;
 

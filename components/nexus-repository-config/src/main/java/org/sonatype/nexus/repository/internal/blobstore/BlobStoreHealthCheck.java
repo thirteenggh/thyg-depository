@@ -36,7 +36,7 @@ import static java.lang.String.format;
 /**
  * Inform on the health of all BlobStores based on their configured soft quota.
  */
-@Named("Blob Stores")
+@Named("Blob存储区")
 @Singleton
 public class BlobStoreHealthCheck
     extends HealthCheck
@@ -63,7 +63,7 @@ public class BlobStoreHealthCheck
         .map(BlobStoreQuotaResult::getMessage)
         .collect(Collectors.toList());
 
-    String message = format("%s/%s blob stores violating their quota<br>%s", violationMessages.size(),
+    String message = format("%s/%s Blob存储区违反了其配额<br>%s", violationMessages.size(),
         Iterators.size(blobStoreManagerProvider.get().browse().iterator()),
         String.join("<br>", violationMessages));
 

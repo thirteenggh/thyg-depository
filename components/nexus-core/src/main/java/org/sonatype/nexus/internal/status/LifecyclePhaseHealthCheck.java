@@ -27,7 +27,7 @@ import static java.lang.String.format;
  *
  * @since 3.16
  */
-@Named("Lifecycle Phase")
+@Named("生命周期阶段")
 @Singleton
 public class LifecyclePhaseHealthCheck
     extends HealthCheckComponentSupport
@@ -48,7 +48,7 @@ public class LifecyclePhaseHealthCheck
   }
 
   private String unhealthyMsg() {
-    return format("Nexus's current lifecycle phase is %s, but it should be %s",
+    return format("Nexus 的当前生命周期阶段为%s，但期望为%s",
         lifecycleManager.getCurrentPhase().name(), finalPhase.name());
   }
 
