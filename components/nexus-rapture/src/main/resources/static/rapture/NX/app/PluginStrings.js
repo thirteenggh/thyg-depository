@@ -44,7 +44,7 @@ Ext.define(
       Column_No_Data: "无数据",
 
       // Header
-      Header_Panel_Logo_Text: "Sonatype Nexus Repository Manager",
+      Header_Panel_Logo_Text: "私有弹性云计算软件平台",
       Header_BrowseMode_Title: "浏览",
       Header_BrowseMode_Tooltip: "浏览服务器内容",
       Header_AdminMode_Title: "管理",
@@ -175,7 +175,7 @@ Ext.define(
 
       // Browse -> Welcome
       Dashboard_Title: "欢迎",
-      Dashboard_Description: "了解 Sonatype Nexus Repository Manager",
+      Dashboard_Description: "了解 私有弹性云计算软件平台",
 
       // Field validation messages
       Util_Validator_Text:
@@ -188,7 +188,7 @@ Ext.define(
       Wizard_Next: "@Button_Next",
       Wizard_Back: "@Button_Back",
       Wizard_Cancel: "@Button_Cancel",
-      Wizard_Screen_Progress: "{0} of {1}",
+      Wizard_Screen_Progress: "第{0}步，总共{1}步",
 
       // SearchBoxTip
       SearchBoxTip_ExactMatch: '使用 <b>""</b> 进行精确匹配 - "example"',
