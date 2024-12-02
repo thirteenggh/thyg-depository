@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 37 42.25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+    <defs>
+        <style>.cls-1{fill:#286bff;}.cls-2{fill:#fff;}</style>
+    </defs>
     <title>Ti</title>
     <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="首页" transform="translate(-120.000000, -120.000000)">
