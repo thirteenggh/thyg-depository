@@ -18,8 +18,8 @@ import {faDownload} from '@fortawesome/free-solid-svg-icons';
 export default function SupportZipResponse({response, download}) {
   return <div className='nxrm-support-zip-response'>
     <h2>{UIStrings.SUPPORT_ZIP.CREATED_TITLE}</h2>
-    <p>Support ZIP has been created.<br/>
-    You can reference this file on the filesystem or download the file from your browser.</p>
+    <p>支持 ZIP 已创建<br/>
+    您可以在文件系统上引用此文件，也可以从浏览器下载该文件。</p>
     <FieldWrapper labelText={UIStrings.SUPPORT_ZIP.CREATED_NAME_LABEL}>
       <Textfield
         name='name'

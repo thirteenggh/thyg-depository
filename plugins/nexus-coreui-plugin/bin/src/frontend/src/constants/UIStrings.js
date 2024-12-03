@@ -20,9 +20,9 @@ export default {
   ANONYMOUS_SETTINGS: {
     MENU: {
       text: '匿名访问',
-      description: '配置服务器内容的匿名访问'
+      description: '配置对服务器内容的匿名访问'
     },
-    ENABLED_CHECKBOX_LABEL: '访问：',
+    ENABLED_CHECKBOX_LABEL: '访问权限：',
     ENABLED_CHECKBOX_DESCRIPTION: '允许匿名用户访问服务器',
     USERNAME_TEXTFIELD_LABEL: '用户名：',
     REALM_SELECT_LABEL: '领域：',
@@ -162,8 +162,7 @@ export default {
       HELP_TEXT: `\
 路由规则就像可以应用于组的过滤器，涉及安全访问和组件获取。\
 它们可以减少访问组内仓库的数量，从而获取组件。\
-有关更多信息，<a href="http://links.sonatype.com/products/nxrm3/docs/routing-rule" target="_blank" \
-rel="noopener noreferrer">请查看文档</a>。`
+有关更多信息，<a href="http://links.sonatype.com/products/nxrm3/docs/routing-rule" target="_blank" rel="noopener noreferrer">请查看文档</a>。`
     },
 
     PREVIEW: {
@@ -330,7 +329,7 @@ rel="noopener noreferrer">请查看文档</a>。`
   SUPPORT_ZIP: {
     MENU: {
       text: '支持 ZIP',
-      description: '创建包含有关您的服务器的有用支持信息的 ZIP 文件'
+      description: '创建一个包含有关您的服务器的有用支持信息的 ZIP 文件'
     },
     DESCRIPTION: '<p>创建支持 ZIP 文件时不会向 Sonatype 发送任何信息。</p>' +
         '<p>创建支持 ZIP 可能需要几分钟时间。</p>',
@@ -365,7 +364,7 @@ rel="noopener noreferrer">请查看文档</a>。`
 
   ANALYZE_APPLICATION: {
     HEADER: '分析应用程序',
-    MAIN: '应用程序分析对该应用程序进行深度检查，识别潜在的风险。<br/>更多信息请访问 <a href="http://links.sonatype.com/products/insight/ac/home">这里</a>',
+    MAIN: '应用程序分析对该应用程序进行深度检查，识别潜在的风险。<br/>更多信息请访问 <a href=\"http://links.sonatype.com/products/insight/ac/home\">这里</a>',
     EMAIL: {
       LABEL: '电子邮件地址',
       DESCRIPTION: '报告将发送到该地址'
@@ -454,8 +453,8 @@ rel="noopener noreferrer">请查看文档</a>。`
 
       CONFIRM_DELETE: {
         TITLE: '删除清理策略',
-        MESSAGE: (inUseCount) => inUseCount ?
-            `此清理策略正在 ${inUseCount} 个仓库中使用` :
+        MESSAGE: (inUseCount) => inUseCount ? 
+            `此清理策略正在 ${inUseCount} 个仓库中使用` : 
             '此清理策略未被任何仓库使用',
         YES: '删除',
         NO: '取消'

@@ -97,7 +97,7 @@ Ext.define('NX.util.Url', {
    * @param {String} value to copy
    */
   asCopyWidget: function (value) {
-    return '<button onclick="Ext.widget(\'nx-copywindow\', { copyText: \'' + value + '\' });" title="' + value + '"><i class="fa fa-clipboard"></i> copy</button>';
+    return '<button onclick="Ext.widget(\'nx-copywindow\', { copyText: \'' + value + '\' });" title="' + value + '"><i class="fa fa-clipboard"></i> 复制</button>';
   },
 
   /**

@@ -48,7 +48,7 @@ Ext.define('NX.coreui.view.security.RealmSettings', {
           {
             xtype: 'nx-itemselector',
             name: 'realms',
-            fieldLabel: 'Active realms',
+            fieldLabel: '可用域',
             buttons: ['up', 'add', 'remove', 'down'],
             fromTitle: NX.I18n.get('Security_RealmSettings_Available_FromTitle'),
             toTitle: NX.I18n.get('Security_RealmSettings_Available_ToTitle'),

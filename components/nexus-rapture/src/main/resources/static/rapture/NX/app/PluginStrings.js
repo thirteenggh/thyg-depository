@@ -80,7 +80,7 @@ Ext.define(
 
       // Footer
       Footer_Panel_HTML:
-        "版权所有 &copy; 2008-至今, Sonatype Inc. 保留所有权利。",
+        "版权所有 &copy; 2008-至今, 天河国云 Inc. 保留所有权利。",
 
       // Sign in
       SignIn_Title: "登录",

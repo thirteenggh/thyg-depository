@@ -93,7 +93,7 @@ Ext.define('NX.coreui.controller.Outreach', {
             src: url,
             // override renderTpl to add title attribute for accessibility purpose
             renderTpl: [
-              '<iframe src="{src}" id="{id}-iframeEl" data-ref="iframeEl" name="{frameName}" title="Nexus Repository Manager Outreach" width="100%" height="100%" frameborder="0"></iframe>'
+              '<iframe src="{src}" id="{id}-iframeEl" data-ref="iframeEl" name="{frameName}" title="私有弹性云计算软件平台 Outreach" width="100%" height="100%" frameborder="0"></iframe>'
             ],
             listeners: {
               load: function () {
