@@ -17,14 +17,22 @@
  *
  * @since 3.0
  */
-Ext.define('NX.view.dashboard.Welcome', {
-  extend: 'Ext.container.Container',
-  alias: 'widget.nx-dashboard-welcome',
-  requires: [
-    'NX.Icons'
-  ],
+Ext.define("NX.view.dashboard.Welcome", {
+  extend: "Ext.container.Container",
+  alias: "widget.nx-dashboard-welcome",
+  requires: ["NX.Icons"],
 
-  cls: 'nx-iframe-full',
-  width: '100%',
-  layout: 'fit'
+  cls: "nx-iframe-full",
+  width: "100%",
+  layout: "fit",
+
+  items: [
+    {
+      xtype: "button",
+      text: "测试",
+      handler: function () {
+        Ext.MessageBox.alert("欢迎！", "欢迎使用本应用");
+      },
+    },
+  ],
 });
