@@ -73,6 +73,7 @@ body {
 
 #loading-spinner {
   vertical-align: text-bottom;
+  mix-blend-mode: screen;
 }
 
 #loading-msg {
