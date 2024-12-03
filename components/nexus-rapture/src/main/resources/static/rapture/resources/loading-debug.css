@@ -11,7 +11,7 @@
  * Eclipse Foundation. All other trademarks are the property of their respective owners.
  */
 
-body {
+ body {
   margin: 0;
 }
 
@@ -21,7 +21,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  /* background-color: black; */
+  background-color: black;
   z-index: 20000;
 }
 
@@ -29,27 +29,23 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  /* background-color: black; */
+  background-color: black;
   margin: auto;
   z-index: 20001;
-  background-image:url('images/background.png');
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #loading-background {
-  width: 75%;
-  height: 75%;
+  width: 1024px;
+  height: 768px;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 30%;
-  margin: auto 300px;
-  /* background-image: url('images/loading-background.png');
+  margin: auto;
+  background-image: url('images/background.png');
   background-repeat: no-repeat;
-  background-position: center center; */
+  background-position: center center;
 }
 
 #loading-logo {
@@ -73,7 +69,6 @@ body {
 
 #loading-spinner {
   vertical-align: text-bottom;
-  mix-blend-mode: screen;
 }
 
 #loading-msg {
