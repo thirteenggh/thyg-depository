@@ -35,7 +35,7 @@ class SelectorsSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-selectors-all',
-                description: 'All permissions for Content Selectors',
+                description: '内容选择器的所有权限',
                 type: 'application',
                 properties: [
                     domain : 'selectors',
@@ -44,7 +44,7 @@ class SelectorsSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-selectors-create',
-                description: 'Create permission for Content Selectors',
+                description: '内容选择器的创建权限',
                 type: 'application',
                 properties: [
                     domain : 'selectors',
@@ -53,7 +53,7 @@ class SelectorsSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-selectors-read',
-                description: 'Read permission for Content Selectors',
+                description: '内容选择器的读取权限',
                 type: 'application',
                 properties: [
                     domain : 'selectors',
@@ -62,7 +62,7 @@ class SelectorsSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-selectors-update',
-                description: 'Update permission for Content Selectors',
+                description: '内容选择器的更新权限',
                 type: 'application',
                 properties: [
                     domain : 'selectors',
@@ -71,7 +71,7 @@ class SelectorsSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-selectors-delete',
-                description: 'Delete permission for Content Selectors',
+                description: '内容选择器的删除权限',
                 type: 'application',
                 properties: [
                     domain : 'selectors',

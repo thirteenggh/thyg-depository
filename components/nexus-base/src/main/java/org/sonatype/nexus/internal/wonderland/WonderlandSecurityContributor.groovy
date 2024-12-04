@@ -35,7 +35,7 @@ class WonderlandSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-wonderland-all',
-                description: 'All permissions for Wonderland',
+                description: 'Wonderland 的所有权限',
                 type: 'application',
                 properties: [
                     domain: 'wonderland',

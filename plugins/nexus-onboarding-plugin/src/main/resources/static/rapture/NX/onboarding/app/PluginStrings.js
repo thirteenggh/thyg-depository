@@ -27,7 +27,7 @@ Ext.define(
       Onboarding_Text: "入门",
       Onboarding_Description: "需要关注的配置更改",
       Onboarding_Authenticate:
-        "您的 <b>管理员</b> 用户密码位于 <br><b>{0}</b> 服务器上。",
+        "您的 <b>admin</b> 用户密码位于 <br><b>{0}</b> 服务器上。",
       Onboarding_LoadStepsError: "无法从服务器检索设置步骤",
     },
 

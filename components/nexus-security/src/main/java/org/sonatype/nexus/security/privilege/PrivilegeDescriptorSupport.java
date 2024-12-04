@@ -108,10 +108,10 @@ public abstract class PrivilegeDescriptorSupport<T extends ApiPrivilege, Y exten
   protected static String humanizeName(final String name, final String format) {
     if (ALL.equals(name)) {
       if (ALL.equals(format)) {
-        return "all";
+        return "所有";
       }
       else {
-        return "all '" + format + "'-format";
+        return "所有'" + format + "'-format";
       }
     }
     else {
@@ -132,7 +132,7 @@ public abstract class PrivilegeDescriptorSupport<T extends ApiPrivilege, Y exten
       @Override
       public String apply(final String action) {
         if (ALL.equals(action)) {
-          return "All";
+          return "所有";
         }
         else {
           return UPPER_UNDERSCORE.to(UPPER_CAMEL, action);
@@ -140,10 +140,10 @@ public abstract class PrivilegeDescriptorSupport<T extends ApiPrivilege, Y exten
       }
     })));
     if (actions.length > 1 || ALL.equals(actions[0])) {
-      stringBuilder.append(" privileges");
+      stringBuilder.append("权限");
     }
     else {
-      stringBuilder.append(" privilege");
+      stringBuilder.append("权限");
     }
     return stringBuilder.toString();
   }

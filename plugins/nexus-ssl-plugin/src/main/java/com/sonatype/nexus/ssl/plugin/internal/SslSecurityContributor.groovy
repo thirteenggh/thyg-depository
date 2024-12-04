@@ -35,7 +35,7 @@ class SslSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-ssl-truststore-all',
-                description: 'All permissions for SSL Truststore',
+                description: 'SSL Truststore的所有权限',
                 type: 'application',
                 properties: [
                     domain : 'ssl-truststore',
@@ -44,7 +44,7 @@ class SslSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-ssl-truststore-read',
-                description: 'Read permission for SSL Truststore',
+                description: 'SSL Truststore的读取权限',
                 type: 'application',
                 properties: [
                     domain : 'ssl-truststore',
@@ -53,7 +53,7 @@ class SslSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-ssl-truststore-create',
-                description: 'Create permission for SSL Truststore',
+                description: 'SSL Truststore的创建权限',
                 type: 'application',
                 properties: [
                     domain : 'ssl-truststore',
@@ -62,7 +62,7 @@ class SslSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-ssl-truststore-update',
-                description: 'Update permission for SSL Truststore',
+                description: 'SSL Truststore的更新权限',
                 type: 'application',
                 properties: [
                     domain : 'ssl-truststore',
@@ -71,7 +71,7 @@ class SslSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-ssl-truststore-delete',
-                description: 'Delete permission for SSL Truststore',
+                description: 'SSL Truststore的删除权限',
                 type: 'application',
                 properties: [
                     domain : 'ssl-truststore',

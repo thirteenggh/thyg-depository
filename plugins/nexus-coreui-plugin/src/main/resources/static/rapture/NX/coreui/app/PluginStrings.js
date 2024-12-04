@@ -332,7 +332,7 @@ Ext.define(
       Repositories_Description: "管理存储库",
       Repositories_Delete_Mask: "正在删除存储库",
       Repositories_Create_Title: "创建存储库：{0}",
-      Repositories_SelectRecipe_Title: "选择配方",
+      Repositories_SelectRecipe_Title: "选择工具",
       Repository_RepositoryAdd_Create_Success: "已创建存储库：",
       Repository_RepositoryAdd_Create_Error: "您没有权限创建存储库",
       Repository_RepositorySettingsForm_Update_Success: "已更新存储库：",

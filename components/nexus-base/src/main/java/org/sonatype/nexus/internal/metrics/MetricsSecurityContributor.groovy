@@ -35,7 +35,7 @@ class MetricsSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-metrics-all',
-                description: 'All permissions for Metrics',
+                description: 'Metrics 的所有权限',
                 type: 'application',
                 properties: [
                     domain: 'metrics',

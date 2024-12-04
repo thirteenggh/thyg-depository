@@ -38,7 +38,7 @@ class ScriptSecurityContributor
     configuration.setPrivileges([
         new MemoryCPrivilege(
             id: 'nx-script-*-*',
-            description: 'All permissions for Scripts',
+            description: '脚本的所有权限',
             type: 'script',
             properties: [
                 name : '*',
@@ -47,7 +47,7 @@ class ScriptSecurityContributor
         ),
         new MemoryCPrivilege(
             id: 'nx-script-*-browse',
-            description: 'Browse permission for Scripts',
+            description: '脚本的浏览权限',
             type: 'script',
             properties: [
                 name : '*',
@@ -56,7 +56,7 @@ class ScriptSecurityContributor
         ),
         new MemoryCPrivilege(
             id: 'nx-script-*-add',
-            description: 'Add permission for Scripts',
+            description: '脚本的添加权限',
             type: 'script',
             properties: [
                 name : '*',
@@ -65,7 +65,7 @@ class ScriptSecurityContributor
         ),
         new MemoryCPrivilege(
             id: 'nx-script-*-edit',
-            description: 'Edit permission for Scripts',
+            description: '脚本的编辑权限',
             type: 'script',
             properties: [
                 name : '*',
@@ -74,7 +74,7 @@ class ScriptSecurityContributor
         ),
         new MemoryCPrivilege(
             id: 'nx-script-*-read',
-            description: 'Read permission for Scripts',
+            description: '脚本的读取权限',
             type: 'script',
             properties: [
                 name : '*',
@@ -83,7 +83,7 @@ class ScriptSecurityContributor
         ),
         new MemoryCPrivilege(
             id: 'nx-script-*-delete',
-            description: 'Delete permission for Scripts',
+            description: '脚本的删除权限',
             type: 'script',
             properties: [
                 name : '*',
@@ -92,7 +92,7 @@ class ScriptSecurityContributor
         ),
         new MemoryCPrivilege(
             id: 'nx-script-*-run',
-            description: 'Run permission for Scripts',
+            description: '脚本的运行权限',
             type: 'script',
             properties: [
                 name : '*',
