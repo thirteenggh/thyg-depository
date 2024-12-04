@@ -36,7 +36,7 @@ Ext.define(
      */
     keys: {
       // Browse -> Browse
-      Assets_Info_Repository: "仓库",
+      Assets_Info_Repository: "存储库",
       Assets_Info_Format: "格式",
       Assets_Info_Group: "组件组",
       Assets_Info_Name: "组件名称",
@@ -50,7 +50,7 @@ Ext.define(
       Assets_Info_BlobRef: "Blob引用",
       Assets_Info_Blob_Created: "Blob创建时间",
       Assets_Info_Blob_Updated: "Blob更新时间",
-      Assets_Info_ContainingRepositoryName: "包含仓库名称",
+      Assets_Info_ContainingRepositoryName: "包含存储库名称",
       Assets_Info_Downloaded_Count: "最近30天下载次数",
       Assets_Info_Downloaded_Unit: "次下载",
       Assets_Info_UploadedBy: "上传者",
@@ -65,7 +65,7 @@ Ext.define(
       FolderInfo_Delete_Success: "文件夹正在后台删除",
       Component_Asset_Tree_Title_Feature: "树形视图",
       Component_Asset_Tree_Description_Feature: "查看组件和资产的树形布局",
-      Component_Asset_Tree_EmptyText_View: "在仓库中未找到组件/资产",
+      Component_Asset_Tree_EmptyText_View: "在存储库中未找到组件/资产",
       Component_Asset_Tree_Expand_Failure: "无法显示请求的树形条目",
       Component_Asset_Tree_Filtered_EmptyText_View:
         '所有组件都已被过滤掉，尝试使用<a href="#browse/search">搜索</a>代替？',
@@ -121,7 +121,7 @@ Ext.define(
       HealthCheckInfo_Popularity_Label: "流行度",
       HealthCheckInfo_Loading_Text: "正在加载...",
       HealthCheckInfo_Disabled_Tooltip:
-        "启用仓库健康检查（RHC）后，年龄和流行度数据才可用。",
+        "启用存储库健康检查（RHC）后，年龄和流行度数据才可用。",
       HealthCheckInfo_Error_Tooltip: "检索组件数据出错",
       HealthCheckInfo_Quota_Tooltip:
         "年龄和流行度数据的查询限制已达到。请联系Sonatype支持扩展当前配额限制。",
@@ -144,20 +144,20 @@ Ext.define(
         "搜索超时，超出 {0} 秒，请细化您的搜索条件。{1}",
       Search_Results_TimedOut_LearnMore: "了解更多",
       SearchCriteria_Keyword_FieldLabel: "关键词",
-      SearchCriteria_RepositoryName_FieldLabel: "仓库名称",
+      SearchCriteria_RepositoryName_FieldLabel: "存储库名称",
       SearchCriteria_Name_FieldLabel: "名称",
       SearchCriteria_Tag_FieldLabel: "标签",
       SearchCriteria_Format_FieldLabel: "格式",
       SearchCriteria_Group_FieldLabel: "组",
       SearchCriteria_Checksum_Group: "校验和",
-      SearchDocker_Group: "Docker 仓库",
-      SearchMaven_Group: "Maven 仓库",
-      SearchNpm_Group: "npm 仓库",
-      SearchNuget_Group: "NuGet 仓库",
-      SearchPyPi_Group: "PyPI 仓库",
-      SearchRubygems_Group: "RubyGems 仓库",
-      SearchGitLfs_Group: "Git LFS 仓库",
-      SearchYum_Group: "Yum 仓库",
+      SearchDocker_Group: "Docker 存储库",
+      SearchMaven_Group: "Maven 存储库",
+      SearchNpm_Group: "npm 存储库",
+      SearchNuget_Group: "NuGet 存储库",
+      SearchPyPi_Group: "PyPI 存储库",
+      SearchRubygems_Group: "RubyGems 存储库",
+      SearchGitLfs_Group: "Git LFS 存储库",
+      SearchYum_Group: "Yum 存储库",
       SearchCriteria_MD5_FieldLabel: "MD5",
       SearchCriteria_SHA1_FieldLabel: "SHA-1",
       SearchCriteria_SHA256_FieldLabel: "SHA-256",
@@ -196,19 +196,19 @@ Ext.define(
       SearchRubygems_Homepage_FieldLabel: "首页",
       SearchYum_Architecture_FieldLabel: "架构",
       SearchYum_Name_FieldLabel: "包名称",
-      SearchGolang_Group: "Go 仓库",
+      SearchGolang_Group: "Go 存储库",
       SearchGolang_License_FieldLabel: "许可证",
       Search_More_Text: "更多条件",
       Search_SearchResultList_Format_Header: "格式",
       Search_SearchResultList_Group_Header: "组",
       Search_SearchResultList_Name_Header: "名称",
-      Search_SearchResultList_Repository_Header: "仓库",
+      Search_SearchResultList_Repository_Header: "存储库",
       Search_SearchResultList_Version_Header: "版本",
       Search_SearchResultList_EmptyText: "没有组件匹配过滤器条件",
       Search_Assets_Group: "组",
       Search_Assets_Name: "名称",
       Search_Assets_Format: "格式",
-      Search_Assets_Repository: "仓库",
+      Search_Assets_Repository: "存储库",
       Search_Assets_Version: "版本",
       SearchResultAssetList_Name_Header: "名称",
       Component_AssetInfo_Info_Title: "摘要",
@@ -218,49 +218,49 @@ Ext.define(
 
       // Browse -> Search -> Bower
       SearchBower_Text: "Bower",
-      SearchBower_Description: "在Bower仓库中搜索组件",
+      SearchBower_Description: "在Bower存储库中搜索组件",
 
       // Browse -> Search -> Docker
       SearchDocker_Text: "Docker",
-      SearchDocker_Description: "在Docker仓库中搜索组件",
+      SearchDocker_Description: "在Docker存储库中搜索组件",
 
       // Browse -> Search -> R
       SearchR_Text: "R",
-      SearchR_Description: "在R仓库中搜索组件",
+      SearchR_Description: "在R存储库中搜索组件",
 
       // Browse -> Search -> Raw
       SearchRaw_Text: "Raw",
-      SearchRaw_Description: "在Raw仓库中搜索组件",
+      SearchRaw_Description: "在Raw存储库中搜索组件",
 
       // Browse -> Search -> Git LFS
       SearchGitLfs_Text: "Git LFS",
-      SearchGitLfs_Description: "在Git LFS仓库中搜索组件",
+      SearchGitLfs_Description: "在Git LFS存储库中搜索组件",
 
       // Browse -> Search -> Go
       SearchGolang_Text: "Go",
-      SearchGolang_Description: "在Go仓库中搜索组件",
+      SearchGolang_Description: "在Go存储库中搜索组件",
 
       // Browse -> Search -> Helm
       SearchHelm_Text: "Helm",
-      SearchHelm_Description: "在Helm仓库中搜索组件",
-      SearchHelm_Group: "Helm仓库",
+      SearchHelm_Description: "在Helm存储库中搜索组件",
+      SearchHelm_Group: "Helm存储库",
       Repository_Facet_HelmFacet_Title: "Helm设置",
 
       // Browse -> Search -> npm
       SearchNpm_Text: "npm",
-      SearchNpm_Description: "在npm仓库中搜索组件",
+      SearchNpm_Description: "在npm存储库中搜索组件",
 
       // Browse -> Search -> Nuget
       SearchNuget_Text: "NuGet",
-      SearchNuget_Description: "在NuGet仓库中搜索组件",
+      SearchNuget_Description: "在NuGet存储库中搜索组件",
 
       // Browse -> Search -> PyPI
       SearchPyPi_Text: "PyPI",
-      SearchPyPi_Description: "在PyPI仓库中搜索组件",
+      SearchPyPi_Description: "在PyPI存储库中搜索组件",
 
       // Browse -> Search -> Rubygems
       SearchRubygems_Text: "RubyGems",
-      SearchRubygems_Description: "在RubyGems仓库中搜索组件",
+      SearchRubygems_Description: "在RubyGems存储库中搜索组件",
 
       // Browse -> Search -> Custom
       Search_Custom_Text: "自定义",
@@ -272,33 +272,33 @@ Ext.define(
 
       // Browse -> Search -> Yum
       SearchYum_Text: "Yum",
-      SearchYum_Description: "在Yum仓库中搜索组件",
+      SearchYum_Description: "在Yum存储库中搜索组件",
 
       // Browse -> Search -> Apt
       SearchApt_Text: "Apt",
-      SearchApt_Description: "在Apt仓库中搜索组件",
+      SearchApt_Description: "在Apt存储库中搜索组件",
 
       // Browse -> Search -> Cocoapods
       SearchCocoapods_Text: "Cocoapods",
-      SearchCocoapods_Description: "在Cocoapods仓库中搜索组件",
+      SearchCocoapods_Description: "在Cocoapods存储库中搜索组件",
 
       // Browse -> Search -> p2
       SearchP2_Text: "P2",
-      SearchP2_Description: "在P2仓库中搜索组件",
-      SearchP2_Group: "P2仓库",
+      SearchP2_Description: "在P2存储库中搜索组件",
+      SearchP2_Group: "P2存储库",
       SearchP2_PluginName_FieldLabel: "插件名称",
 
       // Browse -> Search -> Conan
-      SearchConan_Group: "Conan仓库",
+      SearchConan_Group: "Conan存储库",
       SearchConan_Text: "Conan",
-      SearchConan_Description: "在Conan仓库中搜索组件",
+      SearchConan_Description: "在Conan存储库中搜索组件",
       SearchConan_BaseVersion_FieldLabel: "基础版本",
       SearchConan_Channel_FieldLabel: "频道",
 
       // Browse -> Search -> Conda
       SearchConda_Text: "Conda",
-      SearchConda_Description: "在Conda仓库中搜索组件",
-      SearchConda_Group: "Conda仓库",
+      SearchConda_Description: "在Conda存储库中搜索组件",
+      SearchConda_Group: "Conda存储库",
       SearchConda_License_FieldLabel: "许可证",
 
       // Browse -> Browse
@@ -307,11 +307,11 @@ Ext.define(
 
       // Browse -> Upload
       FeatureGroups_Upload_Text: "上传",
-      FeatureGroups_Upload_Description: "上传内容到仓库",
+      FeatureGroups_Upload_Description: "上传内容到存储库",
       FeatureGroups_Upload_Wait_Message: "正在上传您的组件...",
       FeatureGroups_Upload_Successful: "组件上传成功",
       FeatureGroups_Upload_Successful_Link_Text: "立即查看。",
-      FeatureGroups_Upload_Successful_Text: "组件已上传到 {0} 仓库",
+      FeatureGroups_Upload_Successful_Text: "组件已上传到 {0} 存储库",
       FeatureGroups_Upload_Asset_Form_Title: "为这个组件选择资产",
       FeatureGroups_Upload_Asset_Form_File_Label: "文件",
       FeatureGroups_Upload_Asset_Form_Remove_Button: "移除",
@@ -324,29 +324,29 @@ Ext.define(
         "组件详情将从提供的POM文件中提取。",
 
       // Admin -> Repository
-      FeatureGroups_Repository_Text: "仓库",
-      FeatureGroups_Repository_Description: "仓库管理",
+      FeatureGroups_Repository_Text: "存储库",
+      FeatureGroups_Repository_Description: "存储库管理",
 
       // Admin -> Repository -> Repositories
-      Repositories_Text: "仓库",
-      Repositories_Description: "管理仓库",
-      Repositories_Delete_Mask: "正在删除仓库",
-      Repositories_Create_Title: "创建仓库：{0}",
+      Repositories_Text: "存储库",
+      Repositories_Description: "管理存储库",
+      Repositories_Delete_Mask: "正在删除存储库",
+      Repositories_Create_Title: "创建存储库：{0}",
       Repositories_SelectRecipe_Title: "选择配方",
-      Repository_RepositoryAdd_Create_Success: "已创建仓库：",
-      Repository_RepositoryAdd_Create_Error: "您没有权限创建仓库",
-      Repository_RepositorySettingsForm_Update_Success: "已更新仓库：",
-      Repository_RepositorySettingsForm_Update_Error: "您没有权限更新仓库",
-      Repository_RepositoryList_New_Button: "创建仓库",
+      Repository_RepositoryAdd_Create_Success: "已创建存储库：",
+      Repository_RepositoryAdd_Create_Error: "您没有权限创建存储库",
+      Repository_RepositorySettingsForm_Update_Success: "已更新存储库：",
+      Repository_RepositorySettingsForm_Update_Error: "您没有权限更新存储库",
+      Repository_RepositoryList_New_Button: "创建存储库",
       Repository_RepositoryList_Name_Header: "名称",
       Repository_RepositoryList_Type_Header: "类型",
       Repository_RepositoryList_Format_Header: "格式",
       Repository_RepositoryList_Status_Header: "状态",
       Repository_RepositoryList_URL_Header: "URL",
-      Repository_RepositoryList_Filter_EmptyText: "没有仓库匹配“{$filter}”",
+      Repository_RepositoryList_Filter_EmptyText: "没有存储库匹配“{$filter}”",
       Repository_RepositoryList_EmptyText:
-        '<div class="summary">还没有创建仓库<br><span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div><div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是仓库？</h3><p>仓库是存储位置，例如包、库、二进制文件和容器，它们被检索以便安装或使用。创建和管理仓库是Nexus Repository Manager配置的重要组成部分，因为它允许您向最终用户展示内容，同时也为他们提供了存储更多内容的位置。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/repository" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
-      Repository_RepositoryFeature_Delete_Button: "删除仓库",
+        '<div class="summary">还没有创建存储库<br><span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div><div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是存储库？</h3><p>存储库是存储位置，例如包、库、二进制文件和容器，它们被检索以便安装或使用。创建和管理存储库是Nexus Repository Manager配置的重要组成部分，因为它允许您向最终用户展示内容，同时也为他们提供了存储更多内容的位置。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/repository" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+      Repository_RepositoryFeature_Delete_Button: "删除存储库",
       Repository_RepositoryFeature_RebuildIndex_Button: "重建索引",
       Repository_RepositoryFeature_HealthCheckDisable_Button: "禁用健康检查",
       Repository_RepositoryFeature_HealthCheckEnable_Button: "启用健康检查",
@@ -356,14 +356,14 @@ Ext.define(
       Repository_Facet_BowerProxyFacet_RewritePackageUrls_FieldLabel:
         "启用包URL重写",
       Repository_Facet_BowerProxyFacet_RewritePackageUrls_HelpText:
-        "强制Bower通过代理仓库检索包",
+        "强制Bower通过代理存储库检索包",
       Repository_Facet_DockerHostedFacet_V1_Title: "Docker Registry API支持",
       Repository_Facet_DockerHostedFacet_V1_Enabled: "启用Docker V1 API",
       Repository_Facet_DockerHostedFacet_V1_Enabled_Help:
-        "允许客户端使用V1 API与此仓库交互",
-      Repository_Facet_DockerConnectorFacet_Title: "仓库连接器",
+        "允许客户端使用V1 API与此存储库交互",
+      Repository_Facet_DockerConnectorFacet_Title: "存储库连接器",
       Repository_Facet_DockerConnectorFacet_Help:
-        '<em>连接器允许Docker客户端直接连接到托管注册表，但并不总是必需的。请咨询我们的<a href="https://links.sonatype.com/products/nexus/docker-ssl-connector/docs" target="_blank" rel="noopener">文档</a>，以确定哪种连接器适合您的用例。有关扩展仓库的信息，请查看我们的<a href="https://links.sonatype.com/products/nexus/docker-scaling-repositories/docs" target="_blank" rel="noopener">扩展文档</a>。</em>',
+        '<em>连接器允许Docker客户端直接连接到托管注册表，但并不总是必需的。请咨询我们的<a href="https://links.sonatype.com/products/nexus/docker-ssl-connector/docs" target="_blank" rel="noopener">文档</a>，以确定哪种连接器适合您的用例。有关扩展存储库的信息，请查看我们的<a href="https://links.sonatype.com/products/nexus/docker-scaling-repositories/docs" target="_blank" rel="noopener">扩展文档</a>。</em>',
       Repository_Facet_DockerConnectorFacet_HttpPort_FieldLabel: "HTTP",
       Repository_Facet_DockerConnectorFacet_HttpPort_HelpText:
         "在指定端口创建HTTP连接器。通常，如果服务器位于安全代理后面，则使用此设置。",
@@ -392,7 +392,7 @@ Ext.define(
       Repository_Facet_YumHostedFacet_Title: "Yum",
       Repository_Facet_YumHostedFacet_RepodataDepth_FieldLabel: "Repodata深度",
       Repository_Facet_YumHostedFacet_RepodataDepth_HelpText:
-        "指定创建repodata文件夹的仓库深度",
+        "指定创建repodata文件夹的存储库深度",
       Repository_Facet_YumHostedFacet_DeployPolicy_FieldLabel: "布局策略",
       Repository_Facet_YumHostedFacet_DeployPolicy_HelpText:
         "验证所有路径是否为RPM或yum元数据",
@@ -404,7 +404,7 @@ Ext.define(
       Repository_Facet_AptFacet_Distribution_HelpText:
         "要获取的发行版，例如bionic",
       Repository_Facet_AptFacet_Flat_FieldLabel: "Flat",
-      Repository_Facet_AptFacet_Flat_HelpText: "此仓库是否为平面仓库？",
+      Repository_Facet_AptFacet_Flat_HelpText: "此存储库是否为平面存储库？",
       Repository_Facet_AptSigningFacet_Keypair_FieldLabel: "签名密钥",
       Repository_Facet_AptSigningFacet_Keypair_HelpText:
         "PGP签名密钥对（例如gpg --export-secret-key --armor <Name or ID>）",
@@ -412,7 +412,7 @@ Ext.define(
       Repository_Facet_CondaFacet_Title: "Conda设置",
       Repository_Facet_GroupFacet_Title: "组",
       Repository_Facet_NugetGroupFacet_NugetGroupValidationLabel:
-        '<span style="color: red; ">组仓库不能包含NuGet v2和v3成员的混合。您不能添加<b>{0}</b>（{1}），因为组中包含了<b>{2}</b>（{3}）。</span>',
+        '<span style="color: red; ">组存储库不能包含NuGet v2和v3成员的混合。您不能添加<b>{0}</b>（{1}），因为组中包含了<b>{2}</b>（{3}）。</span>',
       Repository_Facet_HttpClientFacet_Title: "HTTP",
       Repository_Facet_Maven2Facet_Title: "Maven 2",
       Repository_Facet_NegativeCacheFacet_Title: "负缓存",
@@ -428,24 +428,24 @@ Ext.define(
       Repository_Facet_StorageFacetHosted_Title: "托管",
       Repository_Facet_RoutingRuleFacet_Title: "路由规则",
       Repository_Facet_RoutingRuleFacet_HelpText:
-        "选择一个规则以限制某些请求不被此仓库服务",
+        "选择一个规则以限制某些请求不被此存储库服务",
       Repository_Facet_ProxyFacet_Autoblock_FieldLabel: "自动阻止启用",
       Repository_Facet_ProxyFacet_Autoblock_HelpText:
         "如果检测到远程对等节点不可达/无响应，则自动阻止出站连接",
       Repository_Facet_ProxyFacet_Blocked_FieldLabel: "已阻止",
-      Repository_Facet_ProxyFacet_Blocked_HelpText: "阻止对此仓库的出站连接",
+      Repository_Facet_ProxyFacet_Blocked_HelpText: "阻止对此存储库的出站连接",
       Repository_RepositorySettingsForm_Name_FieldLabel: "名称",
-      Repository_RepositorySettingsForm_Name_HelpText: "此仓库的唯一标识符",
+      Repository_RepositorySettingsForm_Name_HelpText: "此存储库的唯一标识符",
       Repository_RepositorySettingsForm_URL_FieldLabel: "URL",
-      Repository_RepositorySettingsForm_URL_HelpText: "访问此仓库的URL",
-      Repository_Facet_GroupFacet_Members_FieldLabel: "成员仓库",
-      Repository_Facet_GroupFacet_Members_HelpText: "选择并排序组成此组的仓库",
+      Repository_RepositorySettingsForm_URL_HelpText: "访问此存储库的URL",
+      Repository_Facet_GroupFacet_Members_FieldLabel: "成员存储库",
+      Repository_Facet_GroupFacet_Members_HelpText: "选择并排序组成此组的存储库",
       Repository_Facet_GroupFacet_Members_FromTitle: "可用",
       Repository_Facet_GroupFacet_Members_ToTitle: "成员",
       Repository_Facet_GroupWriteFacet_Writable_Repository_FieldLabel:
-        "可写仓库",
+        "可写存储库",
       Repository_Facet_GroupWriteFacet_Writable_Repository_HelpText:
-        "POST和PUT请求将被路由到的成员仓库",
+        "POST和PUT请求将被路由到的成员存储库",
       Repository_Facet_StorageFacetHosted_Deployment_FieldLabel: "部署策略",
       Repository_Facet_StorageFacetHosted_Deployment_HelpText:
         "控制是否允许部署和更新构件",
@@ -459,30 +459,30 @@ Ext.define(
         "允许对‘最新’标签进行重新部署，但对于所有其他标签则遵循部署策略",
       Repository_Facet_StorageFacetHosted_Deployment_ReadOnlyItem: "只读",
       Repository_Facet_ProxyFacet_Remote_FieldLabel: "远程存储",
-      Repository_Facet_ProxyFacet_Remote_HelpText: "被代理的远程仓库的位置",
+      Repository_Facet_ProxyFacet_Remote_HelpText: "被代理的远程存储库的位置",
       Repository_Facet_ProxyFacet_Remote_EmptyText: "输入URL",
       Repository_Facet_ProxyFacet_Bower_Remote_HelpText:
-        "被代理的远程仓库的位置，例如 https://registry.bower.io",
+        "被代理的远程存储库的位置，例如 https://registry.bower.io",
       Repository_Facet_ProxyFacet_Docker_Remote_HelpText:
-        "被代理的远程仓库的位置，例如 https://registry-1.docker.io",
+        "被代理的远程存储库的位置，例如 https://registry-1.docker.io",
       Repository_Facet_ProxyFacet_Maven_Remote_HelpText:
-        "被代理的远程仓库的位置，例如 https://repo1.maven.org/maven2/",
+        "被代理的远程存储库的位置，例如 https://repo1.maven.org/maven2/",
       Repository_Facet_ProxyFacet_Npm_Remote_HelpText:
-        "被代理的远程仓库的位置，例如 https://registry.npmjs.org",
+        "被代理的远程存储库的位置，例如 https://registry.npmjs.org",
       Repository_Facet_ProxyFacet_Nuget_Remote_HelpText:
-        "被代理的远程仓库的位置，例如 https://api.nuget.org/v3/index.json",
+        "被代理的远程存储库的位置，例如 https://api.nuget.org/v3/index.json",
       Repository_Facet_ProxyFacet_Pypi_Remote_HelpText:
-        "被代理的远程仓库的位置，例如 https://pypi.org",
+        "被代理的远程存储库的位置，例如 https://pypi.org",
       Repository_Facet_ProxyFacet_Rubygems_Remote_HelpText:
-        "被代理的远程仓库的位置，例如 https://rubygems.org",
+        "被代理的远程存储库的位置，例如 https://rubygems.org",
       Repository_Facet_ProxyFacet_Yum_Remote_HelpText:
-        "被代理的远程仓库的位置，例如 http://mirror.centos.org/centos/",
+        "被代理的远程存储库的位置，例如 http://mirror.centos.org/centos/",
       Ssl_SslUseTrustStore_BoxLabel: "使用Nexus信任库",
       Ssl_SslUseTrustStore_Certificate_Button: "查看证书",
       Ssl_SslUseTrustStore_Certificate_HelpText:
         "使用存储在Nexus信任库中的证书连接到外部系统",
       Maven2Facet_VersionPolicy_FieldLabel: "版本策略",
-      Maven2Facet_VersionPolicy_HelpText: "此仓库存储哪种类型的构件？",
+      Maven2Facet_VersionPolicy_HelpText: "此存储库存储哪种类型的构件？",
       Maven2Facet_VersionPolicy_EmptyText: "选择一个策略",
       Maven2Facet_VersionPolicy_MixedItem: "混合",
       Maven2Facet_VersionPolicy_ReleaseItem: "发布",
@@ -495,19 +495,19 @@ Ext.define(
       Repository_Facet_Maven2Facet_LayoutPolicy_PermissiveItem: "宽容",
       Repository_RepositorySettingsForm_Format_FieldLabel: "格式",
       Repository_RepositorySettingsForm_Format_HelpText:
-        "仓库的格式（例如maven2、docker、raw、nuget...）",
+        "存储库的格式（例如maven2、docker、raw、nuget...）",
       Repository_RepositorySettingsForm_Type_FieldLabel: "类型",
       Repository_RepositorySettingsForm_Type_HelpText:
-        "仓库的类型（例如组、托管或代理）",
+        "存储库的类型（例如组、托管或代理）",
       Repository_RepositorySettingsForm_Online_FieldLabel: "在线",
       Repository_RepositorySettingsForm_Online_HelpText:
-        "如果选中，仓库接受传入请求",
+        "如果选中，存储库接受传入请求",
       Repository_Facet_ProxyFacet_ArtifactAge_FieldLabel: "最大组件年龄",
       Repository_Facet_ProxyFacet_MetadataAge_FieldLabel: "最大元数据年龄",
       Repository_Facet_ProxyFacet_ArtifactAge_HelpText:
-        "在重新检查远程仓库之前缓存构件的时间（分钟）。发布仓库应使用-1。",
+        "在重新检查远程存储库之前缓存构件的时间（分钟）。发布存储库应使用-1。",
       Repository_Facet_ProxyFacet_MetadataAge_HelpText:
-        "在重新检查远程仓库之前缓存元数据的时间（分钟）。",
+        "在重新检查远程存储库之前缓存元数据的时间（分钟）。",
       Repository_Facet_HttpClientFacet_ConnectionRetries_FieldLabel: "连接重试",
       Repository_Facet_HttpClientFacet_ConnectionRetries_HelpText:
         "如果初始连接尝试超时，总共重试次数",
@@ -523,29 +523,29 @@ Ext.define(
         "允许存储和使用Cookie",
       Repository_Facet_StorageFacet_BlobStore_FieldLabel: "Blob存储",
       Repository_Facet_StorageFacet_BlobStore_HelpText:
-        "用于存储仓库内容的Blob存储",
+        "用于存储存储库内容的Blob存储",
       Repository_Facet_StorageFacet_BlobStore_EmptyText: "选择一个Blob存储",
       Repository_Facet_StorageFacet_ContentTypeValidation_FieldLabel:
         "严格内容类型验证",
       Repository_Facet_StorageFacet_ContentTypeValidation_HelpText:
-        "验证上传到此仓库的所有内容是否为适当的MIME类型，适用于仓库格式",
+        "验证上传到此存储库的所有内容是否为适当的MIME类型，适用于存储库格式",
       Repository_Facet_StorageFacet_DataStore_FieldLabel: "数据存储",
       Repository_Facet_StorageFacet_DataStore_HelpText:
         "用于存储内容元数据的数据存储",
       Repository_Facet_StorageFacet_DataStore_EmptyText: "选择一个数据存储",
       Repository_Facet_NegativeCacheFacet_Enabled_FieldLabel: "未找到缓存启用",
       Repository_Facet_NegativeCacheFacet_Enabled_HelpText:
-        "缓存不在代理仓库中存在的内容的响应",
+        "缓存不在代理存储库中存在的内容的响应",
       Repository_Facet_NegativeCacheFacet_TTL_FieldLabel: "未找到缓存TTL",
       Repository_Facet_NegativeCacheFacet_TTL_HelpText:
-        "缓存文件未在仓库中找到的事实的时间（分钟）",
+        "缓存文件未在存储库中找到的事实的时间（分钟）",
       Repository_Facet_NugetProxyFacet_ProtocolVersion: "协议版本",
       Repository_Facet_NugetProxyFacet_V2: "NuGet V2",
       Repository_Facet_NugetProxyFacet_V3: "NuGet V3",
       Repository_Facet_NugetProxyFacet_ItemMaxAge_FieldLabel:
         "元数据查询缓存年龄",
       Repository_Facet_NugetProxyFacet_ItemMaxAge_HelpText:
-        "从代理仓库缓存查询结果的时间（秒）",
+        "从代理存储库缓存查询结果的时间（秒）",
       Repository_Facet_Npm_Title: "npm",
       Repository_Facet_Npm_RemoveNonCataloged_Label: "移除未编目版本",
       Repository_Facet_Npm_RemoveNonCataloged_HelpText:
@@ -572,31 +572,31 @@ Ext.define(
       HealthCheckRepositoryColumn_Analyzing: "正在分析...",
       HealthCheckRepositoryColumn_Analyzing_Tooltip:
         "<span><h2>分析进行中</h2>" +
-        "您的仓库内容正在被分析。这个过程应该只需要几分钟。<br><br>" +
-        "当分析完成并且此页面刷新后，我们将向您展示仓库中前5个最脆弱的组件，过去一个月的下载次数，以及年比概览。</span>",
+        "您的存储库内容正在被分析。这个过程应该只需要几分钟。<br><br>" +
+        "当分析完成并且此页面刷新后，我们将向您展示存储库中前5个最脆弱的组件，过去一个月的下载次数，以及年比概览。</span>",
       HealthCheckRepositoryColumn_View_Permission_Error:
         "<span><h2>没有权限查看摘要报告</h2>" +
-        "要查看仓库健康检查摘要报告，您的用户账户必须具有必要的权限。</span>",
+        "要查看存储库健康检查摘要报告，您的用户账户必须具有必要的权限。</span>",
       HealthCheckRepositoryColumn_Analyze: "分析",
       HealthCheckRepositoryColumn_Analyze_Tooltip:
-        "<span><h2>仓库健康检查分析</h2>点击此按钮请求IQ服务器进行仓库健康检查（RHC）" +
-        "该过程是非侵入性和非破坏性的。IQ服务器将返回有关仓库中开源组件的可操作质量和安全信息。" +
+        "<span><h2>存储库健康检查分析</h2>点击此按钮请求IQ服务器进行存储库健康检查（RHC）" +
+        "该过程是非侵入性和非破坏性的。IQ服务器将返回有关存储库中开源组件的可操作质量和安全信息。" +
         '<br><br><a href="http://links.sonatype.com/products/clm/rhc/home" rel="noopener" ' +
-        'target="_blank">了解IQ服务器仓库健康检查如何帮助您更快地制作更好的软件</a></span>',
-      HealthCheckRepositoryColumn_Analyze_Dialog_Title: "分析仓库",
+        'target="_blank">了解IQ服务器存储库健康检查如何帮助您更快地制作更好的软件</a></span>',
+      HealthCheckRepositoryColumn_Analyze_Dialog_Title: "分析存储库",
       HealthCheckRepositoryColumn_Analyze_Dialog_Msg:
-        "您是否要分析仓库 {0} 和其他仓库的安全隐患和许可问题？",
-      HealthCheckRepositoryColumn_Analyze_Dialog_Ok_Text: "是的，所有仓库",
-      HealthCheckRepositoryColumn_Analyze_Dialog_Yes_Text: "是的，仅此仓库",
+        "您是否要分析存储库 {0} 和其他存储库的安全隐患和许可问题？",
+      HealthCheckRepositoryColumn_Analyze_Dialog_Ok_Text: "是的，所有存储库",
+      HealthCheckRepositoryColumn_Analyze_Dialog_Yes_Text: "是的，仅此存储库",
       HealthCheckRepositoryColumn_Analyze_Permission_Error:
-        "<span><h2>没有权限分析仓库</h2>" +
-        "要分析仓库，您的用户账户必须有权限启动分析。</span>",
+        "<span><h2>没有权限分析存储库</h2>" +
+        "要分析存储库，您的用户账户必须有权限启动分析。</span>",
       HealthCheckRepositoryColumn_Loading: "正在加载...",
       HealthCheckRepositoryColumn_Unavailable_Tooltip:
-        "<span><h2>仓库健康检查不可用</h2>无法在此仓库上执行仓库健康检查（RHC），" +
+        "<span><h2>存储库健康检查不可用</h2>无法在此存储库上执行存储库健康检查（RHC），" +
         "因为它是不支持的类型或服务中断。<br><br>" +
         '<a href="http://links.sonatype.com/products/clm/rhc/home" rel="noopener" ' +
-        'target="_blank">了解IQ服务器仓库健康检查如何帮助您更快地制作更好的软件</a></span>',
+        'target="_blank">了解IQ服务器存储库健康检查如何帮助您更快地制作更好的软件</a></span>',
 
       HealthCheckSummary_Help:
         '<a href="http://links.sonatype.com/products/nexus/rhc/manual-remediation-with-rhc" target="_blank"' +
@@ -625,7 +625,7 @@ Ext.define(
         '<div class="summary">还没有创建Blob存储<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是Blob存储？</h3>' +
-        '<p>您通过代理仓库下载的二进制资产，或发布到托管仓库的资产，都存储在与这些仓库关联的Blob存储中。在传统的单节点NXRM部署中，Blob存储通常与本地文件系统目录相关联，通常在sonatype-work目录内。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/blob-store" ' +
+        '<p>您通过代理存储库下载的二进制资产，或发布到托管存储库的资产，都存储在与这些存储库关联的Blob存储中。在传统的单节点NXRM部署中，Blob存储通常与本地文件系统目录相关联，通常在sonatype-work目录内。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/blob-store" ' +
         'target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
       Blobstore_BlobstoreList_Failed: "失败",
       Blobstore_BlobstoreList_Started: "已启动",
@@ -687,7 +687,7 @@ Ext.define(
       Selector_SelectorSettingsForm_Description_FieldLabel: "描述",
       Selector_SelectorSettingsForm_Expression_FieldLabel: "搜索表达式",
       Selector_SelectorSettingsForm_Expression_HelpText:
-        "使用查询来识别仓库、组件或资产",
+        "使用查询来识别存储库、组件或资产",
       Selector_SelectorSettingsForm_Expression_Examples:
         '<div style="font-size: 11px"><br/>' +
         "<h4>内容选择器表达式示例：</h4>" +
@@ -714,11 +714,11 @@ Ext.define(
       SelectorPreviewWindow_expression_jexl: "JEXL",
       SelectorPreviewWindow_expression_csel: "CSEL",
       SelectorPreviewWindow_type_FieldLabel: "类型",
-      SelectorPreviewWindow_repository_FieldLabel: "预览仓库",
+      SelectorPreviewWindow_repository_FieldLabel: "预览存储库",
       SelectorPreviewWindow_repository_HelpText:
-        "选择一个仓库来评估内容选择器并查看可用的内容。",
-      SelectorPreviewWindow_repository_EmptyText: "选择一个仓库...",
-      SelectorPreviewWindow_EmptyText_View: "仓库中没有资产匹配表达式",
+        "选择一个存储库来评估内容选择器并查看可用的内容。",
+      SelectorPreviewWindow_repository_EmptyText: "选择一个存储库...",
+      SelectorPreviewWindow_EmptyText_View: "存储库中没有资产匹配表达式",
       SelectorPreviewWindow_EmptyText_Filter: "没有资产匹配“{$filter}”",
       SelectorPreviewWindow_Name_Column: "名称",
       SelectorPreviewWindow_Preview_Button: "预览",
@@ -897,7 +897,7 @@ Ext.define(
         '<div class="summary">还没有定义LDAP服务器<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是LDAP？</h3>' +
-        '<p>您可以配置NXRM实例使用LDAP进行认证和用户角色映射。仓库管理器可以缓存认证信息，并支持多个LDAP服务器和用户/组映射，以利用组织中所有仓库管理器的中央认证设置。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/ldap" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>您可以配置NXRM实例使用LDAP进行认证和用户角色映射。存储库管理器可以缓存认证信息，并支持多个LDAP服务器和用户/组映射，以利用组织中所有存储库管理器的中央认证设置。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/ldap" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
       Ldap_LdapServerFeature_Delete_Button: "删除连接",
       Ldap_LdapServerFeature_Connection_Title: "连接",
       Ldap_LdapServerFeature_UserAndGroup_Title: "用户和组",
@@ -1023,7 +1023,7 @@ Ext.define(
         '<div class="summary">还没有定义SSL证书<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是SSL？</h3>' +
-        '<p>使用安全套接层（SSL）通信与仓库管理器是重要的安全特性和推荐的最佳实践。安全通信可以是入站或出站的。出站客户端通信可能包括：与代理仓库、电子邮件服务器、LDAPS服务器的集成。入站客户端通信包括：Web浏览器HTTPS访问、工具访问仓库内容、使用REST API。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/ssl-certificate" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>使用安全套接层（SSL）通信与存储库管理器是重要的安全特性和推荐的最佳实践。安全通信可以是入站或出站的。出站客户端通信可能包括：与代理存储库、电子邮件服务器、LDAPS服务器的集成。入站客户端通信包括：Web浏览器HTTPS访问、工具访问存储库内容、使用REST API。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/ssl-certificate" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
       Ssl_SslCertificateList_Filter_EmptyText: "没有SSL证书匹配“{$filter}”",
       Ssl_SslCertificateDetailsWindow_Title: "证书详情",
       SslCertificates_Remove_Button: "从信任库中移除证书",
@@ -1133,8 +1133,8 @@ Ext.define(
       CleanupPolicies_Description: "管理组件移除配置",
       CleanupPolicies_Create_Title: "创建清理策略",
       CleanupPolicies_Delete_Title: "确认删除？",
-      CleanupPolicies_Delete_Description: "此清理策略没有被任何仓库使用",
-      CleanupPolicies_Delete_Description_Multiple: "此清理策略被{0}仓库使用",
+      CleanupPolicies_Delete_Description: "此清理策略没有被任何存储库使用",
+      CleanupPolicies_Delete_Description_Multiple: "此清理策略被{0}存储库使用",
       CleanupPolicies_Delete_Success: "清理策略已删除：{0}",
       CleanupPolicy_CleanupPolicyList_Preview_Button: "预览结果",
       CleanupPolicy_CleanupPolicyList_New_Button: "创建清理策略",
@@ -1144,7 +1144,7 @@ Ext.define(
         '<div class="summary">还没有创建清理策略<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是清理策略？</h3>' +
-        '<p>清理策略可用于从您的仓库中移除内容。这些策略将在配置的频率下执行。创建后，必须从<a href="#admin/repository/repositories">仓库配置屏幕</a>分配清理策略给仓库。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/cleanup-policy" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>清理策略可用于从您的存储库中移除内容。这些策略将在配置的频率下执行。创建后，必须从<a href="#admin/repository/repositories">存储库配置屏幕</a>分配清理策略给存储库。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/cleanup-policy" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
       CleanupPolicy_CleanupPolicyList_Name_Header: "名称",
       CleanupPolicy_CleanupPolicyList_Format_Header: "格式",
       CleanupPolicy_CleanupPolicyList_Notes_Header: "备注",
@@ -1189,14 +1189,14 @@ Ext.define(
       CleanupPolicy_CleanupPolicyAdd_Create_Success: "清理策略已创建：",
       CleanupPolicy_CleanupPolicyPreviewWindow_Title: "清理策略预览",
       CleanupPolicy_CleanupPolicyPreviewWindow_repository_FieldLabel:
-        "预览仓库",
+        "预览存储库",
       CleanupPolicy_CleanupPolicyPreviewWindow_repository_HelpText:
-        "选择一个仓库来预览如果应用此策略可能会被清理的内容",
+        "选择一个存储库来预览如果应用此策略可能会被清理的内容",
       CleanupPolicy_CleanupPolicyPreviewWindow_repository_EmptyText:
-        "选择一个仓库",
+        "选择一个存储库",
       CleanupPolicy_CleanupPolicyPreviewWindow_Preview_Button: "预览",
       CleanupPolicy_CleanupPolicyPreviewWindow_EmptyText_View:
-        "仓库中没有资产匹配标准",
+        "存储库中没有资产匹配标准",
       CleanupPolicy_CleanupPolicyPreviewWindow_EmptyText_Filter:
         "没有资产匹配“{$filter}”",
       CleanupPolicy_CleanupPolicyPreviewWindow_Group_Column: "组",
@@ -1342,7 +1342,7 @@ Ext.define(
         '<div class="summary">还没有定义计划任务<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是计划任务？</h3>' +
-        '<p>仓库管理器允许您安排维护任务的执行。这些任务可以对所有仓库或特定仓库执行定期维护步骤，配置在可配置的时间表上，或者简单地执行其他系统维护。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/scheduled-task" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>存储库管理器允许您安排维护任务的执行。这些任务可以对所有存储库或特定存储库执行定期维护步骤，配置在可配置的时间表上，或者简单地执行其他系统维护。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/scheduled-task" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
       Task_TaskList_Filter_EmptyState: "没有计划任务匹配“{$filter}”",
       Task_TaskFeature_Delete_Button: "删除任务",
       Tasks_Delete_Success: "任务已删除：{0}",
@@ -1461,7 +1461,7 @@ Ext.define(
         "<p>安装新许可需要重启服务器才能生效</p>",
       Licensing_LicensingDetails_LicenseSelect_Button: "选择许可…",
       Licensing_LicensingDetails_LicenseInstall_Button: "安装许可",
-      Licensing_LicenseAgreement_Title: "私有弹性云计算软件平台 许可协议",
+      Licensing_LicenseAgreement_Title: "私有弹性云计算软件平台许可协议",
       Licensing_LicenseAgreement_Yes_Button: "我接受",
       Licensing_LicenseAgreement_No_Button: "我不接受",
       Licensing_LicenseAgreement_Download_Button: "下载协议副本。",
@@ -1523,7 +1523,7 @@ Ext.define(
     bundles: {
       "NX.coreui.migration.Controller": {
         Feature_Text: "升级",
-        Feature_Description: "从 私有弹性云计算软件平台 2 升级配置和内容",
+        Feature_Description: "从私有弹性云计算软件平台升级配置和内容",
 
         Activate_Mask: "加载中",
 
@@ -1545,8 +1545,8 @@ Ext.define(
       "NX.coreui.migration.NoUpgradeHAScreen": {
         Title: "检测到高可用性集群（HA-C）",
         Description:
-          "<p>在运行 HA-C 时，从 私有弹性云计算软件平台 2 升级不可用。</p>" +
-          "<p>请以单节点模式运行 私有弹性云计算软件平台 3 以继续。</p>",
+          "<p>在运行 HA-C 时，从私有弹性云计算软件平台升级不可用。</p>" +
+          "<p>请以单节点模式运行私有弹性云计算软件平台以继续。</p>",
       },
 
       "NX.coreui.migration.AgentScreen": {
@@ -1571,36 +1571,36 @@ Ext.define(
       "NX.coreui.migration.ContentScreen": {
         Title: "内容",
         Description:
-          "<p>您希望从 私有弹性云计算软件平台 2 转移哪些内容？</p>",
-        Repositories_FieldLabel: "仓库配置和内容",
+          "<p>您希望从私有弹性云计算软件平台转移哪些内容？</p>",
+        Repositories_FieldLabel: "存储库配置和内容",
         Configuration_FieldLabel: "服务器配置",
       },
 
       "NX.coreui.migration.OverviewScreen": {
         Title: "概览",
         Description:
-          "<p>此向导将帮助您从 私有弹性云计算软件平台 2 升级。</p>" +
+          "<p>此向导将帮助您从私有弹性云计算软件平台升级。</p>" +
           "<p>许多服务器的方面可以通过此功能进行升级：" +
           "<ul>" +
           "<li>配置：安全（用户、角色和权限）以及其他适用的系统设置</li>" +
-          "<li>受支持格式的仓库：maven2, nuget, npm, rubygems, site</li>" +
+          "<li>受支持格式的存储库：maven2, nuget, npm, rubygems, site</li>" +
           "</ul>" +
           "</p>" +
           "<p>某些方面是 <strong>不兼容</strong> 的，不包含在升级中：" +
           "<ul>" +
-          "<li>不支持的仓库格式：yum, p2, obr</li>" +
+          "<li>不支持的存储库格式：yum, p2, obr</li>" +
           "<li>计划任务</li>" +
           "<li>功能</li>" +
-          "<li>临时仓库（Pro）</li>" +
+          "<li>临时存储库（Pro）</li>" +
           "</ul>" +
           "</p>" +
           "<p>请注意以下几点：" +
           "<ul>" +
           "<li>服务器配置可以多次传输，每次都会完全替换现有配置。</li>" +
-          "<li>与服务器配置不同，此工具仅应在仓库上使用一次。批量升级或多次升级仓库存在已知问题，不建议也不支持。</li>" +
-          "<li>仓库升级可能需要 <strong>相当长的时间</strong>。</li>" +
-          "<li>在升级成功完成之前，不建议在 私有弹性云计算软件平台 中进行任何配置更改，因为此时配置是易变的。</li>" +
-          "<li>在升级过程中，Nexus Repository Manager 3 中的所有仓库将处于离线状态。</li>" +
+          "<li>与服务器配置不同，此工具仅应在存储库上使用一次。批量升级或多次升级存储库存在已知问题，不建议也不支持。</li>" +
+          "<li>存储库升级可能需要 <strong>相当长的时间</strong>。</li>" +
+          "<li>在升级成功完成之前，不建议在私有弹性云计算软件平台中进行任何配置更改，因为此时配置是易变的。</li>" +
+          "<li>在升级过程中，私有弹性云计算软件平台中的所有存储库将处于离线状态。</li>" +
           "</ul>" +
           "</p>",
       },
@@ -1615,12 +1615,12 @@ Ext.define(
       "NX.coreui.migration.RepositoryDefaultsScreen": {
         $extend: "NX.coreui.migration.RepositoryCustomizeWindow",
 
-        Title: "仓库默认设置",
+        Title: "存储库默认设置",
         Description:
-          "<p>配置用于仓库升级的默认设置。<br/>" +
-          "可以在选择要升级的仓库时自定义每个仓库的设置。</p>",
+          "<p>配置用于存储库升级的默认设置。<br/>" +
+          "可以在选择要升级的存储库时自定义每个存储库的设置。</p>",
         IngestMethod_HelpText:
-          "选择仓库内容应如何传输。您选择的方法可能并非所有仓库都支持。",
+          "选择存储库内容应如何传输。您选择的方法可能并非所有存储库都支持。",
       },
 
       "NX.coreui.migration.RepositoryCustomizeWindow": {
@@ -1631,12 +1631,12 @@ Ext.define(
         DataStore_EmptyText: "选择数据存储",
 
         BlobStore_FieldLabel: "Blob 存储",
-        BlobStore_HelpText: "选择仓库内容应存储的位置",
+        BlobStore_HelpText: "选择存储库内容应存储的位置",
         BlobStore_EmptyText: "选择 Blob 存储",
 
         IngestMethod_FieldLabel: "方法",
-        IngestMethod_HelpText: "选择仓库内容应如何传输",
-        IngestMethod_EmptyText: "选择仓库内容传输方法",
+        IngestMethod_HelpText: "选择存储库内容应如何传输",
+        IngestMethod_EmptyText: "选择存储库内容传输方法",
         IngestMethod_Link: "硬链接（最快）",
         IngestMethod_Copy: "文件系统复制（较慢）",
         IngestMethod_Download: "下载（最慢）",
@@ -1676,11 +1676,11 @@ Ext.define(
       },
 
       "NX.coreui.migration.RepositoriesScreen": {
-        Title: "仓库",
+        Title: "存储库",
         Description:
-          "<p>选择要升级的仓库。<br/>" +
-          "根据需要自定义每个仓库的升级高级配置。</p>",
-        Repository_Column: "仓库",
+          "<p>选择要升级的存储库。<br/>" +
+          "根据需要自定义每个存储库的升级高级配置。</p>",
+        Repository_Column: "存储库",
         Type_Column: "类型",
         Format_Column: "格式",
         Supported_Column: "支持",
@@ -1688,7 +1688,7 @@ Ext.define(
         Datastore_Column: "数据存储",
         Blobstore_Column: "Blob 存储",
         Method_Column: "方法",
-        Action_Tooltip: "自定义仓库选项",
+        Action_Tooltip: "自定义存储库选项",
       },
 
       "NX.coreui.migration.RepositoriesStep": {
@@ -1738,7 +1738,7 @@ Ext.define(
         Abort_Message: "升级已中止",
 
         Stop_Waiting_Confirm_Title: "停止等待更改",
-        Stop_Waiting_Confirm_Text: "将不再同步仓库的任何未来更改。继续吗？",
+        Stop_Waiting_Confirm_Text: "将不再同步存储库的任何未来更改。继续吗？",
         Stop_Waiting_Confirm_Mask: "正在完成更改",
         Stop_Waiting_Confirm_Message: "更改已完成",
 

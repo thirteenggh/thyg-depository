@@ -64,7 +64,7 @@ Ext.define(
       Help_Feature_Text: "帮助：",
       Header_Help_Feature_Tooltip: "当前选中功能的帮助和文档",
       Header_Help_About_Text: "关于",
-      Header_Help_About_Tooltip: "关于 私有弹性云计算软件平台",
+      Header_Help_About_Tooltip: "关于私有弹性云计算软件平台",
       Header_Help_Documentation_Text: "文档",
       Header_Help_Documentation_Tooltip: "产品文档",
       Header_Help_KB_Text: "知识库",
@@ -125,7 +125,7 @@ Ext.define(
         "您的许可证已被检测为丢失或无效。请上传有效的许可证以继续操作。",
 
       // About modal
-      AboutWindow_Title: "关于 私有弹性云计算软件平台",
+      AboutWindow_Title: "关于私有弹性云计算软件平台",
       AboutWindow_About_Title: "版权",
       AboutWindow_License_Tab: "许可证",
 
@@ -175,7 +175,7 @@ Ext.define(
 
       // Browse -> Welcome
       Dashboard_Title: "欢迎",
-      Dashboard_Description: "了解 私有弹性云计算软件平台",
+      Dashboard_Description: "了解私有弹性云计算软件平台",
 
       // Field validation messages
       Util_Validator_Text:

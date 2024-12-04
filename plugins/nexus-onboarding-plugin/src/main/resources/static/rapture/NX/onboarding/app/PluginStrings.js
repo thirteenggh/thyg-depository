@@ -39,7 +39,7 @@ Ext.define(
       "NX.onboarding.view.OnboardingCompleteScreen": {
         Title: "完成",
         Description:
-          "<p>设置任务已完成，祝您愉快地使用 私有弹性云计算软件平台！</p>",
+          "<p>设置任务已完成，祝您愉快地使用私有弹性云计算软件平台！</p>",
         Finish_Button: "完成",
       },
       "NX.onboarding.view.ChangeAdminPasswordScreen": {
@@ -48,7 +48,7 @@ Ext.define(
       "NX.onboarding.view.ConfigureAnonymousAccessScreen": {
         Title: "配置匿名访问",
         Description:
-          "<p><b>启用匿名访问</b> 意味着默认情况下，用户可以无需凭证即可搜索、浏览和下载仓库中的组件。请 <b>考虑贵组织的安全隐患。</b>" +
+          "<p><b>启用匿名访问</b> 意味着默认情况下，用户可以无需凭证即可搜索、浏览和下载存储库中的组件。请 <b>考虑贵组织的安全隐患。</b>" +
           "<br>" +
           "<p><b>禁用匿名访问</b> 需要谨慎选择，因为这 <b>将要求所有用户或构建工具提供凭证。</b>" +
           "<br><br>" +

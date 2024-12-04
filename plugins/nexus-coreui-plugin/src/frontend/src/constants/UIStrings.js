@@ -42,8 +42,8 @@ export default {
 
     HELP_TITLE: '什么是内容选择器？',
     HELP_TEXT: `\
-内容选择器为您提供从仓库中选择特定内容的方法。\
-仓库内容根据用 CSEL（内容选择表达式语言）编写的表达式进行评估。\
+内容选择器为您提供从存储库中选择特定内容的方法。\
+存储库内容根据用 CSEL（内容选择表达式语言）编写的表达式进行评估。\
 有关更多信息，<a href="http://links.sonatype.com/products/nxrm3/docs/content-selector" target="_blank" rel="noopener noreferrer">请查看文档</a>。`,
 
     CREATE_BUTTON: '创建选择器',
@@ -53,16 +53,16 @@ export default {
     TYPE_LABEL: '类型',
     DESCRIPTION_LABEL: '描述',
     EXPRESSION_LABEL: '搜索表达式',
-    EXPRESSION_DESCRIPTION: '使用以下查询来识别仓库内容',
+    EXPRESSION_DESCRIPTION: '使用以下查询来识别存储库内容',
 
     PREVIEW: {
       TITLE: '预览内容选择器结果',
-      REPOSITORY_LABEL: '预览仓库',
-      REPOSITORY_DESCRIPTION: '选择一个仓库以评估内容选择器，并查看可用的内容',
+      REPOSITORY_LABEL: '预览存储库',
+      REPOSITORY_DESCRIPTION: '选择一个存储库以评估内容选择器，并查看可用的内容',
       BUTTON: '预览',
       RESULTS: '预览结果',
       NAME_COLUMN: '名称',
-      EMPTY: '仓库中没有内容与表达式匹配'
+      EMPTY: '存储库中没有内容与表达式匹配'
     },
 
     MESSAGES: {
@@ -145,7 +145,7 @@ export default {
   ROUTING_RULES: {
     MENU: {
       text: '路由规则',
-      description: '限制哪些请求由仓库处理'
+      description: '限制哪些请求由存储库处理'
     },
 
     LIST: {
@@ -155,29 +155,29 @@ export default {
       NAME_LABEL: '名称',
       DESCRIPTION_LABEL: '描述',
       USED_BY_LABEL: '使用者',
-      NEEDS_ASSIGNMENT: '0 个仓库，请将其分配给仓库',
-      USED_BY: (count) => count === 1 ? '1 个仓库' : `${count} 个仓库`,
+      NEEDS_ASSIGNMENT: '0 个存储库，请将其分配给存储库',
+      USED_BY: (count) => count === 1 ? '1 个存储库' : `${count} 个存储库`,
       EMPTY_LIST: '尚未创建路由规则',
       HELP_TITLE: '什么是路由规则？',
       HELP_TEXT: `\
 路由规则就像可以应用于组的过滤器，涉及安全访问和组件获取。\
-它们可以减少访问组内仓库的数量，从而获取组件。\
+它们可以减少访问组内存储库的数量，从而获取组件。\
 有关更多信息，<a href="http://links.sonatype.com/products/nxrm3/docs/routing-rule" target="_blank" rel="noopener noreferrer">请查看文档</a>。`
     },
 
     PREVIEW: {
       TITLE: '全局路由预览',
-      REPOSITORIES_LABEL: '仓库',
-      REPOSITORIES_DESCRIPTION: '选择一组仓库进行测试',
+      REPOSITORIES_LABEL: '存储库',
+      REPOSITORIES_DESCRIPTION: '选择一组存储库进行测试',
       REPOSITORIES: {
-        ALL: '所有仓库',
-        GROUPS: '所有组仓库',
-        PROXIES: '所有代理仓库'
+        ALL: '所有存储库',
+        GROUPS: '所有组存储库',
+        PROXIES: '所有代理存储库'
       },
       PATH_LABEL: '路径',
       PATH_DESCRIPTION: '输入请求路径以检查是否会被阻止或允许。请求始终以斜杠开头。',
       COLUMNS: {
-        REPOSITORY: '仓库',
+        REPOSITORY: '存储库',
         TYPE: '类型',
         FORMAT: '格式',
         RULE: '路由规则',
@@ -191,11 +191,11 @@ export default {
     FORM: {
       CREATE_TITLE: '创建路由规则',
       EDIT_TITLE: '编辑路由规则',
-      UNUSED: `要使用此规则，<a href="#admin/repository/repositories">请将其分配给仓库</a>`,
+      UNUSED: `要使用此规则，<a href="#admin/repository/repositories">请将其分配给存储库</a>`,
       USED_BY: (repositoryNames) => {
         const repositoryLinks = repositoryNames.map(name =>
             `<a href="#admin/repository/repositories:${window.encodeURIComponent(name)}">${name}</a>`);
-        const repository = repositoryNames.length === 1 ? '仓库' : '仓库';
+        const repository = repositoryNames.length === 1 ? '存储库' : '存储库';
         return `此规则正在 ${repositoryNames.length} 个 ${repository} 中使用（${repositoryLinks.join(', ')}）`;
       },
       SAVE_ERROR: '保存路由规则时发生错误',
@@ -219,7 +219,7 @@ export default {
       ADD_MATCHER_BUTTON: '添加另一个匹配器',
       CREATE_BUTTON: '创建路由规则',
       CANNOT_DELETE: (repositoryNames) => `\
-此规则正在 ${repositoryNames.length} 个仓库中使用（${repositoryNames.join(', ')}）`
+此规则正在 ${repositoryNames.length} 个存储库中使用（${repositoryNames.join(', ')}）`
     },
 
     MESSAGES: {
@@ -290,7 +290,7 @@ export default {
   NUGET_API_KEY: {
     MENU: {
       text: 'NuGet API 密钥',
-      description: '配置 NuGet 仓库的凭证'
+      description: '配置 NuGet 存储库的凭证'
     },
     INSTRUCTIONS: '第一次访问时将创建一个新的 API 密钥。重置 API 密钥将使当前密钥失效。',
     AUTH_INSTRUCTIONS: '访问 NuGet API 密钥需要验证您的凭证。',
@@ -310,7 +310,7 @@ export default {
       MAIN: '您的 NuGet API 密钥允许使用 nuget.exe 推送包。',
       WARNING: '请保密此密钥！',
       API_KEY_TEXT: '您的 NuGet API 密钥是：',
-      REGISTER_TEXT: '您可以使用以下命令为给定仓库注册此密钥：',
+      REGISTER_TEXT: '您可以使用以下命令为给定存储库注册此密钥：',
       REGISTER_COMMAND: 'nuget setapikey {0} -source {1}',
       AUTO_CLOSE: '此窗口将在一分钟后自动关闭。'
     }
@@ -402,9 +402,9 @@ export default {
 
     HELP_TITLE: '什么是清理策略？',
     HELP_TEXT: `\
-清理策略可用于从您的仓库中删除内容。这些策略将根据配置的频率执行。\
-创建后，必须将清理策略分配给一个仓库，您可以在\
-<a href="#admin/repository/repositories">仓库配置页面</a>进行分配。更多信息，请查看\
+清理策略可用于从您的存储库中删除内容。这些策略将根据配置的频率执行。\
+创建后，必须将清理策略分配给一个存储库，您可以在\
+<a href="#admin/repository/repositories">存储库配置页面</a>进行分配。更多信息，请查看\
 <a href="http://links.sonatype.com/products/nxrm3/docs/cleanup-policy" target="_blank" rel="noopener noreferrer">文档</a>。`,
     EMPTY_MESSAGE: '未找到清理策略',
     CREATE_BUTTON: '创建清理策略',
@@ -420,7 +420,7 @@ export default {
     ASSET_NAME_LABEL: '资产名称匹配器',
     FORMAT_SELECT: '选择格式...',
     RELEASE_TYPE_SELECT: '选择发布类型...',
-    REPOSITORY_SELECT: '选择仓库...',
+    REPOSITORY_SELECT: '选择存储库...',
 
     NAME_DESCRIPTION: '使用唯一名称为清理策略命名',
     FORMAT_DESCRIPTION: '此清理策略可应用的格式',
@@ -437,14 +437,14 @@ export default {
 
     PREVIEW: {
       TITLE: '清理策略预览',
-      REPOSITORY_LABEL: '预览仓库',
-      REPOSITORY_DESCRIPTION: '选择一个仓库来预览如果应用此策略可能被清理的内容',
+      REPOSITORY_LABEL: '预览存储库',
+      REPOSITORY_DESCRIPTION: '选择一个存储库来预览如果应用此策略可能被清理的内容',
       BUTTON: '预览',
       RESULTS: '预览结果',
       NAME_COLUMN: '名称',
       GROUP_COLUMN: '组',
       VERSION_COLUMN: '版本',
-      EMPTY: '仓库中没有资产符合标准'
+      EMPTY: '存储库中没有资产符合标准'
     },
 
     MESSAGES: {
@@ -454,8 +454,8 @@ export default {
       CONFIRM_DELETE: {
         TITLE: '删除清理策略',
         MESSAGE: (inUseCount) => inUseCount ? 
-            `此清理策略正在 ${inUseCount} 个仓库中使用` : 
-            '此清理策略未被任何仓库使用',
+            `此清理策略正在 ${inUseCount} 个存储库中使用` : 
+            '此清理策略未被任何存储库使用',
         YES: '删除',
         NO: '取消'
       }
