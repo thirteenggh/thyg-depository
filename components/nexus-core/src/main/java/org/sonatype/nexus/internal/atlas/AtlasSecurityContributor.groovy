@@ -35,7 +35,7 @@ class AtlasSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-atlas-all',
-                description: 'All permissions for Support Tools',
+                description: '支持工具的所有权限',
                 type: 'application',
                 properties: [
                     domain : 'atlas',

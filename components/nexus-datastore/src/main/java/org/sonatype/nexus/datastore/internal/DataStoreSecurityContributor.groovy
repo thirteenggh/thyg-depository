@@ -35,7 +35,7 @@ class DataStoreSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-datastores-all',
-                description: 'All permissions for data stores',
+                description: '数据存储的所有权限',
                 type: 'application',
                 properties: [
                     domain : 'datastores',
@@ -44,7 +44,7 @@ class DataStoreSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-datastores-create',
-                description: 'Create permission for data stores',
+                description: '创建数据存储的权限',
                 type: 'application',
                 properties: [
                     domain : 'datastores',
@@ -53,7 +53,7 @@ class DataStoreSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-datastores-read',
-                description: 'Read permission for data stores',
+                description: '读取数据存储的权限',
                 type: 'application',
                 properties: [
                     domain : 'datastores',
@@ -62,7 +62,7 @@ class DataStoreSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-datastores-update',
-                description: 'Update permission for data stores',
+                description: '更新数据存储的权限',
                 type: 'application',
                 properties: [
                     domain : 'datastores',
@@ -71,7 +71,7 @@ class DataStoreSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-datastores-delete',
-                description: 'Delete permission for data stores',
+                description: '删除数据存储的权限',
                 type: 'application',
                 properties: [
                     domain : 'datastores',

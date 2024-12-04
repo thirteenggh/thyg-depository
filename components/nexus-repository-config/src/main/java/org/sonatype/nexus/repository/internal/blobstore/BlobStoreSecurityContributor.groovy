@@ -35,7 +35,7 @@ class BlobStoreSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-blobstores-all',
-                description: 'All permissions for Blob Stores',
+                description: 'Blob 存储的所有权限',
                 type: 'application',
                 properties: [
                     domain : 'blobstores',
@@ -44,7 +44,7 @@ class BlobStoreSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-blobstores-create',
-                description: 'Create permission for Blob Stores',
+                description: '创建 Blob 存储的权限',
                 type: 'application',
                 properties: [
                     domain : 'blobstores',
@@ -53,7 +53,7 @@ class BlobStoreSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-blobstores-read',
-                description: 'Read permission for Blob Stores',
+                description: '读取 Blob 存储的权限',
                 type: 'application',
                 properties: [
                     domain : 'blobstores',
@@ -62,7 +62,7 @@ class BlobStoreSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-blobstores-update',
-                description: 'Update permission for Blob Stores',
+                description: '更新 Blob 存储的权限',
                 type: 'application',
                 properties: [
                     domain : 'blobstores',
@@ -71,7 +71,7 @@ class BlobStoreSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-blobstores-delete',
-                description: 'Delete permission for Blob Stores',
+                description: '删除 Blob 存储的权限',
                 type: 'application',
                 properties: [
                     domain : 'blobstores',

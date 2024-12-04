@@ -35,7 +35,7 @@ class LoggingSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-logging-all',
-                description: 'All permissions for Logging',
+                description: '日志的所有权限',
                 type: 'application',
                 properties: [
                     domain: 'logging',
@@ -44,7 +44,7 @@ class LoggingSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-logging-read',
-                description: 'Read permission for Logging',
+                description: '读取日志的权限',
                 type: 'application',
                 properties: [
                     domain: 'logging',
@@ -53,7 +53,7 @@ class LoggingSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-logging-update',
-                description: 'Update permission for Logging',
+                description: '更新日志的权限',
                 type: 'application',
                 properties: [
                     domain: 'logging',
@@ -62,7 +62,7 @@ class LoggingSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-logging-mark',
-                description: 'Mark permission for Logging',
+                description: '标记日志的权限',
                 type: 'application',
                 properties: [
                     domain: 'logging',

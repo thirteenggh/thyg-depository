@@ -37,7 +37,7 @@ class CapabilitiesSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-capabilities-all',
-                description: 'All permissions for Capabilities',
+                description: '功能的所有权限',
                 type: 'application',
                 properties: [
                     domain : 'capabilities',
@@ -46,7 +46,7 @@ class CapabilitiesSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-capabilities-create',
-                description: 'Create permission for Capabilities',
+                description: '创建功能的权限',
                 type: 'application',
                 properties: [
                     domain : 'capabilities',
@@ -55,7 +55,7 @@ class CapabilitiesSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-capabilities-read',
-                description: 'Read permission for Capabilities',
+                description: '读取功能的权限',
                 type: 'application',
                 properties: [
                     domain : 'capabilities',
@@ -64,7 +64,7 @@ class CapabilitiesSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-capabilities-update',
-                description: 'Update permission for Capabilities',
+                description: '更新功能的权限',
                 type: 'application',
                 properties: [
                     domain : 'capabilities',
@@ -73,7 +73,7 @@ class CapabilitiesSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-capabilities-delete',
-                description: 'Delete permission for Capabilities',
+                description: '删除功能的权限',
                 type: 'application',
                 properties: [
                     domain : 'capabilities',

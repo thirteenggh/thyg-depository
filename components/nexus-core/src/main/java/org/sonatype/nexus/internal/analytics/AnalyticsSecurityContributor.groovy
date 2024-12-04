@@ -35,7 +35,7 @@ class AnalyticsSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-analytics-all',
-                description: 'All permissions for Analytics',
+                description: '指标分析的所有权限',
                 type: 'application',
                 properties: [
                     domain: 'analytics',
