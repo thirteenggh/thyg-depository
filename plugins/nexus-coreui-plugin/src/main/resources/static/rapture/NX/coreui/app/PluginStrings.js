@@ -1087,7 +1087,7 @@ Ext.define(
 
       // Admin -> System -> API
       Api_Text: "API",
-      Api_Description: "了解如何以编程方式与Nexus Repository Manager交互",
+      Api_Description: "了解如何以编程方式与私有 弹性云计算软件平台 交互",
 
       // Admin -> System -> Capabilities
       Capabilities_Text: "功能",
@@ -1599,7 +1599,7 @@ Ext.define(
           "<li>服务器配置可以多次传输，每次都会完全替换现有配置。</li>" +
           "<li>与服务器配置不同，此工具仅应在仓库上使用一次。批量升级或多次升级仓库存在已知问题，不建议也不支持。</li>" +
           "<li>仓库升级可能需要 <strong>相当长的时间</strong>。</li>" +
-          "<li>在升级成功完成之前，不建议在 私有弹性云计算软件平台 3 中进行任何配置更改，因为此时配置是易变的。</li>" +
+          "<li>在升级成功完成之前，不建议在 私有弹性云计算软件平台 中进行任何配置更改，因为此时配置是易变的。</li>" +
           "<li>在升级过程中，Nexus Repository Manager 3 中的所有仓库将处于离线状态。</li>" +
           "</ul>" +
           "</p>",

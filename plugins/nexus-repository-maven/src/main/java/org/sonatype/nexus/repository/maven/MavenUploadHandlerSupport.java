@@ -91,13 +91,13 @@ public abstract class MavenUploadHandlerSupport
 
   private static final String MAVEN_POM_PROPERTY_PREFIX = "${";
 
-  private static final String COMPONENT_COORDINATES_GROUP = "Component coordinates";
+  private static final String COMPONENT_COORDINATES_GROUP = "组件坐标";
 
-  private static final String GENERATE_POM_DISPLAY = "Generate a POM file with these coordinates";
+  private static final String GENERATE_POM_DISPLAY = "使用这些坐标生成一个 POM 文件";
 
-  private static final String ARTIFACT_ID_DISPLAY = "Artifact ID";
+  private static final String ARTIFACT_ID_DISPLAY = "工件 ID";
 
-  private static final String GROUP_ID_DISPLAY = "Group ID";
+  private static final String GROUP_ID_DISPLAY = "组 ID";
 
   private static final Set<String> ignoredPaths = Sets.newHashSet(ARCHETYPE_CATALOG_FILENAME);
 

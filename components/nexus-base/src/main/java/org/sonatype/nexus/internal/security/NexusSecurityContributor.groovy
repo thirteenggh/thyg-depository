@@ -36,12 +36,12 @@ class NexusSecurityContributor
     return new MemorySecurityConfiguration(
         privileges: [
             /**
-             * Grants permission for anything in the 'nexus:' namespace.
-             */
+            * 授予对 'nexus:' 命名空间中所有内容的权限。
+            */
             new MemoryCPrivilege(
                 id: 'nx-all',
                 type: 'wildcard',
-                description: 'All permissions',
+                description: '所有权限', // All permissions
                 properties: [
                     pattern: 'nexus:*'
                 ]
@@ -53,7 +53,7 @@ class NexusSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-settings-all',
-                description: 'All permissions for Settings',
+                description: '设置的所有权限', // All permissions for Settings
                 type: 'application',
                 properties: [
                     domain : 'settings',
@@ -62,7 +62,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-settings-read',
-                description: 'Read permission for Settings',
+                description: '读取设置的权限', // Read permission for Settings
                 type: 'application',
                 properties: [
                     domain : 'settings',
@@ -71,7 +71,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-settings-update',
-                description: 'Update permission for Settings',
+                description: '更新设置的权限', // Update permission for Settings
                 type: 'application',
                 properties: [
                     domain : 'settings',
@@ -85,7 +85,7 @@ class NexusSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-bundles-all',
-                description: 'All permissions for Bundles',
+                description: '捆绑包的所有权限', // All permissions for Bundles
                 type: 'application',
                 properties: [
                     domain : 'bundles',
@@ -94,7 +94,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-bundles-read',
-                description: 'Read permission for Bundles',
+                description: '读取捆绑包的权限', // Read permission for Bundles
                 type: 'application',
                 properties: [
                     domain : 'bundles',
@@ -108,7 +108,7 @@ class NexusSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-search-read',
-                description: 'Read permission for Search',
+                description: '读取搜索的权限', // Read permission for Search
                 type: 'application',
                 properties: [
                     domain : 'search',
@@ -122,7 +122,7 @@ class NexusSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-apikey-all',
-                description: 'All permissions for APIKey',
+                description: 'APIKey 的所有权限', // All permissions for APIKey
                 type: 'application',
                 properties: [
                     domain : 'apikey',
@@ -136,7 +136,7 @@ class NexusSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-privileges-all',
-                description: 'All permissions for Privileges',
+                description: '权限的所有权限', // All permissions for Privileges
                 type: 'application',
                 properties: [
                     domain : 'privileges',
@@ -145,7 +145,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-privileges-create',
-                description: 'Create permission for Privileges',
+                description: '创建权限的权限', // Create permission for Privileges
                 type: 'application',
                 properties: [
                     domain : 'privileges',
@@ -154,7 +154,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-privileges-read',
-                description: 'Read permission for Privileges',
+                description: '读取权限的权限', // Read permission for Privileges
                 type: 'application',
                 properties: [
                     domain : 'privileges',
@@ -163,7 +163,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-privileges-update',
-                description: 'Update permission for Privileges',
+                description: '更新权限的权限', // Update permission for Privileges
                 type: 'application',
                 properties: [
                     domain : 'privileges',
@@ -172,7 +172,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-privileges-delete',
-                description: 'Delete permission for Privileges',
+                description: '删除权限的权限', // Delete permission for Privileges
                 type: 'application',
                 properties: [
                     domain : 'privileges',
@@ -186,7 +186,7 @@ class NexusSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-roles-all',
-                description: 'All permissions for Roles',
+                description: '角色的所有权限', // All permissions for Roles
                 type: 'application',
                 properties: [
                     domain : 'roles',
@@ -195,7 +195,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-roles-create',
-                description: 'Create permission for Roles',
+                description: '创建角色的权限', // Create permission for Roles
                 type: 'application',
                 properties: [
                     domain : 'roles',
@@ -204,7 +204,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-roles-read',
-                description: 'Read permission for Roles',
+                description: '读取角色的权限', // Read permission for Roles
                 type: 'application',
                 properties: [
                     domain : 'roles',
@@ -213,7 +213,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-roles-update',
-                description: 'Update permission for Roles',
+                description: '更新角色的权限', // Update permission for Roles
                 type: 'application',
                 properties: [
                     domain : 'roles',
@@ -222,7 +222,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-roles-delete',
-                description: 'Delete permission for Roles',
+                description: '删除角色的权限', // Delete permission for Roles
                 type: 'application',
                 properties: [
                     domain : 'roles',
@@ -236,7 +236,7 @@ class NexusSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-users-all',
-                description: 'All permissions for Users',
+                description: '用户的所有权限', // All permissions for Users
                 type: 'application',
                 properties: [
                     domain : 'users',
@@ -245,7 +245,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-users-create',
-                description: 'Create permission for Users',
+                description: '创建用户的权限', // Create permission for Users
                 type: 'application',
                 properties: [
                     domain : 'users',
@@ -254,7 +254,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-users-read',
-                description: 'Read permission for Users',
+                description: '读取用户的权限', // Read permission for Users
                 type: 'application',
                 properties: [
                     domain : 'users',
@@ -263,7 +263,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-users-update',
-                description: 'Update permission for Users',
+                description: '更新用户的权限', // Update permission for Users
                 type: 'application',
                 properties: [
                     domain : 'users',
@@ -272,7 +272,7 @@ class NexusSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-users-delete',
-                description: 'Delete permission for Users',
+                description: '删除用户的权限', // Delete permission for Users
                 type: 'application',
                 properties: [
                     domain : 'users',
@@ -280,10 +280,10 @@ class NexusSecurityContributor
                 ]
             ),
 
-            // FIXME: Sort out what the use-case is for this distinct permission, consider nexus:users:change-password?
+            // FIXME: 确定此独立权限的使用场景，考虑 nexus:users:change-password？
             new MemoryCPrivilege(
                 id: 'nx-userschangepw',
-                description: 'Change password permission',
+                description: '修改密码的权限', // Change password permission
                 type: 'application',
                 properties: [
                     domain : 'userschangepw',
@@ -295,7 +295,7 @@ class NexusSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-component-upload',
-                description: 'Upload component permission',
+                description: '上传组件的权限', // Upload component permission
                 type: 'application',
                 properties: [
                     domain : 'component',
@@ -306,22 +306,22 @@ class NexusSecurityContributor
 
         roles: [
             /**
-             * Admin role grants all permissions (ie. super-user)
-             */
+            * 管理员角色授予所有权限（即超级用户）。
+            */
             new MemoryCRole(
                 id: Roles.ADMIN_ROLE_ID,
-                description: 'Administrator Role',
+                description: '管理员角色', // Administrator Role
                 privileges: [
                     'nx-all'
                 ]
             ),
 
             /**
-             * Anonymous role grants permissions to non-authenticated users.
-             */
+            * 匿名角色授予未认证用户的权限。
+            */
             new MemoryCRole(
                 id: Roles.ANONYMOUS_ROLE_ID,
-                description: 'Anonymous Role',
+                description: '匿名角色', // Anonymous Role
                 privileges: [
                     'nx-search-read',
                     'nx-healthcheck-read',
