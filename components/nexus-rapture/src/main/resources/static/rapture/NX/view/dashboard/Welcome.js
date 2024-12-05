@@ -17,15 +17,14 @@
  *
  * @since 3.0
  */
-Ext.define("NX.view.dashboard.Main", {
+Ext.define("NX.view.dashboard.Welcome", {
   extend: "Ext.container.Container",
-  alias: "widget.nx-dashboard-main",
+  alias: "widget.nx-dashboard-welcome",
   requires: ["NX.Icons"],
-  cls: "nx-dashboard-welcome",
-  layout: {
-    type: "vbox",
-    align: "stretch",
-  },
+
+  cls: "nx-iframe-full",
+  width: "100%",
+  layout: "fit",
   padding: "24px",
   items: [
     {
