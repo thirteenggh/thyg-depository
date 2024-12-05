@@ -35,7 +35,7 @@ class SchedulingSecurityContributor
         privileges: [
             new MemoryCPrivilege(
                 id: 'nx-tasks-all',
-                description: 'All permissions for Scheduled Tasks',
+                description: '调度任务的所有权限',
                 type: 'application',
                 properties: [
                     domain : 'tasks',
@@ -44,7 +44,7 @@ class SchedulingSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-tasks-create',
-                description: 'Create permission for Scheduled Tasks',
+                description: '调度任务的创建权限',
                 type: 'application',
                 properties: [
                     domain : 'tasks',
@@ -53,7 +53,7 @@ class SchedulingSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-tasks-read',
-                description: 'Read permission for Scheduled Tasks',
+                description: '调度任务的读取权限',
                 type: 'application',
                 properties: [
                     domain : 'tasks',
@@ -62,7 +62,7 @@ class SchedulingSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-tasks-update',
-                description: 'Update permission for Scheduled Tasks',
+                description: '调度任务的更新权限',
                 type: 'application',
                 properties: [
                     domain : 'tasks',
@@ -71,7 +71,7 @@ class SchedulingSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-tasks-delete',
-                description: 'Delete permission for Scheduled Tasks',
+                description: '调度任务的删除权限',
                 type: 'application',
                 properties: [
                     domain : 'tasks',
@@ -81,7 +81,7 @@ class SchedulingSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-tasks-run',
-                description: 'Run permission for Scheduled Tasks',
+                description: '调度任务的运行权限',
                 type: 'application',
                 properties: [
                     domain : 'tasks',

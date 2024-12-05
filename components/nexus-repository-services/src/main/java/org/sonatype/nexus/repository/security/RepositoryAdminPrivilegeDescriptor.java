@@ -48,8 +48,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 @Named(RepositoryAdminPrivilegeDescriptor.TYPE)
 @Singleton
 public class RepositoryAdminPrivilegeDescriptor
-    extends RepositoryPrivilegeDescriptorSupport<ApiPrivilegeRepositoryAdmin, ApiPrivilegeRepositoryAdminRequest>
-{
+    extends RepositoryPrivilegeDescriptorSupport<ApiPrivilegeRepositoryAdmin, ApiPrivilegeRepositoryAdminRequest> {
   public static final String TYPE = RepositoryAdminPermission.DOMAIN;
 
   public static final String P_FORMAT = "format";
@@ -59,8 +58,7 @@ public class RepositoryAdminPrivilegeDescriptor
   public static final String P_ACTIONS = "actions";
 
   private interface Messages
-      extends MessageBundle
-  {
+      extends MessageBundle {
     @DefaultMessage("Repository Admin")
     String name();
 
@@ -95,21 +93,17 @@ public class RepositoryAdminPrivilegeDescriptor
             P_FORMAT,
             messages.format(),
             messages.formatHelp(),
-            FormField.MANDATORY
-        ),
+            FormField.MANDATORY),
         new RepositoryCombobox(
             P_REPOSITORY,
             messages.repository(),
             messages.repositoryHelp(),
-            true
-        ).includeAnEntryForAllRepositories(),
+            true).includeAnEntryForAllRepositories(),
         new StringTextFormField(
             P_ACTIONS,
             messages.actions(),
             messages.actionsHelp(),
-            FormField.MANDATORY
-        )
-    );
+            FormField.MANDATORY));
   }
 
   @Override
@@ -144,7 +138,7 @@ public class RepositoryAdminPrivilegeDescriptor
     return new CPrivilegeBuilder()
         .type(TYPE)
         .id(id(format, name, actions))
-        .description(String.format("%s for %s repository administration", humanizeActions(actions), humanizeName(name, format)))
+        .description(String.format("%s存储库管理的%s", humanizeName(name, format), humanizeActions(actions)))
         .property(P_FORMAT, format)
         .property(P_REPOSITORY, name)
         .property(P_ACTIONS, actions)

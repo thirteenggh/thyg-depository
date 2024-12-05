@@ -25,7 +25,7 @@ Ext.define(
 
     keys: {
       S3Blobstore_Help:
-        '<em>S3 Blob 存储需要特定的权限才能通过 私有弹性云计算软件平台 完成完整的配置和功能支持。<a href="https://links.sonatype.com/products/nexus/blobstores/s3/docs" target="_blank">请参阅我们的文档</a>了解所需的特定权限。</em>',
+        '<em>S3 Blob 存储需要特定的权限才能通过私有弹性云计算软件平台完成完整的配置和功能支持。<a href="https://links.sonatype.com/products/nexus/blobstores/s3/docs" target="_blank">请参阅我们的文档</a>了解所需的特定权限。</em>',
       S3Blobstore_Region_FieldLabel: "区域",
       S3Blobstore_Region_HelpText: "要使用的 AWS 区域",
       S3Blobstore_Bucket_FieldLabel: "存储桶",

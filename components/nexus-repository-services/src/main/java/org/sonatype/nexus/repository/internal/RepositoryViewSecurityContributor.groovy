@@ -39,7 +39,7 @@ class RepositoryViewSecurityContributor
 
             new MemoryCPrivilege(
                 id: 'nx-repository-view-*-*-*',
-                description: 'All permissions for all repository views',
+                description: '所有存储库视图的所有权限',
                 type: 'repository-view',
                 properties: [
                     format: '*',
@@ -49,7 +49,7 @@ class RepositoryViewSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-repository-view-*-*-browse',
-                description: 'Browse permission for all repository views',
+                description: '所有存储库视图的浏览权限',
                 type: 'repository-view',
                 properties: [
                     format: '*',
@@ -59,7 +59,7 @@ class RepositoryViewSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-repository-view-*-*-read',
-                description: 'Read permission for all repository views',
+                description: '所有存储库视图的读取权限',
                 type: 'repository-view',
                 properties: [
                     format: '*',
@@ -69,7 +69,7 @@ class RepositoryViewSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-repository-view-*-*-edit',
-                description: 'Edit permission for all repository views',
+                description: '所有存储库视图的编辑权限',
                 type: 'repository-view',
                 properties: [
                     format: '*',
@@ -79,7 +79,7 @@ class RepositoryViewSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-repository-view-*-*-add',
-                description: 'Add permission for all repository views',
+                description: '所有存储库视图的添加权限',
                 type: 'repository-view',
                 properties: [
                     format: '*',
@@ -89,7 +89,7 @@ class RepositoryViewSecurityContributor
             ),
             new MemoryCPrivilege(
                 id: 'nx-repository-view-*-*-delete',
-                description: 'Delete permission for all repository views',
+                description: '所有存储库视图的删除权限',
                 type: 'repository-view',
                 properties: [
                     format: '*',

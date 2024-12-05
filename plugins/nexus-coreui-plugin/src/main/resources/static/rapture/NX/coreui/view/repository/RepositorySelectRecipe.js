@@ -36,7 +36,7 @@ Ext.define('NX.coreui.view.repository.RepositorySelectRecipe', {
         return 'repository-hosted';
       }
     },
-    { header: 'Recipe', dataIndex: 'name', flex: 1 }
+    { header: '工具', dataIndex: 'name', flex: 1 }
   ]
 
 });

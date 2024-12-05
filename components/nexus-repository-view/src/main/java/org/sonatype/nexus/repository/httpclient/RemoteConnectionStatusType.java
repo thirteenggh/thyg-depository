@@ -25,7 +25,7 @@ public enum RemoteConnectionStatusType
   BLOCKED("远程被手动阻止"),
   AUTO_BLOCKED_UNAVAILABLE("远程被自动阻止且不可用"),
   UNAVAILABLE("远程不可用"),
-  OFFLINE("仓库脱机");
+  OFFLINE("存储库离线"),;
 
   private final String description;
 
