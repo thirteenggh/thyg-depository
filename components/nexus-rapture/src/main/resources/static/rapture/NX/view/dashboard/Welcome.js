@@ -66,9 +66,19 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>系统健康</h2><label>查看系统状态</label>",
                 },
               ],
-              onClick: function(){
-                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/support/status'));
-              }
+              // onClick: function(){
+              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/support/status'));
+              // }
+              listeners: {
+                render: function (container) {
+                  container.getEl().on("click", function () {
+                    console.log("SHOULD NAVIGATE TO admin/support/status");
+                    NX.Bookmarks.navigateTo(
+                      NX.Bookmarks.fromToken("admin/support/status")
+                    );
+                  });
+                },
+              },
             },
             {
               xtype: "container",
@@ -114,9 +124,21 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>清理策略</h2><label>管理清理策略</label>",
                 },
               ],
-              onClick: function(){
-                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/repository/cleanuppolicies'));
-              }
+              // onClick: function(){
+              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/repository/cleanuppolicies'));
+              // }
+              listeners: {
+                render: function (container) {
+                  container.getEl().on("click", function () {
+                    console.log(
+                      "SHOULD NAVIGATE TO admin/repository/cleanuppolicies"
+                    );
+                    NX.Bookmarks.navigateTo(
+                      NX.Bookmarks.fromToken("admin/repository/cleanuppolicies")
+                    );
+                  });
+                },
+              },
             },
             {
               xtype: "container",
@@ -161,9 +183,19 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>浏览</h2><label>浏览存储库</label>",
                 },
               ],
-              onClick:function(){
-                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
-              }
+              // onClick:function(){
+              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
+              // }
+              listeners: {
+                render: function (container) {
+                  container.getEl().on("click", function () {
+                    console.log("browse/browse");
+                    NX.Bookmarks.navigateTo(
+                      NX.Bookmarks.fromToken("browse/browse")
+                    );
+                  });
+                },
+              },
             },
             {
               xtype: "container",
@@ -226,9 +258,19 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>Maven库(Java)</h3><label>流行的项目管理和构建工具，专为Java应用程序设计</label>",
                 },
               ],
-              onClick:function(){
-                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
-              }
+              // onClick:function(){
+              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
+              // }
+              listeners: {
+                render: function (container) {
+                  container.getEl().on("click", function () {
+                    console.log("browse/browse");
+                    NX.Bookmarks.navigateTo(
+                      NX.Bookmarks.fromToken("browse/browse")
+                    );
+                  });
+                },
+              },
             },
             {
               xtype: "container",
@@ -252,9 +294,19 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>Pypi库 (Python)</h3><label>官方第三方软件包仓库，使得Python开发更加便捷和高效</label>",
                 },
               ],
-              onClick:function(){
-                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
-              }
+              // onClick:function(){
+              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
+              // }
+              listeners: {
+                render: function (container) {
+                  container.getEl().on("click", function () {
+                    console.log("browse/browse");
+                    NX.Bookmarks.navigateTo(
+                      NX.Bookmarks.fromToken("browse/browse")
+                    );
+                  });
+                },
+              },
             },
             {
               xtype: "container",
@@ -277,9 +329,19 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>NPM库 (JavaScript)</h3><label>JS中最大的软件包管理器和默认包仓库，极大地促进了JavaScript生态系统的发展和代码重用</label>",
                 },
               ],
-              onClick:function(){
-                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
-              }
+              // onClick:function(){
+              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
+              // }
+              listeners: {
+                render: function (container) {
+                  container.getEl().on("click", function () {
+                    console.log("browse/browse");
+                    NX.Bookmarks.navigateTo(
+                      NX.Bookmarks.fromToken("browse/browse")
+                    );
+                  });
+                },
+              },
             },
           ],
         },
@@ -328,6 +390,16 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>Nginx</h3><label>安全托管Nginx镜像，优化Web服务部署</label>",
                 },
               ],
+              listeners: {
+                render: function (container) {
+                  container.getEl().on("click", function () {
+                    console.log("browse/browse");
+                    NX.Bookmarks.navigateTo(
+                      NX.Bookmarks.fromToken("browse/browse")
+                    );
+                  });
+                },
+              },
             },
             {
               xtype: "container",
@@ -351,6 +423,16 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>Mysql</h3><label>安全存储Mysql镜像，便捷数据库部署与管理</label>",
                 },
               ],
+              listeners: {
+                render: function (container) {
+                  container.getEl().on("click", function () {
+                    console.log("browse/browse");
+                    NX.Bookmarks.navigateTo(
+                      NX.Bookmarks.fromToken("browse/browse")
+                    );
+                  });
+                },
+              },
             },
             {
               xtype: "container",
@@ -373,6 +455,16 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>Redis</h3><label>高效管理Redis数据缓存服务</label>",
                 },
               ],
+              listeners: {
+                render: function (container) {
+                  container.getEl().on("click", function () {
+                    console.log("browse/browse");
+                    NX.Bookmarks.navigateTo(
+                      NX.Bookmarks.fromToken("browse/browse")
+                    );
+                  });
+                },
+              },
             },
           ],
         },
