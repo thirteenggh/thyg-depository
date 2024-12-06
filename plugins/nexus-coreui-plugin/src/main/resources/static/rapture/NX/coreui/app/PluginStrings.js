@@ -1461,7 +1461,7 @@ Ext.define(
         "<p>安装新许可需要重启服务器才能生效</p>",
       Licensing_LicensingDetails_LicenseSelect_Button: "选择许可…",
       Licensing_LicensingDetails_LicenseInstall_Button: "安装许可",
-      Licensing_LicenseAgreement_Title: "私有弹性云计算软件平台许可协议",
+      Licensing_LicenseAgreement_Title: "可信软件仓库许可协议",
       Licensing_LicenseAgreement_Yes_Button: "我接受",
       Licensing_LicenseAgreement_No_Button: "我不接受",
       Licensing_LicenseAgreement_Download_Button: "下载协议副本。",
@@ -1523,7 +1523,7 @@ Ext.define(
     bundles: {
       "NX.coreui.migration.Controller": {
         Feature_Text: "升级",
-        Feature_Description: "从私有弹性云计算软件平台升级配置和内容",
+        Feature_Description: "从可信软件仓库升级配置和内容",
 
         Activate_Mask: "加载中",
 
@@ -1545,8 +1545,8 @@ Ext.define(
       "NX.coreui.migration.NoUpgradeHAScreen": {
         Title: "检测到高可用性集群（HA-C）",
         Description:
-          "<p>在运行 HA-C 时，从私有弹性云计算软件平台升级不可用。</p>" +
-          "<p>请以单节点模式运行私有弹性云计算软件平台以继续。</p>",
+          "<p>在运行 HA-C 时，从可信软件仓库升级不可用。</p>" +
+          "<p>请以单节点模式运行可信软件仓库以继续。</p>",
       },
 
       "NX.coreui.migration.AgentScreen": {
@@ -1571,7 +1571,7 @@ Ext.define(
       "NX.coreui.migration.ContentScreen": {
         Title: "内容",
         Description:
-          "<p>您希望从私有弹性云计算软件平台转移哪些内容？</p>",
+          "<p>您希望从可信软件仓库转移哪些内容？</p>",
         Repositories_FieldLabel: "存储库配置和内容",
         Configuration_FieldLabel: "服务器配置",
       },
@@ -1579,7 +1579,7 @@ Ext.define(
       "NX.coreui.migration.OverviewScreen": {
         Title: "概览",
         Description:
-          "<p>此向导将帮助您从私有弹性云计算软件平台升级。</p>" +
+          "<p>此向导将帮助您从可信软件仓库升级。</p>" +
           "<p>许多服务器的方面可以通过此功能进行升级：" +
           "<ul>" +
           "<li>配置：安全（用户、角色和权限）以及其他适用的系统设置</li>" +
@@ -1599,8 +1599,8 @@ Ext.define(
           "<li>服务器配置可以多次传输，每次都会完全替换现有配置。</li>" +
           "<li>与服务器配置不同，此工具仅应在存储库上使用一次。批量升级或多次升级存储库存在已知问题，不建议也不支持。</li>" +
           "<li>存储库升级可能需要 <strong>相当长的时间</strong>。</li>" +
-          "<li>在升级成功完成之前，不建议在私有弹性云计算软件平台中进行任何配置更改，因为此时配置是易变的。</li>" +
-          "<li>在升级过程中，私有弹性云计算软件平台中的所有存储库将处于离线状态。</li>" +
+          "<li>在升级成功完成之前，不建议在可信软件仓库中进行任何配置更改，因为此时配置是易变的。</li>" +
+          "<li>在升级过程中，可信软件仓库中的所有存储库将处于离线状态。</li>" +
           "</ul>" +
           "</p>",
       },

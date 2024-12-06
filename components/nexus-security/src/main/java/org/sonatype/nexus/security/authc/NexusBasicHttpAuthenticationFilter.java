@@ -56,7 +56,7 @@ public class NexusBasicHttpAuthenticationFilter
   /**
    * @since 3.1
    */
-  public static final String BASIC_AUTH_REALM = "私有弹性云计算软件平台";
+  public static final String BASIC_AUTH_REALM = "Trust Repository";
 
   protected final Logger log = LoggerFactory.getLogger(getClass());
 

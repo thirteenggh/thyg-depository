@@ -48,7 +48,7 @@ Ext.define('NX.view.dev.styles.Menus', {
         items: [
           menu('Help for [Feature]', 'nx-icon-search-default-x16', 'Help for the current feature', 'feature'),
           '-',
-          menu('About', 'nx-icon-nexus-white-x16', 'About 私有弹性云计算软件平台', 'about'),
+          menu('About', 'nx-icon-nexus-white-x16', 'About 可信软件仓库', 'about'),
           menu('Documentation', 'nx-icon-help-manual-x16', 'Product documentation', 'docs'),
           menu('Knowledge Base', 'nx-icon-help-kb-x16', 'Knowledge base', 'kb'),
           menu('Sonatype Guides', 'nx-icon-help-guides-x16', 'Sonatype Guides', 'guides'),
