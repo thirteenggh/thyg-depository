@@ -66,6 +66,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>系统健康</h2><label>查看系统状态</label>",
                 },
               ],
+              onClick: function(){
+                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/support/status'));
+              }
             },
             {
               xtype: "container",
@@ -95,6 +98,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               xtype: "container",
               cls: "top-left",
               layout: "hbox", // 水平布局
+              flex: 1,
               height: "80px",
               items: [
                 {
@@ -110,10 +114,14 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>清理策略</h2><label>管理清理策略</label>",
                 },
               ],
+              onClick: function(){
+                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/repository/cleanuppolicies'));
+              }
             },
             {
               xtype: "container",
               cls: "top-right",
+              width: "24px",
               height: "80px",
               items: [
                 {
@@ -137,6 +145,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               xtype: "container",
               cls: "top-left",
               layout: "hbox", // 水平布局
+              flex: 1,
               height: "80px",
               items: [
                 {
@@ -152,10 +161,14 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>浏览</h2><label>浏览存储库</label>",
                 },
               ],
+              onClick:function(){
+                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
+              }
             },
             {
               xtype: "container",
               cls: "top-right",
+              width: "24px",
               height: "80px",
               items: [
                 {
@@ -173,7 +186,7 @@ Ext.define("NX.view.dashboard.Welcome", {
     {
       xtype: "container",
       cls: "repository-container",
-      margin: "24px 0",
+      margin: "24px 0 24px 0",
       height: "340px",
       items: [
         {
@@ -213,6 +226,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>Maven库(Java)</h3><label>流行的项目管理和构建工具，专为Java应用程序设计</label>",
                 },
               ],
+              onClick:function(){
+                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
+              }
             },
             {
               xtype: "container",
@@ -236,6 +252,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>Pypi库 (Python)</h3><label>官方第三方软件包仓库，使得Python开发更加便捷和高效</label>",
                 },
               ],
+              onClick:function(){
+                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
+              }
             },
             {
               xtype: "container",
@@ -258,6 +277,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>NPM库 (JavaScript)</h3><label>JS中最大的软件包管理器和默认包仓库，极大地促进了JavaScript生态系统的发展和代码重用</label>",
                 },
               ],
+              onClick:function(){
+                NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
+              }
             },
           ],
         },
