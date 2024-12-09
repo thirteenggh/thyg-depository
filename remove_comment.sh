@@ -15,7 +15,7 @@ COMMENT="/*
  */"
 
 # 遍历当前目录下所有 .java 文件
-find . -name "*.java" | while read -r file; do
+find . -name "*.groovy" | while read -r file; do
   # 使用 awk 删除指定的注释内容
   awk -v comment="$COMMENT" '
     BEGIN { found=0 }
