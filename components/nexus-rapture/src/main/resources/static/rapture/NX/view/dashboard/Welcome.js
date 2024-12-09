@@ -266,7 +266,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                   container.getEl().on("click", function () {
                     console.log("browse/browse");
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/browse")
+                      NX.Bookmarks.fromToken("browse/browse:maven-central")
                     );
                   });
                 },
@@ -329,9 +329,6 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>NPM库 (JavaScript)</h3><label>JS中最大的软件包管理器和默认包仓库，极大地促进了JavaScript生态系统的发展和代码重用</label>",
                 },
               ],
-              // onClick:function(){
-              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
-              // }
               listeners: {
                 render: function (container) {
                   container.getEl().on("click", function () {
