@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 指定要删除的注释内容
-COMMENT="/*
+COMMENT="/**
  * Sonatype Nexus (TM) Open Source Version
  * Copyright (c) 2008-present Sonatype, Inc.
  * All rights reserved. Includes the third-party code listed at http://links.sonatype.com/products/nexus/oss/attributions.
@@ -15,7 +15,7 @@ COMMENT="/*
  */"
 
 # 遍历当前目录下所有 .java 文件
-find . -name "*.js" | while read -r file; do
+find . -name "*.scss" | while read -r file; do
   # 使用 awk 删除指定的注释内容
   awk -v comment="$COMMENT" '
     BEGIN { found=0 }
