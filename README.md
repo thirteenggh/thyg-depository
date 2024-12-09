@@ -1,18 +1,5 @@
-<!--
 
-    Sonatype Nexus (TM) Open Source Version
-    Copyright (c) 2008-present Sonatype, Inc.
-    All rights reserved. Includes the third-party code listed at http://links.sonatype.com/products/nexus/oss/attributions.
-
-    This program and the accompanying materials are made available under the terms of the Eclipse Public License Version 1.0,
-    which accompanies this distribution and is available at http://www.eclipse.org/legal/epl-v10.html.
-
-    Sonatype Nexus (TM) Professional Version is available from Sonatype, Inc. "Sonatype" and "Sonatype Nexus" are trademarks
-    of Sonatype, Inc. Apache Maven is a trademark of the Apache Software Foundation. M2eclipse is a trademark of the
-    Eclipse Foundation. All other trademarks are the property of their respective owners.
-
--->
-# Sonatype Nexus Repository Open Source Codebase 
+# Trust Repository Open Source Codebase 
 
 [![CircleCI Build Status](https://circleci.com/gh/sonatype/nexus-public.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/sonatype/nexus-public) [![Join the chat at https://gitter.im/sonatype/nexus-developers](https://badges.gitter.im/sonatype/nexus-developers.svg)](https://gitter.im/sonatype/nexus-developers?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -39,7 +26,7 @@ To run Nexus Repository, after building, unzip the assembly and start the server
     unzip -d target assemblies/nexus-base-template/target/nexus-base-template-3.29.2-02.zip
     ./target/nexus-base-template-3.29.2-02/bin/nexus console
 
-The `nexus-base-template` assembly is used as the basis for the official Sonatype Nexus distributions.
+The `nexus-base-template` assembly is used as the basis for the official Trust Repository distributions.
 
 ## License
 
