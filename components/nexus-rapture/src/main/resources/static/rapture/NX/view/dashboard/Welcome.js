@@ -425,7 +425,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                   container.getEl().on("click", function () {
                     console.log("browse/browse");
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/browse")
+                      NX.Bookmarks.fromToken("browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*mysql")
                     );
                   });
                 },
