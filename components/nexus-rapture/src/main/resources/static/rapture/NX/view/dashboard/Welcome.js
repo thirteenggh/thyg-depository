@@ -210,7 +210,7 @@ Ext.define("NX.view.dashboard.Welcome", {
       // height: 340,
       flex: 1,
       layout: {
-        type: "hbox",
+        type: "vbox",
         align: "stretch",
       },
       items: [
@@ -340,6 +340,10 @@ Ext.define("NX.view.dashboard.Welcome", {
       cls: "repository-container",
       // height: 340,
       flex: 1,
+      layout: {
+        type: "vbox",
+        align: "stretch",
+      },
       items: [
         {
           xtype: "container",
