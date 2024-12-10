@@ -16,7 +16,7 @@ Ext.define("NX.view.dashboard.Welcome", {
     type: "vbox",
     align: "stretch",
   },
-  padding: "24px",
+  padding: 24,
   items: [
     {
       xtype: "container",
@@ -24,7 +24,8 @@ Ext.define("NX.view.dashboard.Welcome", {
         type: "hbox",
         align: "stretch",
       },
-      height: "160px",
+      // height: 160,
+      flex: 1,
       items: [
         // 系统健康卡片
         {
@@ -32,14 +33,14 @@ Ext.define("NX.view.dashboard.Welcome", {
           cls: "top-card",
           flex: 1,
           layout: "hbox",
-          height: "160px",
+          height: 160,
           items: [
             {
               xtype: "container",
               cls: "top-left",
               layout: "hbox", // 水平布局
               flex: 1,
-              height: "80px",
+              height: 80,
               items: [
                 {
                   xtype: "image",
@@ -50,7 +51,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                 {
                   xtype: "container",
                   cls: "top-title",
-                  height: "80px",
+                  height: 80,
                   html: "<h2>系统健康</h2><label>查看系统状态</label>",
                 },
               ],
@@ -67,8 +68,8 @@ Ext.define("NX.view.dashboard.Welcome", {
             {
               xtype: "container",
               cls: "top-right",
-              width: "24px",
-              height: "80px",
+              width: 24,
+              height: 80,
               items: [
                 {
                   xtype: "image",
@@ -85,15 +86,15 @@ Ext.define("NX.view.dashboard.Welcome", {
           cls: "top-card",
           flex: 1,
           layout: "hbox", // 水平布局
-          height: "160px",
-          margin: "0 32px",
+          height: 160,
+          margin: "0 32",
           items: [
             {
               xtype: "container",
               cls: "top-left",
               layout: "hbox", // 水平布局
               flex: 1,
-              height: "80px",
+              height: 80,
               items: [
                 {
                   xtype: "image",
@@ -104,7 +105,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                 {
                   xtype: "container",
                   cls: "top-title",
-                  height: "80px",
+                  height: 80,
                   html: "<h2>清理策略</h2><label>管理清理策略</label>",
                 },
               ],
@@ -121,8 +122,8 @@ Ext.define("NX.view.dashboard.Welcome", {
             {
               xtype: "container",
               cls: "top-right",
-              width: "24px",
-              height: "80px",
+              width: 24,
+              height: 80,
               items: [
                 {
                   xtype: "image",
@@ -139,14 +140,14 @@ Ext.define("NX.view.dashboard.Welcome", {
           cls: "top-card",
           flex: 1,
           layout: "hbox", // 水平布局
-          height: "160px",
+          height: 160,
           items: [
             {
               xtype: "container",
               cls: "top-left",
               layout: "hbox", // 水平布局
               flex: 1,
-              height: "80px",
+              height: 80,
               items: [
                 {
                   xtype: "image",
@@ -157,7 +158,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                 {
                   xtype: "container",
                   cls: "top-title",
-                  height: "80px",
+                  height: 80,
                   html: "<h2>浏览</h2><label>浏览存储库</label>",
                 },
               ],
@@ -174,8 +175,8 @@ Ext.define("NX.view.dashboard.Welcome", {
             {
               xtype: "container",
               cls: "top-right",
-              width: "24px",
-              height: "80px",
+              width: 24,
+              height: 80,
               items: [
                 {
                   xtype: "image",
@@ -192,15 +193,16 @@ Ext.define("NX.view.dashboard.Welcome", {
     {
       xtype: "container",
       cls: "repository-container",
-      margin: "24px 0 24px 0",
-      height: "340px",
+      margin: "24 0 24 0",
+      // height: 340,
+      flex: 2,
       items: [
         {
           xtype: "container",
           cls: "repository-title",
-          height: "28px",
+          height: 28,
           html: "<h2>主流技术栈软件仓库</h2>",
-          margin: "0 0 32px 0",
+          margin: "0 0 32 0",
         },
         {
           xtype: "container",
@@ -210,15 +212,15 @@ Ext.define("NX.view.dashboard.Welcome", {
             align: "stretch",
             pack: "space-between",
           },
-          height: "200px",
+          height: 200,
           items: [
             {
               xtype: "container",
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              height: "200px",
-              padding: '32px',
+              height: 200,
+              padding: 32,
               items: [
                 {
                   xtype: "image",
@@ -229,8 +231,8 @@ Ext.define("NX.view.dashboard.Welcome", {
                 {
                   xtype: "container",
                   cls: "repository-title",
-                  margin: "12px 0 0 32px",
-                  height: "124px",
+                  margin: "12 0 0 32",
+                  height: 124,
                   html: "<h3>Maven库(Java)</h3><label>流行的项目管理和构建工具，专为Java应用程序设计</label>",
                 },
               ],
@@ -249,9 +251,9 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              margin: "0 32px",
-              height: "200px",
-              padding: '32px',
+              margin: "0 32",
+              height: 200,
+              padding: 32,
               items: [
                 {
                   xtype: "image",
@@ -262,8 +264,8 @@ Ext.define("NX.view.dashboard.Welcome", {
                 {
                   xtype: "container",
                   cls: "repository-title",
-                  margin: "12px 0 0 32px",
-                  height: "124px",
+                  margin: "12 0 0 32",
+                  height: 124,
                   html: "<h3>Pypi库 (Python)</h3><label>官方第三方软件包仓库，使得Python开发更加便捷和高效</label>",
                 },
               ],
@@ -282,8 +284,8 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              height: "200px",
-              padding: '32px',
+              height: 200,
+              padding: 32,
               items: [
                 {
                   xtype: "image",
@@ -294,8 +296,8 @@ Ext.define("NX.view.dashboard.Welcome", {
                 {
                   xtype: "container",
                   cls: "repository-title",
-                  margin: "12px 0 0 32px",
-                  height: "124px",
+                  margin: "12 0 0 32",
+                  height: 124,
                   html: "<h3>NPM库 (JavaScript)</h3><label>JS中最大的软件包管理器和默认包仓库，极大地促进了JavaScript生态系统的发展和代码重用</label>",
                 },
               ],
@@ -318,14 +320,15 @@ Ext.define("NX.view.dashboard.Welcome", {
     {
       xtype: "container",
       cls: "repository-container",
-      height: "340px",
+      // height: 340,
+      flex: 1,
       items: [
         {
           xtype: "container",
           cls: "repository-title",
-          height: "28px",
+          height: 28,
           html: "<h2>私有Docker镜像库</h2>",
-          margin: "0 0 32px 0",
+          margin: "0 0 32 0",
         },
         {
           xtype: "container",
@@ -335,15 +338,15 @@ Ext.define("NX.view.dashboard.Welcome", {
             align: "stretch",
             pack: "space-between",
           },
-          height: "200px",
+          height: 200,
           items: [
             {
               xtype: "container",
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              height: "200px",
-              padding: '32px',
+              height: 200,
+              padding: 32,
               items: [
                 {
                   xtype: "image",
@@ -354,8 +357,8 @@ Ext.define("NX.view.dashboard.Welcome", {
                 {
                   xtype: "container",
                   cls: "repository-title",
-                  margin: "12px 0 0 32px",
-                  height: "124px",
+                  margin: "12 0 0 32",
+                  height: 124,
                   html: "<h3>Nginx</h3><label>安全托管Nginx镜像，优化Web服务部署</label>",
                 },
               ],
@@ -363,7 +366,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                 render: function (container) {
                   container.getEl().on("click", function () {
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*nginx")
+                      NX.Bookmarks.fromToken(
+                        "browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*nginx"
+                      )
                     );
                   });
                 },
@@ -374,9 +379,9 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              margin: "0 32px",
-              height: "200px",
-              padding: '32px',
+              margin: "0 32",
+              height: 200,
+              padding: 32,
               items: [
                 {
                   xtype: "image",
@@ -387,8 +392,8 @@ Ext.define("NX.view.dashboard.Welcome", {
                 {
                   xtype: "container",
                   cls: "repository-title",
-                  margin: "12px 0 0 32px",
-                  height: "124px",
+                  margin: "12 0 0 32",
+                  height: 124,
                   html: "<h3>Mysql</h3><label>安全存储Mysql镜像，便捷数据库部署与管理</label>",
                 },
               ],
@@ -396,7 +401,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                 render: function (container) {
                   container.getEl().on("click", function () {
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*mysql")
+                      NX.Bookmarks.fromToken(
+                        "browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*mysql"
+                      )
                     );
                   });
                 },
@@ -407,8 +414,8 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              height: "200px",
-              padding: '32px',
+              height: 200,
+              padding: 32,
               items: [
                 {
                   xtype: "image",
@@ -419,8 +426,8 @@ Ext.define("NX.view.dashboard.Welcome", {
                 {
                   xtype: "container",
                   cls: "repository-title",
-                  margin: "12px 0 0 32px",
-                  height: "124px",
+                  margin: "12 0 0 32",
+                  height: 124,
                   html: "<h3>Redis</h3><label>高效管理Redis数据缓存服务</label>",
                 },
               ],
@@ -428,7 +435,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                 render: function (container) {
                   container.getEl().on("click", function () {
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*redis")
+                      NX.Bookmarks.fromToken(
+                        "browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*redis"
+                      )
                     );
                   });
                 },
