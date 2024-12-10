@@ -54,13 +54,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>系统健康</h2><label>查看系统状态</label>",
                 },
               ],
-              // onClick: function(){
-              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/support/status'));
-              // }
               listeners: {
                 render: function (container) {
                   container.getEl().on("click", function () {
-                    console.log("SHOULD NAVIGATE TO admin/support/status");
                     NX.Bookmarks.navigateTo(
                       NX.Bookmarks.fromToken("admin/support/status")
                     );
@@ -112,15 +108,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>清理策略</h2><label>管理清理策略</label>",
                 },
               ],
-              // onClick: function(){
-              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/repository/cleanuppolicies'));
-              // }
               listeners: {
                 render: function (container) {
                   container.getEl().on("click", function () {
-                    console.log(
-                      "SHOULD NAVIGATE TO admin/repository/cleanuppolicies"
-                    );
                     NX.Bookmarks.navigateTo(
                       NX.Bookmarks.fromToken("admin/repository/cleanuppolicies")
                     );
@@ -171,13 +161,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>浏览</h2><label>浏览存储库</label>",
                 },
               ],
-              // onClick:function(){
-              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
-              // }
               listeners: {
                 render: function (container) {
                   container.getEl().on("click", function () {
-                    console.log("browse/browse");
                     NX.Bookmarks.navigateTo(
                       NX.Bookmarks.fromToken("browse/browse")
                     );
@@ -214,6 +200,7 @@ Ext.define("NX.view.dashboard.Welcome", {
           cls: "repository-title",
           height: "28px",
           html: "<h2>主流技术栈软件仓库</h2>",
+          margin: "0 0 32px 0",
         },
         {
           xtype: "container",
@@ -231,6 +218,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               flex: 1,
               layout: "hbox",
               height: "200px",
+              padding: '32px',
               items: [
                 {
                   xtype: "image",
@@ -246,13 +234,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>Maven库(Java)</h3><label>流行的项目管理和构建工具，专为Java应用程序设计</label>",
                 },
               ],
-              // onClick:function(){
-              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
-              // }
               listeners: {
                 render: function (container) {
                   container.getEl().on("click", function () {
-                    console.log("browse/browse");
                     NX.Bookmarks.navigateTo(
                       NX.Bookmarks.fromToken("browse/browse:maven-central")
                     );
@@ -267,6 +251,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               layout: "hbox",
               margin: "0 32px",
               height: "200px",
+              padding: '32px',
               items: [
                 {
                   xtype: "image",
@@ -282,13 +267,9 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h3>Pypi库 (Python)</h3><label>官方第三方软件包仓库，使得Python开发更加便捷和高效</label>",
                 },
               ],
-              // onClick:function(){
-              //   NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('browse/browse'));
-              // }
               listeners: {
                 render: function (container) {
                   container.getEl().on("click", function () {
-                    console.log("browse/browse");
                     NX.Bookmarks.navigateTo(
                       NX.Bookmarks.fromToken("browse/browse")
                     );
@@ -302,6 +283,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               flex: 1,
               layout: "hbox",
               height: "200px",
+              padding: '32px',
               items: [
                 {
                   xtype: "image",
@@ -343,6 +325,7 @@ Ext.define("NX.view.dashboard.Welcome", {
           cls: "repository-title",
           height: "28px",
           html: "<h2>私有Docker镜像库</h2>",
+          margin: "0 0 32px 0",
         },
         {
           xtype: "container",
@@ -360,6 +343,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               flex: 1,
               layout: "hbox",
               height: "200px",
+              padding: '32px',
               items: [
                 {
                   xtype: "image",
@@ -378,7 +362,6 @@ Ext.define("NX.view.dashboard.Welcome", {
               listeners: {
                 render: function (container) {
                   container.getEl().on("click", function () {
-                    console.log("browse/browse");
                     NX.Bookmarks.navigateTo(
                       NX.Bookmarks.fromToken("browse/browse")
                     );
@@ -393,6 +376,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               layout: "hbox",
               margin: "0 32px",
               height: "200px",
+              padding: '32px',
               items: [
                 {
                   xtype: "image",
@@ -411,7 +395,6 @@ Ext.define("NX.view.dashboard.Welcome", {
               listeners: {
                 render: function (container) {
                   container.getEl().on("click", function () {
-                    console.log("browse/browse");
                     NX.Bookmarks.navigateTo(
                       NX.Bookmarks.fromToken("browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*mysql")
                     );
@@ -425,6 +408,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               flex: 1,
               layout: "hbox",
               height: "200px",
+              padding: '32px',
               items: [
                 {
                   xtype: "image",
@@ -443,7 +427,6 @@ Ext.define("NX.view.dashboard.Welcome", {
               listeners: {
                 render: function (container) {
                   container.getEl().on("click", function () {
-                    console.log("browse/browse");
                     NX.Bookmarks.navigateTo(
                       NX.Bookmarks.fromToken("browse/browse")
                     );
