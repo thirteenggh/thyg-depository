@@ -117,7 +117,7 @@ Ext.define('NX.view.Main', {
         }
       },
       {xtype: 'nx-header-refresh', ui: 'nx-header'},
-      {xtype: 'nx-header-help', ui: 'nx-header'},
+      // {xtype: 'nx-header-help', ui: 'nx-header'},
       {
         xtype: 'nx-header-mode',
         name: 'user',
