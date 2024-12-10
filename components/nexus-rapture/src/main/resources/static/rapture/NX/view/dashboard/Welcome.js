@@ -12,6 +12,7 @@ Ext.define("NX.view.dashboard.Welcome", {
 
   cls: "nx-dashboard-welcome",
   width: "100%",
+  height: 1080,
   layout: {
     type: "vbox",
     align: "stretch",
@@ -24,8 +25,8 @@ Ext.define("NX.view.dashboard.Welcome", {
         type: "hbox",
         align: "stretch",
       },
-      // height: 160,
-      flex: 1,
+      height: 160,
+      // flex: 1,
       items: [
         // 系统健康卡片
         {
@@ -195,7 +196,7 @@ Ext.define("NX.view.dashboard.Welcome", {
       cls: "repository-container",
       margin: "24 0 24 0",
       // height: 340,
-      flex: 2,
+      flex: 1,
       items: [
         {
           xtype: "container",
