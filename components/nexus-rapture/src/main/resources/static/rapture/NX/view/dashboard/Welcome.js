@@ -363,7 +363,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                 render: function (container) {
                   container.getEl().on("click", function () {
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/browse")
+                      NX.Bookmarks.fromToken("browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*nginx")
                     );
                   });
                 },
@@ -428,7 +428,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                 render: function (container) {
                   container.getEl().on("click", function () {
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/browse")
+                      NX.Bookmarks.fromToken("browse/search/docker=format%3Ddocker%20AND%20attributes.docker.imageName%3D*redis")
                     );
                   });
                 },
