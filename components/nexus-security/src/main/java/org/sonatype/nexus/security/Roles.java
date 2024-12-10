@@ -1,10 +1,5 @@
 package org.sonatype.nexus.security;
 
-/**
- * Holder for Nexus role related constants.
- *
- * @since 3.0
- */
 public final class Roles
 {
   /**

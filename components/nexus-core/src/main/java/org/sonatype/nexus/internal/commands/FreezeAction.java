@@ -19,7 +19,7 @@ import static org.sonatype.nexus.internal.commands.FreezeAction.Mode.enable;
  * @since 3.2
  */
 @Named
-@Command(name = "freeze", scope = "nexus", description = "Freeze Nexus Repository Manager")
+@Command(name = "freeze", scope = "nexus", description = "Freeze Trust Repository Manager")
 public class FreezeAction
     implements Action
 {

@@ -6,12 +6,6 @@ import org.apache.http.protocol.HttpContext;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
-/**
- * Nexus connection keep alive strategy, that differs from the HC4 default one only in one thing: when server does
- * not state timeout, it never says "indefinite" (meaning pool it forever), but instead a finite amount of time.
- *
- * @since 2.3
- */
 public class NexusConnectionKeepAliveStrategy
     extends DefaultConnectionKeepAliveStrategy
 {
@@ -31,13 +25,6 @@ public class NexusConnectionKeepAliveStrategy
     this.maxKeepAliveDuration = maxKeepAliveDuration;
   }
 
-  /**
-   * Returns the duration of time which this connection can be safely kept
-   * idle. Nexus by default does not "believe" much to remote servers, and will never
-   * keep connection pooled "forever", nor will keep it pooled for unreasonable long time.
-   *
-   * @return the duration of time which this connection can be safely kept idle in pool.
-   */
   public long getKeepAliveDuration(final HttpResponse response, final HttpContext context) {
     // ask super class
     final long result = super.getKeepAliveDuration(response, context);

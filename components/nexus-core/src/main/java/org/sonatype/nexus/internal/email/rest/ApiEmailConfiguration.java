@@ -45,7 +45,7 @@ public class ApiEmailConfiguration
   @ApiModelProperty(value = "Verify the server certificate when using TLS or SSL")
   private boolean sslServerIdentityCheckEnabled;
 
-  @ApiModelProperty(value = "Use the Nexus Repository Manager's certificate truststore")
+  @ApiModelProperty(value = "Use the Trust Repository Manager's certificate truststore")
   private boolean nexusTrustStoreEnabled;
 
   public boolean isEnabled() {

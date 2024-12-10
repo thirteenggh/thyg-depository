@@ -32,9 +32,6 @@ public class NexusIsActiveConditionTest
     assertThat(underTest.isSatisfied(), is(false));
   }
 
-  /**
-   * Condition is satisfied when Nexus is started.
-   */
   @Test
   public void satisfiedWhenNexusStarted() {
     underTest.start();

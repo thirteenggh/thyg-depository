@@ -11,7 +11,7 @@ Ext.define('NX.view.header.Logo', {
     'NX.Icons'
   ],
   alias: 'widget.nx-header-logo',
-  alt: 'Sonatype',
+  alt: 'TianheCloud',
 
   autoEl: 'span',
   height: 32,

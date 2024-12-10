@@ -41,7 +41,7 @@ public class NpmAuditErrorHandler
 
   private static final String USER_ERROR_MSG =
       "Error fetching npm audit data. " + lineSeparator() +
-      "See nexus.log for more details or contact your Nexus Repository Manager administrator.";
+      "See nexus.log for more details or contact your Trust Repository Manager administrator.";
 
   private static final String USER_IQ_ERROR_MSG =
       "Error fetching data from IQ Server. " + lineSeparator() +

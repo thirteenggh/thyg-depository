@@ -43,13 +43,6 @@ import static org.sonatype.nexus.scheduling.TaskState.RUNNING;
 import static org.sonatype.nexus.scheduling.TaskState.RUNNING_BLOCKED;
 import static org.sonatype.nexus.scheduling.TaskState.RUNNING_STARTING;
 
-/**
- * Quartz {@link Job} wrapping a Nexus {@link Task}.
- *
- * Supports {@link InterruptableJob} but actual interrupt-ability depends on underlying tasks implementation.
- *
- * @since 3.0
- */
 @PersistJobDataAfterExecution
 @DisallowConcurrentExecution
 @Named

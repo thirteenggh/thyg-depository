@@ -11,22 +11,8 @@ Ext.define('NX.util.Url', {
     'Ext.String'
   ],
 
-  /**
-   * Returns the base URL of the Nexus server.  URL never ends with '/'.
-   *
-   * @public
-   * @property {String}
-   * @readonly
-   */
   baseUrl: NX.app.baseUrl,
 
-  /**
-   * Returns a cache-busting urlSuffix provided by the Nexus server.
-   *
-   * @public
-   * @property {String}
-   * @readonly
-   */
   urlSuffix: NX.app.urlSuffix,
 
   /**

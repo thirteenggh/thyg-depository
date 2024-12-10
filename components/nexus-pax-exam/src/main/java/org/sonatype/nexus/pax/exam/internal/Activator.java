@@ -8,11 +8,6 @@ import org.ops4j.pax.exam.ProbeInvokerFactory;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-/**
- * Registers our delayed {@link ProbeInvokerFactory} which waits for Nexus to start before invoking the testsuite.
- * 
- * @since 3.0
- */
 public class Activator
     implements BundleActivator
 {

@@ -19,11 +19,6 @@ import static org.apache.velocity.runtime.RuntimeConstants.RUNTIME_REFERENCES_ST
 import static org.apache.velocity.runtime.RuntimeConstants.VM_LIBRARY;
 import static org.apache.velocity.runtime.RuntimeConstants.VM_PERM_INLINE_LOCAL;
 
-/**
- * Nexus preconfigured ans shared Velocity provider.
- *
- * @since 2.8
- */
 @Named
 @Singleton
 public class VelocityEngineProvider

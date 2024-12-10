@@ -4,7 +4,7 @@ exports[`SupportZipForm renders support zip form 1`] = `
 <div>
   <div>
     <p>
-      No information will be sent to Sonatype when creating the support ZIP file.
+      No information will be sent to TianheCloud when creating the support ZIP file.
     </p>
     <p>
       Support ZIP creation may take a few minutes to complete.

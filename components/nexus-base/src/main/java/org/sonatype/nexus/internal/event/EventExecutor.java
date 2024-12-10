@@ -35,18 +35,6 @@ import static org.sonatype.nexus.common.event.EventHelper.asReplicating;
 import static org.sonatype.nexus.common.event.EventHelper.isReplicating;
 import static org.sonatype.nexus.internal.event.EventManagerImpl.HOST_THREAD_POOL_SIZE;
 
-/**
- * Custom {@link Executor} used to dispatch events to {@link Asynchronous} subscribers.
- *
- * As Nexus starts, subscribers are called directly by the originating thread. Once the
- * TASKS phase is reached subscribers will be called asynchronously using a thread pool.
- *
- * Conversely as Nexus stops, the thread pool is shutdown after leaving the TASKS phase
- * and subscribers will again be called directly by the originating thread. This avoids
- * asynchronous subscribers from having services disappear beneath them.
- *
- * @since 3.2
- */
 @Named
 @ManagedLifecycle(phase = TASKS)
 @Singleton

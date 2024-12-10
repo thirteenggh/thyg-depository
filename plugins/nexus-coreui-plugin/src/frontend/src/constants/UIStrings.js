@@ -241,7 +241,7 @@ export default {
   SUPPORT_REQUEST: {
     MENU: {
       text: '支持请求',
-      description: '提交 Sonatype 支持请求'
+      description: '提交 TianheCloud 支持请求'
     },
     ACTIONS: {
       submitRequest: '提交请求'
@@ -319,7 +319,7 @@ export default {
       text: '支持 ZIP',
       description: '创建一个包含有关您的服务器的有用支持信息的 ZIP 文件'
     },
-    DESCRIPTION: '<p>创建支持 ZIP 文件时不会向 Sonatype 发送任何信息。</p>' +
+    DESCRIPTION: '<p>创建支持 ZIP 文件时不会向 TianheCloud 发送任何信息。</p>' +
         '<p>创建支持 ZIP 可能需要几分钟时间。</p>',
     REPORT_LABEL: '系统信息报告',
     DUMP_LABEL: 'JVM 线程转储',
@@ -343,7 +343,7 @@ export default {
   },
 
   HEALTHCHECK_EULA: {
-    HEADER: 'Nexus IQ 服务器使用条款',
+    HEADER: 'Trust Repository IQ 服务器使用条款',
     BUTTONS: {
       ACCEPT: '我接受',
       DECLINE: '我不接受'

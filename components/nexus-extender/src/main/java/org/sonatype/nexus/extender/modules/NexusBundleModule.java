@@ -20,11 +20,6 @@ import org.osgi.framework.Constants;
 import static java.lang.Boolean.parseBoolean;
 import static org.sonatype.nexus.extender.modules.FeatureFlaggedIndex.filterByFeatureFlag;
 
-/**
- * Nexus specific {@link BundleModule} that uses bundle imports to decide what to install.
- *
- * @since 3.0
- */
 public class NexusBundleModule
     extends BundleModule
 {

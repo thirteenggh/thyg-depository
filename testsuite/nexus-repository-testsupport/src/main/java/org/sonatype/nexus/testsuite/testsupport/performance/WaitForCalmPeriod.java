@@ -5,9 +5,6 @@ import java.util.concurrent.Callable;
 import org.sonatype.nexus.common.event.EventManager;
 import org.sonatype.nexus.pax.exam.NexusPaxExamSupport;
 
-/**
- * Waits for Nexus to be in a calm state.
- */
 public class WaitForCalmPeriod implements Callable<Void>
 {
   final EventManager eventManager;

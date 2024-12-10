@@ -21,7 +21,7 @@ public final class NexusSecurityApiConstants
   static final String SOURCE_DESCRIPTION =
       "The user source which is the origin of this user. This value cannot be changed.";
 
-  static final String ROLES_DESCRIPTION = "The roles which the user has been assigned within Nexus.";
+  static final String ROLES_DESCRIPTION = "The roles which the user has been assigned within Trust Repository.";
 
   public static final String INVALID_PERMISSIONS = "The user does not have permission to perform the operation.";
 

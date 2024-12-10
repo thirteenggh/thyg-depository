@@ -64,13 +64,13 @@ public class NexusMainTest
   @Test
   public void logMinimumVersionErrorWhenVmCheckDisabledAndLowerVersion() throws Exception {
     runDisabledVmCheckWithVersion(LOWER);
-    assertThat(systemErrRule.getLog(), containsString("Nexus requires minimum java.version: "));
+    assertThat(systemErrRule.getLog(), containsString("Trust Repository requires minimum java.version: "));
   }
 
   @Test
   public void logMinimumVersionErrorWhenVmCheckDisabledAndInvalidVersion() throws Exception {
     runDisabledVmCheckWithVersion(INVALID);
-    assertThat(systemErrRule.getLog(), containsString("Nexus requires minimum java.version: "));
+    assertThat(systemErrRule.getLog(), containsString("Trust Repository requires minimum java.version: "));
   }
 
   @Test

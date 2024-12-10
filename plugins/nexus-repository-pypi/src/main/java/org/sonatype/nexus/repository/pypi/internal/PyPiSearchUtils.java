@@ -51,8 +51,6 @@ import static org.sonatype.nexus.repository.search.query.RepositoryQueryBuilder.
  */
 public final class PyPiSearchUtils
 {
-  // The subset of keys (format attributes) for XML-RPC queries (https://wiki.python.org/moin/PyPIXmlRpc) supported
-  // by Nexus. pip only seems to use name and summary, so until we have a use case for it, limiting to those only.
   private static final Set<String> VALID_SEARCH_KEYS = new ImmutableSet.Builder<String>().add(
       P_NAME,
       P_SUMMARY

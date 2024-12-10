@@ -172,9 +172,6 @@ public final class NpmMetadataUtils
     return null;
   }
 
-  /**
-   * Rewrites dist/tarball entry URLs to point back to this Nexus instance and given repository.
-   */
   public static void rewriteTarballUrl(final String repositoryName, final NestedAttributesMap packageRoot) {
     if (BaseUrlHolder.isSet()) {
       NestedAttributesMap versions = packageRoot.child(VERSIONS);
@@ -194,14 +191,6 @@ public final class NpmMetadataUtils
     }
   }
 
-  /**
-   * Rewrites dist/tarball entry URLs to point back to this Nexus instance and given repository.
-   *
-   * @param repositoryName    Name of the repository we want to point this at.
-   * @param name              Name of the Asset/NPM Package ID
-   * @param currentTarballUrl The real/original tarball url
-   * @return String with local NXRM url
-   */
   static String rewriteTarballUrl(final String repositoryName, final String name, final String currentTarballUrl) {
     if (BaseUrlHolder.isSet()) {
       return String.format(
@@ -235,11 +224,6 @@ public final class NpmMetadataUtils
     return String.format("%s-%s.tgz", name, version);
   }
 
-  /**
-   * Shrinks the package root JSON object as required for npm search operations (basically shaves off version entry
-   * values replacing them with tags. Package roots transformed like this must NOT be persisted back into storage
-   * of Nexus, they are meant only by npm CLI downstream consumption.
-   */
   @Nonnull
   public static NestedAttributesMap shrink(final NestedAttributesMap packageRoot) {
     final NestedAttributesMap versions = packageRoot.child(VERSIONS);
@@ -249,11 +233,6 @@ public final class NpmMetadataUtils
     return packageRoot;
   }
 
-  /**
-   * Overlays 2nd npm metadata object on top of 1st, with care about "shrunk" (version object-less) input. The {@code
-   * recessive} input parameter backing map is modified and returned, while the {@code dominant} input parameter is
-   * unmodified. This method does not care about anything else, unlike {@link #merge(String, List)} does.
-   */
   @Nonnull
   public static NestedAttributesMap overlay(final NestedAttributesMap recessive, final NestedAttributesMap dominant) {
     overlay(recessive.backing(), dominant.backing(), true);
@@ -306,12 +285,6 @@ public final class NpmMetadataUtils
     return new NpmMergeObjectMapper().merge(streams);
   }
 
-  /**
-   * Similar to {@link #mergeContents(List)} but only for a single content, allowing for the same manner of parsing
-   * the output map as the merged ones.
-   *
-   * @param content The content to parse into a {@link NestedAttributesMap}
-   */
   public static NestedAttributesMap parseContent(final Content content) throws IOException {
     return new NpmMergeObjectMapper().read(content.openInputStream());
   }

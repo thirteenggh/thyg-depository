@@ -14,11 +14,6 @@ import com.google.inject.Provider;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.sonatype.nexus.common.app.ManagedLifecycle.Phase.CAPABILITIES;
 
-/**
- * Loads configuration when Nexus is initialized.
- *
- * @since capabilities 2.0
- */
 @Named
 @ManagedLifecycle(phase = CAPABILITIES)
 @Singleton

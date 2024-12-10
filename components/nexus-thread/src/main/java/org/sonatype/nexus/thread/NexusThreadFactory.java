@@ -3,9 +3,6 @@ package org.sonatype.nexus.thread;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/**
- * Nexus {@link ThreadFactory}.
- */
 public class NexusThreadFactory
     implements ThreadFactory
 {

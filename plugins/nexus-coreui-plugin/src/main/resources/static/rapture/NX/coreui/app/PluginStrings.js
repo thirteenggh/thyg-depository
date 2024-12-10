@@ -1280,7 +1280,7 @@ Ext.define(
       Nodes_Disable_read_only_mode_dialog: "禁用只读模式？",
       Nodes_Enable_read_only_mode: "启用只读模式",
       Nodes_Enable_read_only_mode_dialog: "启用只读模式？",
-      Nodes_Read_only_mode_warning: "Nexus Repository处于只读模式",
+      Nodes_Read_only_mode_warning: "Trust Repository处于只读模式",
       Nodes_force_release_dialog: "强制禁用只读模式？",
       Nodes_force_release: "强制禁用只读模式",
       Nodes_Quorum_lost_warning:
@@ -1457,7 +1457,6 @@ Ext.define(
         "许可已安装。如果您启用了新的 PRO 功能，则需要重启。",
       Licensing_Authentication_Validation: "{0} 许可需要验证您的凭证。",
 
-      // Nexus Lifecycle -> Server
       Clm_ClmSettings_Permission_Error: "您没有配置 IQ Server 的权限",
       Clm_Text: "IQ 服务器",
       Clm_Description: "管理 IQ Server 配置",

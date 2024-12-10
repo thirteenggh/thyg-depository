@@ -2,15 +2,6 @@ package org.sonatype.nexus.scheduling;
 
 import java.util.concurrent.Callable;
 
-/**
- * The main interface for all Tasks used in Nexus.
- *
- * All implementations should keep their configuration (if any) in the corresponding {@link TaskConfiguration} object,
- * due to persistence implications.  Or, the task might source it's configuration from other (injected) component.
- * Implementations <em>must not be marked as singletons</em>, container must provide new instance for each execution.
- *
- * @since 3.0
- */
 public interface Task
     extends Callable<Object>
 {

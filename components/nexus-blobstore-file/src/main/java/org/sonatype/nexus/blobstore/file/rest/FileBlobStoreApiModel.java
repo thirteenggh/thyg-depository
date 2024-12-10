@@ -12,7 +12,7 @@ public class FileBlobStoreApiModel
     extends BlobStoreApiModel
 {
   @ApiModelProperty(
-      "The path to the blobstore contents. This can be an absolute path to anywhere on the system Nexus Repository Manager " +
+      "The path to the blobstore contents. This can be an absolute path to anywhere on the system Trust Repository Manager " +
           "has access to or it can be a path relative to the sonatype-work directory."
   )
   @NotEmpty(message = "Path is required")

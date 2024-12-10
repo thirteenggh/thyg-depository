@@ -11,7 +11,7 @@
 
   <artifactId>nexus-orient-console</artifactId>
   <name>${project.groupId}:${project.artifactId}</name>
-  <description>Support utility that launches the OrientDB console for Nexus.</description>
+  <description>Support utility that launches the OrientDB console for Trust Repository.</description>
 
   <dependencies>
     <!--

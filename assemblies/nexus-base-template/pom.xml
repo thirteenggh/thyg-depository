@@ -15,9 +15,6 @@
   <packaging>pom</packaging>
 
   <dependencies>
-    <!--
-    Custom launcher for Nexus
-    -->
     <dependency>
       <groupId>org.sonatype.nexus</groupId>
       <artifactId>nexus-main</artifactId>

@@ -7,11 +7,6 @@ import org.apache.shiro.web.filter.authz.HttpMethodPermissionFilter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * Nexus {@link HttpMethodPermissionFilter}.
- *
- * @since 3.0
- */
 @Named
 @Singleton
 public class NexusHttpMethodPermissionFilter

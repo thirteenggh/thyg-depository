@@ -12,13 +12,8 @@ import org.apache.karaf.shell.api.action.Command
 import static org.apache.karaf.shell.support.ansi.SimpleAnsi.INTENSITY_BOLD
 import static org.apache.karaf.shell.support.ansi.SimpleAnsi.INTENSITY_NORMAL
 
-/**
- * Display Nexus system information.
- *
- * @since 3.0
- */
 @Named
-@Command(name = 'info', scope = 'nexus', description = 'Nexus system information')
+@Command(name = 'info', scope = 'nexus', description = 'Trust Repository system information')
 class InfoAction
     implements Action
 {

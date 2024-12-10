@@ -11,13 +11,6 @@ import com.google.common.collect.ImmutableList;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-/**
- * Represents the models and versions in the current Nexus installation.
- * 
- * If a specific model version is not provided then it defaults to "1.0".
- * 
- * @since 3.1
- */
 public class InitialStep
     implements UpgradePoint, DependencySource<UpgradePoint>
 {

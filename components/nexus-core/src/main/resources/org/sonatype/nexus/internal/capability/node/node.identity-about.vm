@@ -1,5 +1,5 @@
 <p>
-  Provides the unique identity for a Nexus server.
+  Provides the unique identity for a Trust Repository server.
 </p>
 <p>
   This capability is generally configured once and never changed.

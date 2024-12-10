@@ -317,13 +317,13 @@ def processBuildMode() {
 
 def processCliOptions(args) {
   CliBuilder cli = new CliBuilder(usage: './nxrm.groovy [options] [-x options to be passed through]',
-      header: 'Nexus Repository Manager control script')
+      header: 'Trust Repository Manager control script')
   cli.with {
     h longOpt: 'help', 'Show usage information'
     v longOpt: 'verbose', 'show verbose debug information'
     // modes (exclusive from each other)
     b longOpt: 'build', 'Build mode [default]. Intelligently does a full or incremental build.'
-    r longOpt: 'run', args: 1, 'Run mode. Starts Nexus with the specified assembly. Add \'debug\' for Nexus debug mode (i.e. remote debugging).'
+    r longOpt: 'run', args: 1, 'Run mode. Starts Trust Repository with the specified assembly. Add \'debug\' for Trust Repository debug mode (i.e. remote debugging).'
     _ longOpt: 'geb', '''Process dependencies for Geb test execution in your IDE.'''
     _ longOpt: 'sass', '''Compile Sass files to CSS.'''
     e longOpt: 'extract', 'Re-run the assembly extraction'
@@ -386,7 +386,7 @@ Examples:
                                     Same as ./nxrm.groovy --build
   ./nxrm.groovy -f                  Force a full build.
                                     Same as ./nxrm.groovy --build --full
-  ./nxrm.groovy -r pro debug        Run Nexus. Assembly is required. 'debug' is optional and starts Nexus in debug mode.
+  ./nxrm.groovy -r pro debug        Run Trust Repository. Assembly is required. 'debug' is optional and starts Trust Repository in debug mode.
                                     Same as ./nxrm.groovy --run
                                     If NXRM is running when you do a build, it will automatically be re-deployed and re-started.
   ./nxrm.groovy -t skip             Compile tests but skip execution. Note that the default is to skip all tests, even compilation, to save time.
@@ -516,9 +516,9 @@ def processAssemblyArgs() {
     buildOptions.assembliesDesc = "Yes (Build mode = full, assemblies required)"
   }
   else if (buildOptions.buildMode == "incremental" && !isNxrmRunning()) {
-    debug("Incremental build mode, but Nexus not running or no lock file exists so assemblies required")
+    debug("Incremental build mode, but Trust Repository not running or no lock file exists so assemblies required")
     buildOptions.assemblies = ""
-    buildOptions.assembliesDesc = "Yes (Incremental mode, but Nexus not running or no lock file exists so assemblies " +
+    buildOptions.assembliesDesc = "Yes (Incremental mode, but Trust Repository not running or no lock file exists so assemblies " +
         "required)"
   }
   else {
@@ -744,7 +744,6 @@ String getSshHost() {
 
 def runBuild() {
   if (buildOptions.buildMode == "full" && isNxrmRunning()) {
-    // Full mode means Maven clean which nukes target folder which kills Nexus
     warn("Shutting down NXRM due to full build")
     try {
       remoteSession(getSshHost(), trustUnknownHosts = true) {
@@ -808,7 +807,7 @@ def runDeploy() {
     deploy()
   }
   else if (isNxrmRunning()) {
-    info("Nexus found running. Restarting...")
+    info("Trust Repository found running. Restarting...")
 
 	try {
 		remoteSession(getSshHost(), trustUnknownHosts = true) {
@@ -828,17 +827,17 @@ def runDeploy() {
       counter++
       print "."
       if (counter >= 60) {
-        info("Failed to detect Nexus start within 60 seconds. Exiting")
+        info("Failed to detect Trust Repository start within 60 seconds. Exiting")
         return
       }
       sleep 1000
     }
     println "done"
-    info("Nexus Ready")
+    info("Trust Repository Ready")
   }
   else {
     deploy()
-    info("Nexus is not running. You may start it now with './nxrm.groovy -r <assembly> [debug]'.")
+    info("Trust Repository is not running. You may start it now with './nxrm.groovy -r <assembly> [debug]'.")
   }
 
 }
@@ -1032,7 +1031,7 @@ def checkRestore() {
 }
 
 def runNxrm() {
-  info("Starting Nexus on ${rcConfig.port}/${rcConfig.sslPort} (JDWP debug port: ${rcConfig.javaDebugPort})")
+  info("Starting Trust Repository on ${rcConfig.port}/${rcConfig.sslPort} (JDWP debug port: ${rcConfig.javaDebugPort})")
 
   // pre-flight checks
   checkRestore()

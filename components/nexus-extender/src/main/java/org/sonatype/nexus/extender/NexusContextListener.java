@@ -66,23 +66,11 @@ import static org.sonatype.nexus.common.app.ManagedLifecycle.Phase.TASKS;
 import static org.sonatype.nexus.common.property.SystemPropertiesHelper.getBoolean;
 import static org.sonatype.nexus.common.text.Strings2.isEmpty;
 
-/**
- * {@link ServletContextListener} that bootstraps the core Nexus application.
- *
- * @since 3.0
- */
 public class NexusContextListener
     implements ServletContextListener, FrameworkListener
 {
-  /**
-   * Start-level for the Nexus extender; this is distinct from the Karaf start-level (80).
-   * It should be equal to 'org.osgi.framework.startlevel.beginning' in config.properties.
-   */
   public static final int NEXUS_EXTENDER_START_LEVEL = 100;
 
-  /**
-   * Start-level at which point any additional Nexus plugins/features should be available.
-   */
   public static final int NEXUS_PLUGIN_START_LEVEL = 200;
 
   private static final Pattern INSTALL_MODE_FEATURE_FLAG_PATTERN = compile(

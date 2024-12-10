@@ -9,11 +9,6 @@ import org.apache.felix.utils.properties.Properties;
 import org.apache.karaf.main.ConfigProperties;
 import org.apache.karaf.main.lock.Lock;
 
-/**
- * Nexus implementation of Karaf's {@link Lock} that exits this process if another process has the lock.
- * 
- * @since 3.0
- */
 public class NexusFileLock
     implements Lock
 {
@@ -41,7 +36,7 @@ public class NexusFileLock
   public synchronized boolean lock() {
     if (!doLock()) {
       // logging is not configured yet, so use console
-      System.err.println("Nexus data directory already in use: " + dataDir);
+      System.err.println("Trust Repository data directory already in use: " + dataDir);
       System.exit(-1);
     }
     return true;

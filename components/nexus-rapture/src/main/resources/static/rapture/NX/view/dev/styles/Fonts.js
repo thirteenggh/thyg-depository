@@ -98,7 +98,7 @@ Ext.define('NX.view.dev.styles.Fonts', {
             thead: theadTemplate.apply(['Name', 'Description', 'Font & Weight', 'Use Cases', 'Pixels', 'Sample']),
             tbody: tbodyTemplate.apply({
               'h1': [
-                'Header', 'Proxima Nova Light', 'Logo', '20', { text: 'Sonatype Nexus', clz: 'nx-sample-h1' }
+                'Header', 'Proxima Nova Light', 'Logo', '20', { text: 'Trust Repository', clz: 'nx-sample-h1' }
               ],
               'h2': [
                 'Header', 'Proxima Nova Bold', 'Page Title', '26', { text: 'Development', clz: 'nx-sample-h2' }

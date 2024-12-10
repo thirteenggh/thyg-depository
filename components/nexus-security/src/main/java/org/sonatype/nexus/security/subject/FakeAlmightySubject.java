@@ -33,10 +33,6 @@ public class FakeAlmightySubject
 
   public static final Subject TASK_SUBJECT = forUserId(TASK_USERID);
 
-  /**
-   * Creates an "almighty" Subject with given String userId as principal. Should be used with care, as usually you
-   * don't need to tackle anything with this class, as Nexus uses this class only for scheduled tasks.
-   */
   public static Subject forUserId(final String fakeUserId) {
     return new FakeAlmightySubject(fakeUserId);
   }

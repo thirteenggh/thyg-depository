@@ -338,7 +338,7 @@ public class JettyServer
 
       StringBuilder buf = new StringBuilder();
       buf.append("\n-------------------------------------------------\n\n");
-      buf.append("Started ").append(banner instanceof String ? banner : "Nexus Repository Manager");
+      buf.append("Started ").append(banner instanceof String ? banner : "Trust Repository Manager");
       buf.append("\n\n-------------------------------------------------");
       log.info(buf.toString());
     }

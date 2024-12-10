@@ -153,7 +153,7 @@ public class ConnectorManager
       }
     }
     catch (IllegalStateException e) {
-      throw new IllegalStateException("Jetty HTTPS is not enabled in Nexus", e);
+      throw new IllegalStateException("Jetty HTTPS is not enabled in Trust Repository", e);
     }
   }
 

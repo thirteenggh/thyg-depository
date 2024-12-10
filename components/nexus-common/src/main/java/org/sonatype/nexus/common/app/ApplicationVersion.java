@@ -34,10 +34,5 @@ public interface ApplicationVersion
    */
   String getBuildTimestamp();
 
-  /**
-   * Returns the minimum Nexus 2 version allowed for migration compatibility with this build.
-   *
-   * @since 3.4
-   */
   String getNexus2CompatibleVersion();
 }

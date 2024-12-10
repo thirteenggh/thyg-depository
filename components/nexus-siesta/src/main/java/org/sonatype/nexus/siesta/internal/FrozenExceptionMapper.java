@@ -28,7 +28,7 @@ public class FrozenExceptionMapper
   protected Response convert(final FrozenException exception, final String id) {
     return Response.serverError()
         .status(SERVICE_UNAVAILABLE)
-        .entity(String.format("Nexus Repository Manager is in read-only mode: (ID %s)", id))
+        .entity(String.format("Trust Repository Manager is in read-only mode: (ID %s)", id))
         .type(TEXT_PLAIN)
         .build();
   }

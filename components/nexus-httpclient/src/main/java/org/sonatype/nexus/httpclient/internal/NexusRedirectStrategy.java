@@ -19,32 +19,6 @@ import org.slf4j.LoggerFactory;
 import static com.google.common.net.HttpHeaders.LOCATION;
 import static org.sonatype.nexus.httpclient.HttpSchemes.HTTP;
 
-// FIXME: Sort out where this was used/needed apply or remove
-/**
- * This special strategy will kick in only if Nexus performs content retrieval.
- * In every other case (non-GET method or GET method used in remote
- * availability check) this strategy defaults to {@link DefaultRedirectStrategy} behavior.
- * <p/>In case of content retrieval, the "do not follow redirect to index pages (collections), but accept and follow
- * any other redirects" strategy kicks in. If index page redirect is detected (by checking the URL path for trailing
- * slash), redirection mechanism of HC4 is stopped, and hence, the response will return with redirect response code
- * (301, 302 or 307). Main goal of this {@link org.apache.http.client.RedirectStrategy} is to save the
- * subsequent (the one following the redirect) request once we learn it would lead us to index page, as we
- * don't need index pages (hence, we do not fetch it only to throw it away).
- * <p/>
- * Usual problems are misconfiguration, where a repository published over HTTPS is configured with HTTP (ie.
- * admin mistyped the URL). Seemingly all work, but that is a source of performance issue, as every outgoing
- * Nexus request will "bounce", as usually HTTP port will redirect Nexus to HTTPS port, and then the artifact
- * will be fetched. Remedy for these scenarios is to edit the proxy repository configuration and update the
- * URL to proper protocol.
- * <p/>
- * This code <strong>assumes</strong> that remote repository is set up by best practices and common conventions,
- * hence, index page redirect means that target URL ends with slash. For more about this topic, read the
- * "To slash or not to slash" Google blog entry.
- *
- * @see <a href="http://googlewebmastercentral.blogspot.hu/2010/04/to-slash-or-not-to-slash.html">To slash or not to
- *      slash</a>
- * @since 3.0
- */
 public class NexusRedirectStrategy
     extends DefaultRedirectStrategy
 {

@@ -1,10 +1,5 @@
 /*global Ext, NX*/
 
-/**
- * Nexus application.
- *
- * @since 3.0
- */
 Ext.define('NX.app.Application', {
   extend: 'Ext.app.Application',
 

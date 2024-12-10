@@ -17,11 +17,6 @@ import com.google.common.collect.Lists;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 import static javax.ws.rs.core.MediaType.APPLICATION_XML;
 
-/**
- * Expose Nexus settings.
- *
- * @since 2.7
- */
 @Named
 @Singleton
 @Path(SettingsResource.RESOURCE_URI)

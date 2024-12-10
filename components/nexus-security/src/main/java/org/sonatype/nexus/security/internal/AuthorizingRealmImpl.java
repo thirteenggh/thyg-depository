@@ -106,7 +106,6 @@ public class AuthorizingRealmImpl
       }
     }
 
-    // clean up the realm names for processing (replace the Nexus*Realm with default)
     cleanUpRealmList(realmNames);
 
     if (RoleMappingUserManager.class.isInstance(userManager)) {
@@ -138,7 +137,7 @@ public class AuthorizingRealmImpl
     // user not managed by this Realm
     {
       throw new AuthorizationException("User for principals: " + principals.getPrimaryPrincipal()
-          + " not manged by Nexus realm.");
+          + " not manged by Trust Repository realm.");
     }
 
     return new SimpleAuthorizationInfo(roles);

@@ -119,9 +119,6 @@
               org.ops4j.pax.exam,
               org.ops4j.pax.exam.util
             </Import-Package>
-            <!--
-            Other imports will arrive later as Nexus starts
-            -->
             <DynamicImport-Package>*</DynamicImport-Package>
           </instructions>
         </configuration>

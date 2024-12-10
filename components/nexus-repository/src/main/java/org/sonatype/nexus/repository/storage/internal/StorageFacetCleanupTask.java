@@ -11,12 +11,6 @@ import org.sonatype.nexus.scheduling.TaskSupport;
 import static com.google.common.base.Preconditions.checkNotNull;
 import static org.sonatype.nexus.logging.task.TaskLogType.NEXUS_LOG_ONLY;
 
-/**
- * Background task (hidden from users) that cleans up deleted storage facets. Triggered programmatically on repo delete
- * or on Nexus startup.
- *
- * @since 3.2.1
- */
 @Named
 @TaskLogging(NEXUS_LOG_ONLY)
 public class StorageFacetCleanupTask

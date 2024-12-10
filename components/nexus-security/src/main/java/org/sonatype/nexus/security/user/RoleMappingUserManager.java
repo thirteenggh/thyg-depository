@@ -4,11 +4,6 @@ import java.util.Set;
 
 import org.sonatype.nexus.security.role.RoleIdentifier;
 
-/**
- * Extends the UserManager interface to allow a UserManager to add roles to users from other UserManagers.
- *
- * For example, a User might come from a JDBC UserManager, but has additional roles mapped in Nexus.
- */
 public interface RoleMappingUserManager
     extends UserManager
 {

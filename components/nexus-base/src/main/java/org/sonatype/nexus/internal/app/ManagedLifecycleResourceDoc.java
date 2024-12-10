@@ -4,11 +4,6 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 
-/**
- * REST API to manage the Nexus application lifecycle.
- *
- * @since 3.16
- */
 @Api("Lifecycle")
 public interface ManagedLifecycleResourceDoc
 {

@@ -67,7 +67,7 @@ public class SwaggerModel
 
   private Swagger createSwagger() {
     return new Swagger().info(new Info()
-        .title("Nexus Repository Manager REST API")
+        .title("Trust Repository Manager REST API")
         .version(applicationVersion.getVersion()));
   }
 

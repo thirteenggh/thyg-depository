@@ -12,13 +12,8 @@ import org.apache.karaf.shell.api.action.Command;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-/**
- * Command to manage the Nexus application lifecycle.
- *
- * @since 3.16
- */
 @Named
-@Command(name = "lifecyclePhase", scope = "nexus", description = "Move the Nexus application lifecycle to the given phase")
+@Command(name = "lifecyclePhase", scope = "nexus", description = "Move the Trust Repository application lifecycle to the given phase")
 public class LifecyclePhaseAction
     implements Action
 {

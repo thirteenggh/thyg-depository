@@ -55,7 +55,7 @@ public class ExtDirectExceptionHandler
     }
 
     if (e instanceof FrozenException || e.getCause() instanceof FrozenException) {
-      return error(new Exception("Nexus Repository Manager is in read-only mode"));
+      return error(new Exception("Trust Repository Manager is in read-only mode"));
     }
 
     // exception logging for all non-suppressed exceptions

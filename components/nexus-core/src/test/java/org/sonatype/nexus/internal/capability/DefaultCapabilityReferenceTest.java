@@ -425,9 +425,6 @@ public class DefaultCapabilityReferenceTest
     verify(capabilityRegistry).remove(underTest.context().id());
   }
 
-  /**
-   * When Nexus is shutdown capability is passivated.
-   */
   @Test
   public void passivateWhenNexusIsShutdown() throws Exception {
     underTest.enable();

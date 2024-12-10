@@ -14,11 +14,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J;
 
-/**
- * Nexus bootstrap launcher.
- *
- * @since 2.1
- */
 public class Launcher
 {
   static {

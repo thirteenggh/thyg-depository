@@ -21,7 +21,7 @@ To build the project and generate the template assembly use the included Maven w
 
 ## Running
 
-To run Nexus Repository, after building, unzip the assembly and start the server:
+To run Trust Repository, after building, unzip the assembly and start the server:
 
     unzip -d target assemblies/nexus-base-template/target/nexus-base-template-3.29.2-02.zip
     ./target/nexus-base-template-3.29.2-02/bin/nexus console
@@ -38,5 +38,5 @@ Looking to contribute to our code but need some help? There's a few ways to get 
 
 * File an issue in [our public JIRA](https://issues.sonatype.org/browse/NEXUS)
 * Check out the [Nexus3](http://stackoverflow.com/questions/tagged/nexus3) tag on Stack Overflow
-* Check out the [Nexus Repository User List](https://groups.google.com/a/glists.sonatype.com/forum/?hl=en#!forum/nexus-users)
+* Check out the [Trust Repository User List](https://groups.google.com/a/glists.sonatype.com/forum/?hl=en#!forum/nexus-users)
 * Connect with [@sonatypeDev](https://twitter.com/sonatypeDev) on Twitter

@@ -74,7 +74,6 @@ public class DefaultMimeSupport
             final List<String> detected = Lists.newArrayList();
             final MimeRule mimeType = nexusMimeTypes.getMimeRuleForExtension(key);
             if (mimeType != null) {
-              // add Nexus matches first
               detected.addAll(mimeType.getMimetypes());
               if (mimeType.isOverride()) {
                 return detected;

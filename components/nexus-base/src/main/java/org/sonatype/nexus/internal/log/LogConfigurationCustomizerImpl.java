@@ -6,11 +6,6 @@ import javax.inject.Singleton;
 import org.sonatype.nexus.common.log.LogConfigurationCustomizer;
 import org.sonatype.nexus.common.log.LoggerLevel;
 
-/**
- * Configures core Nexus loggers.
- *
- * @since 2.7
- */
 @Named
 @Singleton
 public class LogConfigurationCustomizerImpl
@@ -18,7 +13,6 @@ public class LogConfigurationCustomizerImpl
 {
   @Override
   public void customize(final Configuration configuration) {
-    // non Nexus loggers
     configuration.setLoggerLevel("org.apache.commons", LoggerLevel.WARN);
 
     configuration.setLoggerLevel("org.eclipse.jetty", LoggerLevel.INFO);
@@ -27,7 +21,6 @@ public class LogConfigurationCustomizerImpl
     // NEXUS-5456: limit noisy guice timing logger
     configuration.setLoggerLevel("com.google.inject.internal.util.Stopwatch", LoggerLevel.INFO);
 
-    // NEXUS-5835: limit noisy jmx connections to Nexus when root.level is DEBUG
     configuration.setLoggerLevel("javax.management", LoggerLevel.INFO);
     configuration.setLoggerLevel("sun.rmi", LoggerLevel.INFO);
 

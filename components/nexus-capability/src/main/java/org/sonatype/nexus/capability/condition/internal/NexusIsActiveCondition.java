@@ -62,16 +62,16 @@ public class NexusIsActiveCondition
 
   @Override
   public String toString() {
-    return "Nexus is active";
+    return "Trust Repository is active";
   }
 
   @Override
   public String explainSatisfied() {
-    return "Nexus is active";
+    return "Trust Repository is active";
   }
 
   @Override
   public String explainUnsatisfied() {
-    return "Nexus is not active";
+    return "Trust Repository is not active";
   }
 }

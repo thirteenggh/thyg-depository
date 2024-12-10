@@ -69,9 +69,6 @@ import static org.ops4j.pax.exam.CoreOptions.wrappedBundle;
 import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.editConfigurationFileExtend;
 import static org.ops4j.pax.exam.options.WrappedUrlProvisionOption.OverwriteMode.MERGE;
 
-/**
- * Support for Nexus integration tests.
- */
 public abstract class NexusITSupport
     extends NexusPaxExamSupport
 {
@@ -99,9 +96,6 @@ public abstract class NexusITSupport
     return configureNexusBase();
   }
 
-  /**
-   * Configure Nexus base with out-of-the box settings (no HTTPS).
-   */
   public static Option[] configureNexusBase() {
     return options(
         nexusDistribution("org.sonatype.nexus.assemblies", "nexus-base-template"),
@@ -116,18 +110,11 @@ public abstract class NexusITSupport
     );
   }
 
-  /**
-   * Make sure Nexus is responding on the standard base URL before continuing
-   */
   @Before
   public void waitForNexus() throws Exception {
     waitFor(responseFrom(nexusUrl));
   }
 
-  /**
-   * Verifies there are no unreleased HTTP connections in Nexus. This check runs automatically after each test but tests
-   * may as well run this check manually at suitable points during their execution.
-   */
   @After
   public void verifyNoConnectionLeak() throws Exception {
     // Some proxy repos directly serve upstream content, i.e. the connection to the upstream repo is actively used while
@@ -210,9 +197,6 @@ public abstract class NexusITSupport
     return new SSLConnectionSocketFactory(context, NoopHostnameVerifier.INSTANCE);
   }
 
-  /**
-   * @return Client truststore containing exported Nexus certificate
-   */
   protected KeyStore trustStore() throws Exception {
     KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());
     try (FileInputStream instream = new FileInputStream(resolveBaseFile("target/it-resources/ssl/client.jks"))) {
@@ -221,18 +205,12 @@ public abstract class NexusITSupport
     return trustStore;
   }
 
-  /**
-   * @return Context with preemptive auth enabled for Nexus
-   */
   protected HttpClientContext clientContext() {
     HttpClientContext context = HttpClientContext.create();
     context.setAuthCache(basicAuthCache());
     return context;
   }
 
-  /**
-   * @return Cache with preemptive auth enabled for Nexus
-   */
   protected AuthCache basicAuthCache() {
     String hostname = nexusUrl.getHost();
     AuthCache authCache = new BasicAuthCache();

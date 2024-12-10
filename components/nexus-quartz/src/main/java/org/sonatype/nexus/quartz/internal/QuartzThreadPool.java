@@ -16,11 +16,6 @@ import org.quartz.spi.ThreadPool;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
-/**
- * Nexus specific implementation of {@link ThreadPool} that is integrated with Shiro.
- *
- * @since 3.0
- */
 public class QuartzThreadPool
     implements ThreadPool
 {

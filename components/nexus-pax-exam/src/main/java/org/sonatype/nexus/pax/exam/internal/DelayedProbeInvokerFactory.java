@@ -31,11 +31,6 @@ import static org.sonatype.nexus.pax.exam.NexusPaxExamSupport.NEXUS_PAX_EXAM_INV
 import static org.sonatype.nexus.pax.exam.NexusPaxExamSupport.NEXUS_PAX_EXAM_TIMEOUT_DEFAULT;
 import static org.sonatype.nexus.pax.exam.NexusPaxExamSupport.NEXUS_PAX_EXAM_TIMEOUT_KEY;
 
-/**
- * Delayed {@link ProbeInvokerFactory} that waits for Nexus to start before invoking the testsuite.
- * 
- * @since 3.0
- */
 public class DelayedProbeInvokerFactory
     implements ProbeInvokerFactory
 {
@@ -74,22 +69,18 @@ public class DelayedProbeInvokerFactory
 
   private ProbeInvoker doCreateProbeInvoker(final Object context, final String expr) {
     try {
-      // wait for Nexus to start and register its Pax-Exam injector
       if (nexusInjectorTracker.waitForService(examTimeout) != null) {
 
         // use the real Pax-Exam invoker factory to supply the testsuite invoker
         return probeFactoryTracker.getService().createProbeInvoker(context, expr);
       }
-      throw new TestContainerException("Nexus failed to start after " + examTimeout + "ms");
+      throw new TestContainerException("Trust Repository failed to start after " + examTimeout + "ms");
     }
     catch (final InterruptedException e) {
-      throw new TestContainerException("Nexus failed to start after " + examTimeout + "ms", e);
+      throw new TestContainerException("Trust Repository failed to start after " + examTimeout + "ms", e);
     }
   }
 
-  /**
-   * @return Timeout to apply when waiting for Nexus to start
-   */
   private static int getExamTimeout(final BundleContext context) {
     final String value = context.getProperty(NEXUS_PAX_EXAM_TIMEOUT_KEY);
     if (value == null || value.trim().length() == 0) {

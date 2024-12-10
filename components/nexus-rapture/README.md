@@ -1,4 +1,4 @@
-# Nexus Rapture Baseapp
+# Trust Repository Rapture Baseapp
 
 This module provides the baseapp muck for ExtJS 6.5+ pre-compiled with
 [Sencha CMD](https://docs.sencha.com/cmd/6.5.3/index.html).

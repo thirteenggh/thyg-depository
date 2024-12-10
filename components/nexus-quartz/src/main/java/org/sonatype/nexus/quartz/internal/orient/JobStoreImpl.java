@@ -146,7 +146,6 @@ public class JobStoreImpl
 
   @Override
   public void setInstanceName(final String instanceName) {
-    // scheduler-name (ie. Nexus)
     this.instanceName = instanceName;
   }
 

@@ -14,12 +14,6 @@ import org.apache.http.protocol.HttpContext;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-/**
- * An {@link SSLContextSelector} that will make use of Nexus SSL TrustStore depending on value of
- * {@link SSLContextSelector#USE_TRUST_STORE} attribute.
- *
- * @since 3.0
- */
 @Named
 @Singleton
 public class HttpContextAttributeSSLContextSelector

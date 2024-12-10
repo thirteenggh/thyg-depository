@@ -20,11 +20,6 @@ import org.apache.http.protocol.HttpContext;
 
 import static org.apache.http.conn.ssl.SSLConnectionSocketFactory.getDefaultHostnameVerifier;
 
-/**
- * Nexus specific implementation of {@link LayeredConnectionSocketFactory}, used for HTTPS connections.
- *
- * @since 2.8
- */
 public class NexusSSLConnectionSocketFactory
     implements LayeredConnectionSocketFactory
 {

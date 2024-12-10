@@ -11,11 +11,6 @@ import org.eclipse.sisu.launch.SisuTracker;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
 
-/**
- * {@link Bundle} extender that manages bundles with Nexus components.
- *
- * @since 3.0
- */
 public class NexusBundleExtender
     extends SisuExtender
 {

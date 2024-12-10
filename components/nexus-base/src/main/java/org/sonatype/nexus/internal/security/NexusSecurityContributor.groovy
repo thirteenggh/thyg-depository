@@ -9,11 +9,6 @@ import org.sonatype.nexus.security.config.SecurityContributor
 import org.sonatype.nexus.security.config.memory.MemoryCPrivilege
 import org.sonatype.nexus.security.config.memory.MemoryCRole
 
-/**
- * Default Nexus security configuration.
- *
- * @since 3.0
- */
 @Named
 @Singleton
 class NexusSecurityContributor

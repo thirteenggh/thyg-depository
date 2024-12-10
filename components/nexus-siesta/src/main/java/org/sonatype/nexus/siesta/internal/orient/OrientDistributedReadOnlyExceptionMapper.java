@@ -30,7 +30,7 @@ public class OrientDistributedReadOnlyExceptionMapper
     if ("OWriteOperationNotPermittedException".equals(exception.getClass().getSimpleName())) {
       return Response.serverError()
           .status(SERVICE_UNAVAILABLE)
-          .entity(String.format("Nexus Repository Manager is in read-only mode: (ID %s)", id))
+          .entity(String.format("Trust Repository Manager is in read-only mode: (ID %s)", id))
           .type(TEXT_PLAIN)
           .build();
     }

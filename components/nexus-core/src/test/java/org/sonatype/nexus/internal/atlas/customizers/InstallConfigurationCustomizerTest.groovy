@@ -148,7 +148,7 @@ class InstallConfigurationCustomizerTest
         <discovery-strategy enabled="true" class="com.hazelcast.aws.AwsDiscoveryStrategy">
           <properties>
             <property name="tag-key">Purpose</property>
-            <property name="tag-value">Nexus Repository Manager</property>
+            <property name="tag-value">Trust Repository Manager</property>
             <property name="iam-role">EC2_IAM_ROLE_NAME</property>
             <property name="security-group-name">EC2_SECURITY_GROUP_NAME</property>
             <property name="region">us-west-1</property>
@@ -183,7 +183,7 @@ class InstallConfigurationCustomizerTest
         <discovery-strategy enabled="true" class="com.hazelcast.aws.AwsDiscoveryStrategy">
           <properties>
             <property name="tag-key">Purpose</property>
-            <property name="tag-value">Nexus Repository Manager</property>
+            <property name="tag-value">Trust Repository Manager</property>
             <property name="iam-role">EC2_IAM_ROLE_NAME</property>
             <property name="security-group-name">EC2_SECURITY_GROUP_NAME</property>
             <property name="region">us-west-1</property>

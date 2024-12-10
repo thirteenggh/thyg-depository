@@ -1,7 +1,5 @@
 /*global Ext, NX*/
 
-/*global NX, Ext, Sonatype*/
-
 /**
  * 'combo' factory.
  *

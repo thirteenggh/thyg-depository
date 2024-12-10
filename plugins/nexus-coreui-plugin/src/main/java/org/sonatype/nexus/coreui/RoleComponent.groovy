@@ -186,7 +186,7 @@ class RoleComponent
     return new RoleXO(
         id: input.roleId,
         version: input.version,
-        source: (input.source == DEFAULT_SOURCE || !input.source) ? 'Nexus' : input.source,
+        source: (input.source == DEFAULT_SOURCE || !input.source) ? 'Trust Repository' : input.source,
         name: input.name != null ? input.name : input.roleId,
         description: input.description != null ? input.description : input.roleId,
         readOnly: input.readOnly,

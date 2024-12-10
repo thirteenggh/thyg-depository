@@ -7,11 +7,6 @@ import java.util.Collection;
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.SSLContext;
 
-/**
- * Nexus SSL TrustStore.
- *
- * @since ssl 1.0
- */
 public interface TrustStore
 {
   /**

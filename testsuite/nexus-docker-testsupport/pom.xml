@@ -16,10 +16,6 @@
 
   <dependencies>
 
-    <!--
-      Dependencies provided by the Nexus container
-    -->
-
     <dependency>
       <groupId>org.sonatype.nexus</groupId>
       <artifactId>nexus-pax-exam</artifactId>

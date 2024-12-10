@@ -36,7 +36,7 @@ exports[`SystemInformation renders correctly 1`] = `
         <p
           class="nx-page-title__description nx-feature-description"
         >
-          Submit a support request to Sonatype
+          Submit a support request to TianheCloud
         </p>
       </div>
     </div>

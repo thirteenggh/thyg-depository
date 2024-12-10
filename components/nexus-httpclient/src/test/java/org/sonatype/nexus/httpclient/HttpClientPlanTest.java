@@ -26,12 +26,12 @@ public class HttpClientPlanTest
 
   @Test
   public void testGetUserAgentNoSuffix() {
-    testGetUserAgent("Agent of Nexus", null);
+    testGetUserAgent("Agent of Trust Repository", null);
   }
 
   @Test
   public void testGetUserAgentWithSuffix() {
-    testGetUserAgent("Agent of Nexus", "Some suffix");
+    testGetUserAgent("Agent of Trust Repository", "Some suffix");
   }
 
   private void testGetUserAgent(String base, String suffix) {

@@ -10,11 +10,6 @@ import com.google.common.collect.ImmutableList;
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
 
-/**
- * Nexus MIME type rule.
- *
- * @since 3.0
- */
 public class MimeRule
 {
   private final boolean override;

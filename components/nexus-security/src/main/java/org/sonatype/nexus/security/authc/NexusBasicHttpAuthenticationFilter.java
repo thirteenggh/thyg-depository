@@ -22,15 +22,6 @@ import org.slf4j.LoggerFactory;
 import static org.sonatype.nexus.security.SecurityFilter.ATTR_USER_ID;
 import static org.sonatype.nexus.security.SecurityFilter.ATTR_USER_PRINCIPAL;
 
-/**
- * Nexus security filter providing HTTP BASIC authentication support.
- *
- * Knows about special handling needed for anonymous subjects.
- *
- * Does not create sessions.
- *
- * @since 3.0
- */
 @Named
 @Singleton
 public class NexusBasicHttpAuthenticationFilter

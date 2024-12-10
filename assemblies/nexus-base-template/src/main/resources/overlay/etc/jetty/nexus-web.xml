@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
 
-  <display-name>Sonatype Nexus</display-name>
+  <display-name>Trust Repository</display-name>
 
   <listener>
     <listener-class>org.sonatype.nexus.bootstrap.osgi.BootstrapListener</listener-class>

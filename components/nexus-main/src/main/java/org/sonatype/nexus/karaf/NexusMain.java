@@ -7,11 +7,6 @@ import java.util.logging.Logger;
 
 import org.osgi.framework.Version;
 
-/**
- * Nexus alternative to Karaf's main launcher which checks the Java version before launching.
- * 
- * @since 3.0
- */
 public class NexusMain
     extends org.apache.karaf.main.Main
 {
@@ -97,9 +92,9 @@ public class NexusMain
     setDirectory("karaf.etc", baseDir, "etc/karaf");
     setDirectory("logback.etc", baseDir, "etc/logback");
 
-    log.info("Launching Nexus..."); // temporary logging just to show custom launcher is being used in ITs
+    log.info("Launching Trust Repository..."); // temporary logging just to show custom launcher is being used in ITs
     super.launch();
-    log.info("...launched Nexus!");
+    log.info("...launched Trust Repository!");
   }
 
   private IllegalArgumentException badArgument(final String format, final Object... args) {
@@ -138,7 +133,7 @@ public class NexusMain
   static void requireMinimumJavaVersion() {
     if (isNotSupportedVersion(System.getProperty("java.version"))) {
       // logging is not configured yet, so use console
-      System.err.println("Nexus requires minimum java.version: " + MINIMUM_JAVA_VERSION);
+      System.err.println("Trust Repository requires minimum java.version: " + MINIMUM_JAVA_VERSION);
       if (versionCheckRequired()) {
         System.exit(-1);
       }

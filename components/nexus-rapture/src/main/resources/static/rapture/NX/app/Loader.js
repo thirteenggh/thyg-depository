@@ -1,10 +1,5 @@
 /*global Ext, NX*/
 
-/**
- * Nexus application loader.
- *
- * @since 3.0
- */
 Ext.define('NX.app.Loader', {
   requires: [
     'NX.app.Application',

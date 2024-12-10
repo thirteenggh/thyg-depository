@@ -60,8 +60,8 @@ public class LocalNodeAccess
       UUID cn = UUID.randomUUID();
       keyStoreManager.generateAndStoreKeyPair(
           cn.toString(),
-          "Nexus",
-          "Sonatype",
+          "Trust Repository",
+          "TianheCloud",
           "Silver Spring",
           "MD",
           "US");

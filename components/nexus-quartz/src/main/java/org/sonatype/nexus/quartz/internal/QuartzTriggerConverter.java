@@ -34,11 +34,6 @@ import static org.sonatype.nexus.scheduling.schedule.Schedule.SCHEDULE_START_AT;
 import static org.sonatype.nexus.scheduling.schedule.Schedule.csvToSet;
 import static org.sonatype.nexus.scheduling.schedule.Schedule.stringToDate;
 
-/**
- * Provides conversion between Quartz {@link Trigger} and Nexus {@link Schedule}.
- *
- * @since 3.0
- */
 public class QuartzTriggerConverter
     extends ComponentSupport
 {
@@ -48,9 +43,6 @@ public class QuartzTriggerConverter
     this.scheduleFactory = checkNotNull(scheduleFactory);
   }
 
-  /**
-   * Converts a Nexus {@link Schedule} into a Quartz {@link Trigger}.
-   */
   public TriggerBuilder convert(final Schedule schedule) {
     checkNotNull(schedule);
 
@@ -155,12 +147,6 @@ public class QuartzTriggerConverter
     return String.format("0 %d %d", calendar.get(Calendar.MINUTE), calendar.get(Calendar.HOUR_OF_DAY));
   }
 
-  /**
-   * Converts Quartz {@link Trigger} into Nexus {@link Schedule}.
-   *
-   * Only converts triggers created initially from schedulers,
-   * as the {@link Trigger#getJobDataMap()} is used as the source of configuration.
-   */
   public Schedule convert(final Trigger trigger) {
     checkNotNull(trigger);
 

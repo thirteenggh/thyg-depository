@@ -8,21 +8,6 @@ import com.google.inject.matcher.Matcher;
 import com.google.inject.name.Names;
 import org.aopalliance.intercept.MethodInterceptor;
 
-/**
- * Workaround to automatically share method interceptors until
- * <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=403108">proper Sisu feature</a> is implemented.
- * 
- * <p>
- * This module is only bound once in its originating realm, when the bindInterceptor method is first called. The Nexus
- * Plugin Manager can then see this module via the injected dynamic list of AbstractInterceptorModules and will install
- * it in any plugins registered after this point.
- * 
- * <p>
- * Note: you can't contribute interceptors to earlier plugins or from a plugin to core, but the other direction works
- * fine.
- * 
- * @since 2.4
- */
 public abstract class AbstractInterceptorModule
     extends AbstractModule
 {

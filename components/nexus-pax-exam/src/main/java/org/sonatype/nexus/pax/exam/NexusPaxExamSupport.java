@@ -64,23 +64,6 @@ import static org.ops4j.pax.exam.OptionUtils.combine;
 import static org.ops4j.pax.exam.karaf.options.KarafDistributionOption.*;
 import static org.testcontainers.containers.BindMode.READ_ONLY;
 
-/**
- * Provides support for testing Nexus with Pax-Exam, test-cases can inject any component from the distribution. <br>
- * <br>
- * Extend this class and choose the base distribution (and any optional plugins) that you want to test against:
- *
- * <pre>
- * &#064;Configuration
- * public static Option[] configureNexus() {
- *   return options( //
- *       nexusDistribution(&quot;org.sonatype.nexus.assemblies&quot;, &quot;nexus-base-template&quot;), //
- *       nexusPlugin(&quot;org.sonatype.nexus.plugins&quot;, &quot;nexus-repository-raw&quot;) //
- *   );
- * }
- * </pre>
- *
- * @since 3.0
- */
 @RunWith(SafeRunner.class)
 @SafeRunWith(PaxExam.class)
 @ExamFactory(NexusPaxExamTestFactory.class)
@@ -203,16 +186,10 @@ public abstract class NexusPaxExamSupport
     return testData.resolveFile(path);
   }
 
-  /**
-   * Resolves path against the Nexus work directory.
-   */
   public File resolveWorkFile(final String path) {
     return new File(applicationDirectories.getWorkDirectory(), path);
   }
 
-  /**
-   * Resolves path against the Nexus temp directory.
-   */
   public File resolveTempFile(final String path) {
     return new File(applicationDirectories.getTemporaryDirectory(), path);
   }
@@ -232,9 +209,6 @@ public abstract class NexusPaxExamSupport
 
   // -------------------------------------------------------------------------
 
-  /**
-   * @return Timeout to apply when waiting for Nexus to start
-   */
   public static int examTimeout() {
     try {
       return Integer.parseInt(System.getProperty(NEXUS_PAX_EXAM_TIMEOUT_KEY));
@@ -340,29 +314,14 @@ public abstract class NexusPaxExamSupport
 
   // -------------------------------------------------------------------------
 
-  /**
-   * To test a different version set the 'it.nexus.bundle.version' system property.<br>
-   * You can also override the 'groupId', 'artifactId', and 'classifier' the same way.
-   *
-   * @return Pax-Exam option to install a Nexus distribution based on groupId and artifactId
-   */
   public static Option nexusDistribution(final String groupId, final String artifactId) {
     return nexusDistribution(maven(groupId, artifactId).versionAsInProject().type("zip"));
   }
 
-  /**
-   * To test a different version set the 'it.nexus.bundle.version' system property.<br>
-   * You can also override the 'groupId', 'artifactId', and 'classifier' the same way.
-   *
-   * @return Pax-Exam option to install a Nexus distribution based on groupId, artifactId and classifier
-   */
   public static Option nexusDistribution(final String groupId, final String artifactId, final String classifier) {
     return nexusDistribution(maven(groupId, artifactId).classifier(classifier).versionAsInProject().type("zip"));
   }
 
-  /**
-   * @return Pax-Exam option to install a Nexus distribution from the given framework zip
-   */
   public static Option nexusDistribution(final MavenUrlReference frameworkZip) {
 
     // support explicit CI setting as well as automatic detection
@@ -532,48 +491,30 @@ public abstract class NexusPaxExamSupport
     }
   }
 
-  /**
-   * @return Pax-Exam option to change the context path for the Nexus distribution
-   */
   public static Option withContextPath(final String contextPath) {
     return editConfigurationFilePut(NEXUS_PROPERTIES_FILE, "nexus-context-path", contextPath);
   }
 
-  /**
-   * @return Pax-Exam option to enable HTTPS support in the Nexus distribution
-   */
   public static Option withHttps(final File keystore) {
     return composite(
         editConfigurationFileExtend(NEXUS_PROPERTIES_FILE, "nexus-args", "${jetty.etc}/jetty-https.xml"),
         replaceConfigurationFile("etc/ssl/keystore.jks", keystore));
   }
 
-  /**
-   * @return Pax-Exam option to change the Nexus edition based on groupId and artifactId
-   */
   public static Option nexusEdition(final String groupId, final String artifactId) {
     return nexusEdition(maven(groupId, artifactId).versionAsInProject().classifier("features").type("xml"),
         artifactId + '/' + MavenUtils.getArtifactVersion(groupId, artifactId));
   }
 
-  /**
-   * @return Pax-Exam option to change the Nexus edition using the given feature XML and name
-   */
   public static Option nexusEdition(final MavenUrlReference featureXml, final String name) {
     return composite(features(featureXml), editConfigurationFilePut(NEXUS_PROPERTIES_FILE, "nexus-edition", name));
   }
 
-  /**
-   * @return Pax-Exam option to install a Nexus plugin based on groupId and artifactId
-   */
   public static Option nexusFeature(final String groupId, final String artifactId) {
     return nexusFeature(maven(groupId, artifactId).versionAsInProject().classifier("features").type("xml"),
         artifactId + '/' + MavenUtils.getArtifactVersion(groupId, artifactId));
   }
 
-  /**
-   * @return Pax-Exam option to install a Nexus plugin from the given feature XML and name
-   */
   public static Option nexusFeature(final MavenUrlReference featureXml, final String name) {
     return composite(features(featureXml), editConfigurationFileExtend(NEXUS_PROPERTIES_FILE, "nexus-features", name));
   }
@@ -668,9 +609,6 @@ public abstract class NexusPaxExamSupport
 
   // -------------------------------------------------------------------------
 
-  /**
-   * @return Pax-Exam option to install custom invoker factory that waits for Nexus to start
-   */
   private static Option nexusPaxExam() {
     final String version = MavenUtils.getArtifactVersion("org.sonatype.nexus", "nexus-pax-exam");
     Option result = mavenBundle("org.sonatype.nexus", "nexus-pax-exam", version).startLevel(0);

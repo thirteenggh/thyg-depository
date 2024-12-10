@@ -30,11 +30,6 @@ import org.apache.shiro.authz.annotation.RequiresPermissions;
 
 import static com.softwarementors.extjs.djn.EncodingUtils.htmlEncode;
 
-/*
- * Endpoint used by the Nexus RM UI for component uploads
- *
- * @since 3.16
- */
 @Named
 @Singleton
 @Path(UploadResource.RESOURCE_PATH)

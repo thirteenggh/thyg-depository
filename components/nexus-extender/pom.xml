@@ -108,9 +108,6 @@
       <scope>test</scope>
     </dependency>
 
-    <!--
-    Optional support for Pax-Exam if/when deployed alongside Nexus
-    -->
     <dependency>
       <groupId>org.ops4j.pax.exam</groupId>
       <artifactId>pax-exam</artifactId>

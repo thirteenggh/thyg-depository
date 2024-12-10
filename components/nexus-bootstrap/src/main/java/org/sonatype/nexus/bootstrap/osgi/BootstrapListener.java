@@ -107,16 +107,13 @@ public class BootstrapListener
         throw new UnsupportedOperationException("Missing OSGi container");
       }
 
-      // bootstrap our chosen Nexus edition
       requireProperty(properties, NEXUS_EDITION);
       requireProperty(properties, NEXUS_DB_FEATURE);
       installNexusEdition(bundleContext, properties);
 
-      // watch out for the real Nexus listener
       listenerTracker = new ListenerTracker(bundleContext, "nexus", servletContext);
       listenerTracker.open();
 
-      // watch out for the real Nexus filter
       filterTracker = new FilterTracker(bundleContext, "nexus");
       filterTracker.open();
 

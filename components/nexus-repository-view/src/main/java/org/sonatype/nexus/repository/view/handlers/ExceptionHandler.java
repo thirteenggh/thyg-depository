@@ -67,11 +67,11 @@ public class ExceptionHandler
   }
 
   private Response readOnly(final Context context, Exception e) {
-    log.warn("Nexus Repository Manager is in read-only mode: {} {}: {}",
+    log.warn("Trust Repository Manager is in read-only mode: {} {}: {}",
         context.getRequest().getAction(),
         context.getRequest().getPath(),
         e.toString());
 
-    return HttpResponses.serviceUnavailable("Nexus Repository Manager is in read-only mode");
+    return HttpResponses.serviceUnavailable("Trust Repository Manager is in read-only mode");
   }
 }

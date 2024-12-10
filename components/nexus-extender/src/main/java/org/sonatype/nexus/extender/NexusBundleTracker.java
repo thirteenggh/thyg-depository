@@ -17,11 +17,6 @@ import org.osgi.framework.wiring.BundleWiring;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * {@link Bundle} tracker that tracks and binds bundles with Nexus components.
- *
- * @since 3.0
- */
 public class NexusBundleTracker
     extends SisuTracker
 {

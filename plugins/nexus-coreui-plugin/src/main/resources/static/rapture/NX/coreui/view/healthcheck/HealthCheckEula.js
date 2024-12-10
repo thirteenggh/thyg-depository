@@ -12,7 +12,7 @@ Ext.define('NX.coreui.view.healthcheck.HealthCheckEula', {
     'NX.util.Url'
   ],
 
-  title: 'Nexus IQ Server Terms of Use',
+  title: 'Trust Repository IQ Server Terms of Use',
 
   layout: 'fit',
   autoShow: true,

@@ -85,14 +85,6 @@ public interface Capability
    */
   void onActivate() throws Exception;
 
-  /**
-   * Callback when capability is passivated. Passivation will be triggered before a capability is removed, on
-   * Nexus shutdown or when capability is disabled.
-   * <p/>
-   * If an exception occurs, during invocation of this method, the exception will be ignored.
-   *
-   * @throws Exception If capability cannot be passivated
-   */
   void onPassivate() throws Exception;
 
   /**

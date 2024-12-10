@@ -1,10 +1,5 @@
 /*global Ext, NX*/
 
-/**
- * Ssl use Nexus Truststore checkbox.
- *
- * @since 3.0
- */
 Ext.define('NX.coreui.view.ssl.SslUseTrustStore', {
   extend: 'Ext.form.FieldContainer',
   alias: 'widget.nx-coreui-sslusetruststore',

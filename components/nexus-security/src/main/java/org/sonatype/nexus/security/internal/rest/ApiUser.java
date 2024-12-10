@@ -48,7 +48,7 @@ public class ApiUser
   @ApiModelProperty(NexusSecurityApiConstants.STATUS_DESCRIPTION)
   private ApiUserStatus status;
 
-  @ApiModelProperty("Indicates whether the user's properties could be modified by the Nexus Repository Manager. "
+  @ApiModelProperty("Indicates whether the user's properties could be modified by the Trust Repository Manager. "
       + "When false only roles are considered during update.")
   private boolean readOnly;
 
@@ -57,7 +57,7 @@ public class ApiUser
   private Set<String> roles;
 
   @ApiModelProperty("The roles which the user has been assigned in an external source, "
-      + "e.g. LDAP group. These cannot be changed within the Nexus Repository Manager.")
+      + "e.g. LDAP group. These cannot be changed within the Trust Repository Manager.")
   private Set<String> externalRoles;
 
   @SuppressWarnings("unused")

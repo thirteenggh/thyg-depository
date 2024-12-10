@@ -13,11 +13,6 @@ import org.sonatype.nexus.jmx.reflect.ManagedOperation;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-/**
- * JMX controller to manage the Nexus application lifecycle.
- *
- * @since 3.16
- */
 @Named
 @Singleton
 @ManagedObject
