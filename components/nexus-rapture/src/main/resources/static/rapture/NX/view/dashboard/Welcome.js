@@ -237,7 +237,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              // height: 200,
+              maxHeight: 200,
               padding: 32,
               items: [
                 {
@@ -270,7 +270,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               flex: 1,
               layout: "hbox",
               margin: "0 32",
-              // height: 200,
+              maxHeight: 200,
               padding: 32,
               items: [
                 {
@@ -302,7 +302,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              // height: 200,
+              maxHeight: 200,
               padding: 32,
               items: [
                 {
@@ -368,7 +368,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              // height: 200,
+              maxHeight: 200,
               padding: 32,
               items: [
                 {
@@ -403,7 +403,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               flex: 1,
               layout: "hbox",
               margin: "0 32",
-              // height: 200,
+              maxHeight: 200,
               padding: 32,
               items: [
                 {
@@ -437,7 +437,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              // height: 200,
+              maxHeight: 200,
               padding: 32,
               items: [
                 {
