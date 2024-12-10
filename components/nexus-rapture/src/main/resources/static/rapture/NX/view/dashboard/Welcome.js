@@ -56,21 +56,16 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>系统健康</h2><label>查看系统状态</label>",
                 },
               ],
-              listeners: {
-                render: function (container) {
-                  container.getEl().on("click", function () {
-                    NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("admin/support/status")
-                    );
-                  });
-                },
-              },
             },
             {
               xtype: "container",
               cls: "top-right",
               width: 24,
               height: 80,
+              layout: {
+                type: 'vbox',
+                align: 'middle'
+              },
               items: [
                 {
                   xtype: "image",
@@ -80,6 +75,15 @@ Ext.define("NX.view.dashboard.Welcome", {
               ],
             },
           ],
+          listeners: {
+            render: function (container) {
+              container.getEl().on("click", function () {
+                NX.Bookmarks.navigateTo(
+                  NX.Bookmarks.fromToken("admin/support/status")
+                );
+              });
+            },
+          },
         },
         // 清理策略卡片
         {
@@ -110,21 +114,16 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>清理策略</h2><label>管理清理策略</label>",
                 },
               ],
-              listeners: {
-                render: function (container) {
-                  container.getEl().on("click", function () {
-                    NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("admin/repository/cleanuppolicies")
-                    );
-                  });
-                },
-              },
             },
             {
               xtype: "container",
               cls: "top-right",
               width: 24,
               height: 80,
+              layout: {
+                type: 'vbox',
+                align: 'middle'
+              },
               items: [
                 {
                   xtype: "image",
@@ -134,6 +133,15 @@ Ext.define("NX.view.dashboard.Welcome", {
               ],
             },
           ],
+          listeners: {
+            render: function (container) {
+              container.getEl().on("click", function () {
+                NX.Bookmarks.navigateTo(
+                  NX.Bookmarks.fromToken("admin/repository/cleanuppolicies")
+                );
+              });
+            },
+          },
         },
         // 浏览存储库卡片
         {
@@ -163,21 +171,16 @@ Ext.define("NX.view.dashboard.Welcome", {
                   html: "<h2>浏览</h2><label>浏览存储库</label>",
                 },
               ],
-              listeners: {
-                render: function (container) {
-                  container.getEl().on("click", function () {
-                    NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/browse")
-                    );
-                  });
-                },
-              },
             },
             {
               xtype: "container",
               cls: "top-right",
               width: 24,
               height: 80,
+              layout: {
+                type: 'vbox',
+                align: 'middle'
+              },
               items: [
                 {
                   xtype: "image",
@@ -187,6 +190,15 @@ Ext.define("NX.view.dashboard.Welcome", {
               ],
             },
           ],
+          listeners: {
+            render: function (container) {
+              container.getEl().on("click", function () {
+                NX.Bookmarks.navigateTo(
+                  NX.Bookmarks.fromToken("browse/browse")
+                );
+              });
+            },
+          },
         },
       ],
     },
@@ -197,6 +209,10 @@ Ext.define("NX.view.dashboard.Welcome", {
       margin: "24 0 24 0",
       // height: 340,
       flex: 1,
+      layout: {
+        type: "hbox",
+        align: "stretch",
+      },
       items: [
         {
           xtype: "container",
@@ -213,14 +229,15 @@ Ext.define("NX.view.dashboard.Welcome", {
             align: "stretch",
             pack: "space-between",
           },
-          height: 200,
+          // height: 200,
+          flex:1,
           items: [
             {
               xtype: "container",
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              height: 200,
+              // height: 200,
               padding: 32,
               items: [
                 {
@@ -253,7 +270,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               flex: 1,
               layout: "hbox",
               margin: "0 32",
-              height: 200,
+              // height: 200,
               padding: 32,
               items: [
                 {
@@ -285,7 +302,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              height: 200,
+              // height: 200,
               padding: 32,
               items: [
                 {
@@ -339,14 +356,15 @@ Ext.define("NX.view.dashboard.Welcome", {
             align: "stretch",
             pack: "space-between",
           },
-          height: 200,
+          // height: 200,
+          flex:1,
           items: [
             {
               xtype: "container",
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              height: 200,
+              // height: 200,
               padding: 32,
               items: [
                 {
@@ -381,7 +399,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               flex: 1,
               layout: "hbox",
               margin: "0 32",
-              height: 200,
+              // height: 200,
               padding: 32,
               items: [
                 {
@@ -415,7 +433,7 @@ Ext.define("NX.view.dashboard.Welcome", {
               cls: "repository",
               flex: 1,
               layout: "hbox",
-              height: 200,
+              // height: 200,
               padding: 32,
               items: [
                 {
