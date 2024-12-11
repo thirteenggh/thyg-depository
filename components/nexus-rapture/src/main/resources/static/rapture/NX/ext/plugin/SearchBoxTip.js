@@ -24,9 +24,7 @@ Ext.define('NX.ext.plugin.SearchBoxTip', {
       alignTarget: hostComponent,
       cls: 'nx-search-tip',
       defaultAlign: 'tl-bl',
-      html: me.message + '<br>' +
-          '<span class="footer"><a target="_blank" rel="noopener" href="' + NX.controller.Help.getDocsUrl() + '/Searching+for+Components">' +
-          NX.I18n.get('SearchBoxTip_LearnMore') + ' <i class="fa fa-external-link" /></a></span>',
+      html: me.message + '<br>',
       listeners: {
         afterrender: function() {
           me.tip.el.set({'data-for-id': hostComponent.getInputId()});

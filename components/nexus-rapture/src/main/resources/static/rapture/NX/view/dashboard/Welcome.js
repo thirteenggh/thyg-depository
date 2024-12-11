@@ -19,189 +19,189 @@ Ext.define("NX.view.dashboard.Welcome", {
   },
   padding: 24,
   items: [
-    {
-      xtype: "container",
-      layout: {
-        type: "hbox",
-        align: "stretch",
-      },
-      height: 160,
-      // flex: 1,
-      items: [
-        // 系统健康卡片
-        {
-          xtype: "container",
-          cls: "top-card",
-          flex: 1,
-          layout: "hbox",
-          height: 160,
-          items: [
-            {
-              xtype: "container",
-              cls: "top-left",
-              layout: "hbox", // 水平布局
-              flex: 1,
-              height: 80,
-              items: [
-                {
-                  xtype: "image",
-                  cls: "top-icon",
-                  src: NX.Icons.url("health", "x80"),
-                  alt: "系统健康",
-                },
-                {
-                  xtype: "container",
-                  cls: "top-title",
-                  height: 80,
-                  html: "<h2>系统健康</h2><label>查看系统状态</label>",
-                },
-              ],
-            },
-            {
-              xtype: "container",
-              cls: "top-right",
-              width: 24,
-              height: 80,
-              layout: {
-                type: 'vbox',
-                align: 'middle'
-              },
-              items: [
-                {
-                  xtype: "image",
-                  cls: "top-arrow",
-                  src: NX.Icons.url("arrow", "x24"),
-                },
-              ],
-            },
-          ],
-          listeners: {
-            render: function (container) {
-              container.getEl().on("click", function () {
-                NX.Bookmarks.navigateTo(
-                  NX.Bookmarks.fromToken("admin/support/status")
-                );
-              });
-            },
-          },
-        },
-        // 清理策略卡片
-        {
-          xtype: "container",
-          cls: "top-card",
-          flex: 1,
-          layout: "hbox", // 水平布局
-          height: 160,
-          margin: "0 32",
-          items: [
-            {
-              xtype: "container",
-              cls: "top-left",
-              layout: "hbox", // 水平布局
-              flex: 1,
-              height: 80,
-              items: [
-                {
-                  xtype: "image",
-                  cls: "top-icon",
-                  src: NX.Icons.url("clear", "x80"),
-                  alt: "清理策略",
-                },
-                {
-                  xtype: "container",
-                  cls: "top-title",
-                  height: 80,
-                  html: "<h2>清理策略</h2><label>管理清理策略</label>",
-                },
-              ],
-            },
-            {
-              xtype: "container",
-              cls: "top-right",
-              width: 24,
-              height: 80,
-              layout: {
-                type: 'vbox',
-                align: 'middle'
-              },
-              items: [
-                {
-                  xtype: "image",
-                  cls: "top-arrow",
-                  src: NX.Icons.url("arrow", "x24"),
-                },
-              ],
-            },
-          ],
-          listeners: {
-            render: function (container) {
-              container.getEl().on("click", function () {
-                NX.Bookmarks.navigateTo(
-                  NX.Bookmarks.fromToken("admin/repository/cleanuppolicies")
-                );
-              });
-            },
-          },
-        },
-        // 浏览存储库卡片
-        {
-          xtype: "container",
-          cls: "top-card",
-          flex: 1,
-          layout: "hbox", // 水平布局
-          height: 160,
-          items: [
-            {
-              xtype: "container",
-              cls: "top-left",
-              layout: "hbox", // 水平布局
-              flex: 1,
-              height: 80,
-              items: [
-                {
-                  xtype: "image",
-                  cls: "top-icon",
-                  src: NX.Icons.url("browse", "x80"),
-                  alt: "浏览",
-                },
-                {
-                  xtype: "container",
-                  cls: "top-title",
-                  height: 80,
-                  html: "<h2>浏览</h2><label>浏览存储库</label>",
-                },
-              ],
-            },
-            {
-              xtype: "container",
-              cls: "top-right",
-              width: 24,
-              height: 80,
-              layout: {
-                type: 'vbox',
-                align: 'middle'
-              },
-              items: [
-                {
-                  xtype: "image",
-                  cls: "top-arrow",
-                  src: NX.Icons.url("arrow", "x24"),
-                },
-              ],
-            },
-          ],
-          listeners: {
-            render: function (container) {
-              container.getEl().on("click", function () {
-                NX.Bookmarks.navigateTo(
-                  NX.Bookmarks.fromToken("browse/browse")
-                );
-              });
-            },
-          },
-        },
-      ],
-    },
+    // {
+    //   xtype: "container",
+    //   layout: {
+    //     type: "hbox",
+    //     align: "stretch",
+    //   },
+    //   height: 160,
+    //   // flex: 1,
+    //   items: [
+    //     // 系统健康卡片
+    //     {
+    //       xtype: "container",
+    //       cls: "top-card",
+    //       flex: 1,
+    //       layout: "hbox",
+    //       height: 160,
+    //       items: [
+    //         {
+    //           xtype: "container",
+    //           cls: "top-left",
+    //           layout: "hbox", // 水平布局
+    //           flex: 1,
+    //           height: 80,
+    //           items: [
+    //             {
+    //               xtype: "image",
+    //               cls: "top-icon",
+    //               src: NX.Icons.url("health", "x80"),
+    //               alt: "系统健康",
+    //             },
+    //             {
+    //               xtype: "container",
+    //               cls: "top-title",
+    //               height: 80,
+    //               html: "<h2>系统健康</h2><label>查看系统状态</label>",
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           xtype: "container",
+    //           cls: "top-right",
+    //           width: 24,
+    //           height: 80,
+    //           layout: {
+    //             type: 'vbox',
+    //             align: 'middle'
+    //           },
+    //           items: [
+    //             {
+    //               xtype: "image",
+    //               cls: "top-arrow",
+    //               src: NX.Icons.url("arrow", "x24"),
+    //             },
+    //           ],
+    //         },
+    //       ],
+    //       listeners: {
+    //         render: function (container) {
+    //           container.getEl().on("click", function () {
+    //             NX.Bookmarks.navigateTo(
+    //               NX.Bookmarks.fromToken("admin/support/status")
+    //             );
+    //           });
+    //         },
+    //       },
+    //     },
+    //     // 清理策略卡片
+    //     {
+    //       xtype: "container",
+    //       cls: "top-card",
+    //       flex: 1,
+    //       layout: "hbox", // 水平布局
+    //       height: 160,
+    //       margin: "0 32",
+    //       items: [
+    //         {
+    //           xtype: "container",
+    //           cls: "top-left",
+    //           layout: "hbox", // 水平布局
+    //           flex: 1,
+    //           height: 80,
+    //           items: [
+    //             {
+    //               xtype: "image",
+    //               cls: "top-icon",
+    //               src: NX.Icons.url("clear", "x80"),
+    //               alt: "清理策略",
+    //             },
+    //             {
+    //               xtype: "container",
+    //               cls: "top-title",
+    //               height: 80,
+    //               html: "<h2>清理策略</h2><label>管理清理策略</label>",
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           xtype: "container",
+    //           cls: "top-right",
+    //           width: 24,
+    //           height: 80,
+    //           layout: {
+    //             type: 'vbox',
+    //             align: 'middle'
+    //           },
+    //           items: [
+    //             {
+    //               xtype: "image",
+    //               cls: "top-arrow",
+    //               src: NX.Icons.url("arrow", "x24"),
+    //             },
+    //           ],
+    //         },
+    //       ],
+    //       listeners: {
+    //         render: function (container) {
+    //           container.getEl().on("click", function () {
+    //             NX.Bookmarks.navigateTo(
+    //               NX.Bookmarks.fromToken("admin/repository/cleanuppolicies")
+    //             );
+    //           });
+    //         },
+    //       },
+    //     },
+    //     // 浏览存储库卡片
+    //     {
+    //       xtype: "container",
+    //       cls: "top-card",
+    //       flex: 1,
+    //       layout: "hbox", // 水平布局
+    //       height: 160,
+    //       items: [
+    //         {
+    //           xtype: "container",
+    //           cls: "top-left",
+    //           layout: "hbox", // 水平布局
+    //           flex: 1,
+    //           height: 80,
+    //           items: [
+    //             {
+    //               xtype: "image",
+    //               cls: "top-icon",
+    //               src: NX.Icons.url("browse", "x80"),
+    //               alt: "浏览",
+    //             },
+    //             {
+    //               xtype: "container",
+    //               cls: "top-title",
+    //               height: 80,
+    //               html: "<h2>浏览</h2><label>浏览存储库</label>",
+    //             },
+    //           ],
+    //         },
+    //         {
+    //           xtype: "container",
+    //           cls: "top-right",
+    //           width: 24,
+    //           height: 80,
+    //           layout: {
+    //             type: 'vbox',
+    //             align: 'middle'
+    //           },
+    //           items: [
+    //             {
+    //               xtype: "image",
+    //               cls: "top-arrow",
+    //               src: NX.Icons.url("arrow", "x24"),
+    //             },
+    //           ],
+    //         },
+    //       ],
+    //       listeners: {
+    //         render: function (container) {
+    //           container.getEl().on("click", function () {
+    //             NX.Bookmarks.navigateTo(
+    //               NX.Bookmarks.fromToken("browse/browse")
+    //             );
+    //           });
+    //         },
+    //       },
+    //     },
+    //   ],
+    // },
     // 主流技术栈软件仓库
     {
       xtype: "container",
