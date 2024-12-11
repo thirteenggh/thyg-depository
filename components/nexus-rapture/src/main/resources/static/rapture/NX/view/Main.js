@@ -116,7 +116,7 @@ Ext.define('NX.view.Main', {
           NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/support/status'));
         }
       },
-      {xtype: 'nx-header-refresh', ui: 'nx-header'},
+      // {xtype: 'nx-header-refresh', ui: 'nx-header'},
       // {xtype: 'nx-header-help', ui: 'nx-header'},
       {
         xtype: 'nx-header-mode',

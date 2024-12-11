@@ -12808,8 +12808,10 @@ a.x-color-picker-item:hover {
 }
 
 .x-grid-item-over {
-    color: #333;
-    background-color: #e8e8e8;
+    /* color: #333;
+    background-color: #e8e8e8; */
+    color: #FFFFFF;
+    background: rgba(236,239,244,0.08);
 }
 
 .x-grid-item-focused {

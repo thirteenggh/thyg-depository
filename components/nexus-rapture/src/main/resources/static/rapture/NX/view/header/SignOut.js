@@ -12,15 +12,16 @@ Ext.define('NX.view.header.SignOut', {
     'NX.I18n'
   ],
 
-  iconCls: 'x-fa fa-sign-out-alt',
-
+  // iconCls: 'x-fa fa-sign-out-alt',
+  width: 5,
   /**
    * @override
    */
   initComponent: function() {
     Ext.apply(this, {
-      text: NX.I18n.get('Header_SignOut_Text'),
-      tooltip: NX.I18n.get('Header_SignOut_Tooltip'),
+      // text: NX.I18n.get('Header_SignOut_Text'),
+      // tooltip: NX.I18n.get('Header_SignOut_Tooltip'),
+      text: '',
       hidden: true
     });
 

@@ -6364,7 +6364,9 @@ tr.x-grid-subtable-row {
     /**
  * @class NX.view.header.Panel
  */
-    background-color: #222;
+    /* background-color: #222; */
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.04);
     padding: 0 0 0 10px;
 }
 
@@ -7135,9 +7137,12 @@ tr.x-grid-subtable-row {
 }
 
 .x-panel-body-nx-feature-menu {
-    background: #ddd;
+    /* background: #ddd;
     border-color: #c2c2c2;
-    color: #333;
+    color: #333; */
+    background: #1D3058;
+    border-color: #1D3058;
+    color: #8493AD;
     font-size: 16px;
     font-weight: normal;
     font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -7357,7 +7362,8 @@ tr.x-grid-subtable-row {
 }
 
 .x-panel-nx-feature-menu .x-panel-body-nx-feature-menu .x-grid-item .x-grid-cell {
-    background-color: #ddd;
+    /* background-color: #ddd; */
+    background-color: #1D3058;
     height: 2.5em;
 }
 

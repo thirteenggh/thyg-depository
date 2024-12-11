@@ -36,9 +36,11 @@ Ext.define('NX.view.header.Panel', {
 
         // set height to ensure we have uniform size and not depend on what is in the toolbar
         height: 50,
-
+        width: 300,
         anchor: '100%',
-
+        style:{
+          backgroundColor: '#1D3058',
+        },
         defaults: {
           scale: 'medium'
         },
