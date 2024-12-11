@@ -537,7 +537,7 @@ Ext.define(
       Repository_Facet_Npm_Title: "npm",
       Repository_Facet_Npm_RemoveNonCataloged_Label: "移除未编目版本",
       Repository_Facet_Npm_RemoveNonCataloged_HelpText:
-        '从npm包元数据中移除未编目版本。<span style="font-weight: bold">IQ: 审计和隔离</span>功能必须启用，此功能才能生效。<a target="_blank" href="http://links.sonatype.com/products/nxrm3/docs/npm-with-firewall">了解更多。</a>',
+        '从npm包元数据中移除未编目版本。<span style="font-weight: bold">IQ: 审计和隔离</span>功能必须启用，此功能才能生效。',
       Repository_Facet_HttpClientFacet_AuthenticationType_FieldLabel:
         "认证类型",
       Repository_Facet_HttpClientFacet_AuthenticationType_Username: "用户名",
@@ -682,7 +682,6 @@ Ext.define(
         '<p>选择所有“raw”格式内容<br/><i>format == "raw"</i></p>' +
         '<p>选择所有路径以“/org/sonatype/nexus”开头的“maven2”内容<br/><i>format == "maven2" and path =^ "/org/sonatype/nexus"</i></p>' +
         "<br/>" +
-        '<p>查看<a href="http://links.sonatype.com/products/nexus/selectors/docs" target="_blank" rel="noopener">文档</a>了解更多细节</p>' +
         "</div>",
       Selector_SelectorSettingsForm_Expression_Examples_jexl:
         '<div style="font-size: 11px"><br/>' +
@@ -690,7 +689,6 @@ Ext.define(
         '<p>选择所有“raw”格式内容<br/><i>format == "raw"</i></p>' +
         '<p>选择所有路径以“/org/sonatype/nexus”开头的“maven2”内容<br/><i>format == "maven2" and path =^ "/org/sonatype/nexus"</i></p>' +
         "<br/>" +
-        '<p>查看<a href="http://links.sonatype.com/products/nexus/selectors/docs" target="_blank" rel="noopener">文档</a>了解更多细节</p>' +
         "</div>",
       Selector_SelectorSettingsForm_SelectorID_Title: "选择器ID",
       Selector_SelectorSettingsForm_Specification_Title: "规范",

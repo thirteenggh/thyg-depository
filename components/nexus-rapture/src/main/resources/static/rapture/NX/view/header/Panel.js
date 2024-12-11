@@ -5,23 +5,20 @@
  *
  * @since 3.0
  */
-Ext.define('NX.view.header.Panel', {
-  extend: 'Ext.container.Container',
-  alias: 'widget.nx-header-panel',
-  requires: [
-    'NX.I18n',
-    'NX.State'
-  ],
+Ext.define("NX.view.header.Panel", {
+  extend: "Ext.container.Container",
+  alias: "widget.nx-header-panel",
+  requires: ["NX.I18n", "NX.State"],
 
-  cls: 'nx-header-panel',
+  cls: "nx-header-panel",
 
   layout: {
-    type: 'vbox',
-    align: 'stretch',
-    pack: 'start'
+    type: "vbox",
+    align: "stretch",
+    pack: "start",
   },
 
-  ariaRole: 'banner',
+  ariaRole: "banner",
 
   /**
    * @override
@@ -30,46 +27,57 @@ Ext.define('NX.view.header.Panel', {
     var me = this;
 
     me.items = [
-      { xtype: 'nx-header-branding', hidden: true },
+      { xtype: "nx-header-branding", hidden: true },
       {
-        xtype: 'toolbar',
+        xtype: "toolbar",
 
         // set height to ensure we have uniform size and not depend on what is in the toolbar
         height: 50,
         width: 300,
-        anchor: '100%',
-        style:{
-          backgroundColor: '#1D3058',
+        anchor: "100%",
+        style: {
+          backgroundColor: "#1D3058",
         },
         defaults: {
-          scale: 'medium'
+          scale: "medium",
         },
 
         items: [
-          { xtype: 'nx-header-logo' },
           {
-            xtype: 'container',
-            layout: {
-              type: 'vbox',
-              pack: 'center'
+            xtype: "container",
+            layout: "hbox",
+            height: 50,
+            width: 300,
+            style: {
+              backgroundColor: "#1D3058",
             },
             items: [
+              { xtype: "nx-header-logo" },
               {
-                xtype: 'label',
-                cls: 'productname',
-                text: NX.I18n.get('Header_Panel_Logo_Text')
+                xtype: "container",
+                layout: {
+                  type: "vbox",
+                  pack: "center",
+                },
+                items: [
+                  {
+                    xtype: "label",
+                    cls: "productname",
+                    text: NX.I18n.get("Header_Panel_Logo_Text"),
+                  },
+                  {
+                    xtype: "label",
+                    cls: "productspec",
+                    text: NX.State.getBrandedEditionAndVersion(),
+                  },
+                ],
               },
-              {
-                xtype: 'label',
-                cls: 'productspec',
-                text: NX.State.getBrandedEditionAndVersion()
-              }
-            ]
-          }
-        ]
-      }
+            ],
+          },
+        ],
+      },
     ];
 
     me.callParent();
-  }
+  },
 });

@@ -268,8 +268,7 @@ Ext.define('NX.coreui.controller.Search', {
         timedOut = rawData && rawData.timedOut,
         limited = rawData && rawData.limited,
         format = Ext.util.Format.numberRenderer('0,000'),
-        learnMore = '<a target="_blank" rel="noopener" href="' + NX.controller.Help.getDocsUrl() + '/Searching+for+Components">' +
-            NX.I18n.get('Search_Results_TimedOut_LearnMore') + ' <i class="fa fa-external-link" /></a>';
+        learnMore = '';
 
     if (timedOut) {
       this.timedOutMessage = NX.I18n.format('Search_Results_TimedOut_Message', searchRequestTimeoutInSeconds, learnMore);
