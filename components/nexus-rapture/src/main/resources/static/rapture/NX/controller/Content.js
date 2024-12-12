@@ -95,7 +95,8 @@ Ext.define('NX.controller.Content', {
     content.resetUnsavedChangesFlag();
 
     // set browser title
-    NX.global.document.title = text + ' - ' + NX.State.getValue('uiSettings').title;
+    // NX.global.document.title = text + ' - ' + NX.State.getValue('uiSettings').title;
+    NX.global.document.title = text + ' - ' + '可信软件仓库';
 
     // update description
     if (description === undefined) {
