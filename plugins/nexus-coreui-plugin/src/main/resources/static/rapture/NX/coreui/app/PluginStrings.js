@@ -1073,7 +1073,7 @@ Ext.define(
 
       // Admin -> System -> API
       Api_Text: "API",
-      Api_Description: "了解如何以编程方式与私有 弹性云计算软件平台 交互",
+      Api_Description: "了解如何以编程方式与可信软件仓库交互",
 
       // Admin -> System -> Capabilities
       Capabilities_Text: "功能",
