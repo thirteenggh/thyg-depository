@@ -35,6 +35,7 @@ Ext.define("NX.view.header.Panel", {
         height: 50,
         width: 300,
         anchor: "100%",
+        padding: "8 12",
         style: {
           backgroundColor: "#1D3058",
         },

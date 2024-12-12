@@ -226,7 +226,7 @@ Ext.define("NX.view.dashboard.Welcome", {
           cls: "repository-cards",
           layout: {
             type: "hbox", // 水平布局
-            align: "stretch",
+            align: "middle",
             pack: "space-between",
           },
           // height: 200,
@@ -357,7 +357,7 @@ Ext.define("NX.view.dashboard.Welcome", {
           cls: "repository-cards",
           layout: {
             type: "hbox", // 水平布局
-            align: "stretch",
+            align: "middle",
             pack: "space-between",
           },
           // height: 200,
