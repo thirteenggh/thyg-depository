@@ -93,7 +93,7 @@ Ext.define('NX.view.header.Mode', {
           cls: 'nx-modebutton',
           scale: 'medium',
           // min-width here as the user-mode extends past this with user-name
-          minWidth: 49,
+          minWidth: me.minWidth || 49,
           toggleGroup: 'mode',
           allowDepress: false,
           handler: function(button) {

@@ -79,7 +79,7 @@ Ext.define('NX.view.Main', {
 
     me.down('nx-header-panel>toolbar').add([
       // 2x pad
-      ' ', ' ',
+      // ' ', ' ',
       {
         xtype: 'nx-header-mode',
         name: 'browse',
@@ -93,10 +93,10 @@ Ext.define('NX.view.Main', {
         xtype: 'nx-header-mode',
         name: 'admin',
         title: "",
-        width: 5,
         // title: NX.I18n.get('Header_AdminMode_Title'),
         // tooltip: NX.I18n.get('Header_AdminMode_Tooltip'),
         // iconCls: 'x-fa fa-cog',
+        minWidth: 5,
         autoHide: true,
         collapseMenu: false
       },

@@ -59,6 +59,7 @@ Ext.define("NX.view.header.Panel", {
                   type: "vbox",
                   pack: "center",
                 },
+                margin: "0 0 0 16",
                 items: [
                   {
                     xtype: "label",
@@ -69,9 +70,6 @@ Ext.define("NX.view.header.Panel", {
                     xtype: "label",
                     cls: "productspec",
                     text: NX.State.getBrandedEditionAndVersion(),
-                    style: {
-                      marginLeft: 20,
-                    }
                   },
                 ],
               },
