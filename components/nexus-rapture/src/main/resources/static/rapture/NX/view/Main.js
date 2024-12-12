@@ -92,9 +92,10 @@ Ext.define('NX.view.Main', {
       {
         xtype: 'nx-header-mode',
         name: 'admin',
-        title: NX.I18n.get('Header_AdminMode_Title'),
-        tooltip: NX.I18n.get('Header_AdminMode_Tooltip'),
-        iconCls: 'x-fa fa-cog',
+        title: "",
+        // title: NX.I18n.get('Header_AdminMode_Title'),
+        // tooltip: NX.I18n.get('Header_AdminMode_Tooltip'),
+        // iconCls: 'x-fa fa-cog',
         autoHide: true,
         collapseMenu: false
       },
@@ -116,7 +117,7 @@ Ext.define('NX.view.Main', {
           NX.Bookmarks.navigateTo(NX.Bookmarks.fromToken('admin/support/status'));
         }
       },
-      // {xtype: 'nx-header-refresh', ui: 'nx-header'},
+      {xtype: 'nx-header-refresh', ui: 'nx-header'},
       // {xtype: 'nx-header-help', ui: 'nx-header'},
       {
         xtype: 'nx-header-mode',

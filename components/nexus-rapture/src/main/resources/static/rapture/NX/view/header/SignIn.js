@@ -12,16 +12,15 @@ Ext.define('NX.view.header.SignIn', {
     'NX.I18n'
   ],
 
-  // iconCls: 'x-fa fa-sign-in-alt',
+  iconCls: 'x-fa fa-sign-in-alt',
   width: 5,
   /**
    * @override
    */
   initComponent: function() {
     Ext.apply(this, {
-      // text: NX.I18n.get('Header_SignIn_Text'),
-      // tooltip: NX.I18n.get('Header_SignIn_Tooltip')
-      text: '',
+      text: NX.I18n.get('Header_SignIn_Text'),
+      tooltip: NX.I18n.get('Header_SignIn_Tooltip')
     });
 
     this.callParent();

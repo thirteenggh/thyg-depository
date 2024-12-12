@@ -69,6 +69,9 @@ Ext.define("NX.view.header.Panel", {
                     xtype: "label",
                     cls: "productspec",
                     text: NX.State.getBrandedEditionAndVersion(),
+                    style: {
+                      marginLeft: 20,
+                    }
                   },
                 ],
               },
