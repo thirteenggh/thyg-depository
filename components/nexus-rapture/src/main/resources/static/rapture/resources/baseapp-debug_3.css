@@ -6367,7 +6367,7 @@ tr.x-grid-subtable-row {
     /* background-color: #222; */
     background: #FFFFFF;
     box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.04);
-    padding: 0 0 0 10px;
+    padding: 0;
 }
 
 .nx-header-panel .productname {
