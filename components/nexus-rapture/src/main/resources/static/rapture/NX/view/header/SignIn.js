@@ -13,7 +13,6 @@ Ext.define('NX.view.header.SignIn', {
   ],
 
   iconCls: 'x-fa fa-sign-in-alt',
-  width: 5,
   /**
    * @override
    */

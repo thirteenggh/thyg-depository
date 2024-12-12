@@ -13,7 +13,6 @@ Ext.define('NX.view.header.SignOut', {
   ],
 
   iconCls: 'x-fa fa-sign-out-alt',
-  width: 5,
   /**
    * @override
    */
