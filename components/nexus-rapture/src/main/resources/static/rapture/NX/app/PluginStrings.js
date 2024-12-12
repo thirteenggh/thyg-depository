@@ -91,7 +91,7 @@ Ext.define(
       ChangeOrderWindow_Cancel_Button: "@Button_Cancel",
 
       // Server
-      User_ConnectFailure_Message: "操作失败，无法联系到服务器",
+      User_ConnectFailure_Message: "操作失败，无法连接到服务器",
       State_Reconnected_Message: "服务器已重新连接",
       State_Disconnected_Message: "服务器已断开",
       UiSessionTimeout_Expire_Message: "会话即将过期",
