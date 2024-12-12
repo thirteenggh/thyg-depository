@@ -33,9 +33,7 @@ Ext.define("NX.view.header.Panel", {
 
         // set height to ensure we have uniform size and not depend on what is in the toolbar
         height: 50,
-        width: 300,
         anchor: "100%",
-        padding: "8 12",
         style: {
           backgroundColor: "#1D3058",
         },
@@ -49,6 +47,7 @@ Ext.define("NX.view.header.Panel", {
             layout: "hbox",
             height: 50,
             width: 300,
+            padding: "8 12",
             style: {
               backgroundColor: "#1D3058",
             },
