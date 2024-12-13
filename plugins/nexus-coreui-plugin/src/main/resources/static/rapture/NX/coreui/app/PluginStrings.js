@@ -98,7 +98,7 @@ Ext.define(
       AnalyzeApplicationWindow_Analyze_Button: "分析",
       AnalyzeApplicationWindow_Cancel_Button: "取消",
       AnalyzeApplicationWindow_Form_Html:
-        '<p>应用分析对应用进行深度检查，识别潜在风险。更多信息可在<a href="http://links.sonatype.com/products/insight/ac/home" target="_blank" rel="noopener" class="x-link">此处</a>查看。</p>',
+        '<p>应用分析对应用进行深度检查，识别潜在风险。</p>',
       AnalyzeApplicationWindow_Loading_Mask: "正在加载",
       AnalyzeApplicationWindow_No_Assets_Error_Title: "组件无应用资产",
       AnalyzeApplicationWindow_No_Assets_Error_Message:
@@ -333,7 +333,7 @@ Ext.define(
       Repository_RepositoryList_URL_Header: "URL",
       Repository_RepositoryList_Filter_EmptyText: "没有存储库匹配“{$filter}”",
       Repository_RepositoryList_EmptyText:
-        '<div class="summary">还没有创建存储库<br><span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div><div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是存储库？</h3><p>存储库是存储位置，例如包、库、二进制文件和容器，它们被检索以便安装或使用。创建和管理存储库是Nexus Repository Manager配置的重要组成部分，因为它允许您向最终用户展示内容，同时也为他们提供了存储更多内容的位置。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/repository" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<div class="summary">还没有创建存储库<br><span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div><div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是存储库？</h3><p>存储库是存储位置，例如包、库、二进制文件和容器，它们被检索以便安装或使用。创建和管理存储库是可信软件仓库配置的重要组成部分，因为它允许您向最终用户展示内容，同时也为他们提供了存储更多内容的位置。</p></div>',
       Repository_RepositoryFeature_Delete_Button: "删除存储库",
       Repository_RepositoryFeature_RebuildIndex_Button: "重建索引",
       Repository_RepositoryFeature_HealthCheckDisable_Button: "禁用健康检查",
@@ -351,7 +351,7 @@ Ext.define(
         "允许客户端使用V1 API与此存储库交互",
       Repository_Facet_DockerConnectorFacet_Title: "存储库连接器",
       Repository_Facet_DockerConnectorFacet_Help:
-        '<em>连接器允许Docker客户端直接连接到托管注册表，但并不总是必需的。请咨询我们的<a href="https://links.sonatype.com/products/nexus/docker-ssl-connector/docs" target="_blank" rel="noopener">文档</a>，以确定哪种连接器适合您的用例。有关扩展存储库的信息，请查看我们的<a href="https://links.sonatype.com/products/nexus/docker-scaling-repositories/docs" target="_blank" rel="noopener">扩展文档</a>。</em>',
+        '<em>连接器允许Docker客户端直接连接到托管注册表，但并不总是必需的。</em>',
       Repository_Facet_DockerConnectorFacet_HttpPort_FieldLabel: "HTTP",
       Repository_Facet_DockerConnectorFacet_HttpPort_HelpText:
         "在指定端口创建HTTP连接器。通常，如果服务器位于安全代理后面，则使用此设置。",
@@ -366,7 +366,7 @@ Ext.define(
       Repository_Facet_DockerProxyFacet_IndexUrl_HelpText: "Docker索引的位置",
       Repository_Facet_DockerProxyFacet_ForeignLayers_FieldLabel: "外部层缓存",
       Repository_Facet_DockerProxyFacet_ForeignLayers_HelpText:
-        "允许Nexus Repository Manager下载和缓存外部层",
+        "允许可信软件仓库下载和缓存外部层",
       Repository_Facet_DockerProxyFacet_ForeignLayersWhitelist_FieldLabel:
         "外部层允许的URL",
       Repository_Facet_DockerProxyFacet_ForeignLayersWhitelist_HelpText:
@@ -465,10 +465,10 @@ Ext.define(
         "被代理的远程存储库的位置，例如 https://rubygems.org",
       Repository_Facet_ProxyFacet_Yum_Remote_HelpText:
         "被代理的远程存储库的位置，例如 http://mirror.centos.org/centos/",
-      Ssl_SslUseTrustStore_BoxLabel: "使用Nexus信任库",
+      Ssl_SslUseTrustStore_BoxLabel: "使用信任库",
       Ssl_SslUseTrustStore_Certificate_Button: "查看证书",
       Ssl_SslUseTrustStore_Certificate_HelpText:
-        "使用存储在Nexus信任库中的证书连接到外部系统",
+        "使用存储在信任库中的证书连接到外部系统",
       Maven2Facet_VersionPolicy_FieldLabel: "版本策略",
       Maven2Facet_VersionPolicy_HelpText: "此存储库存储哪种类型的构件？",
       Maven2Facet_VersionPolicy_EmptyText: "选择一个策略",
@@ -568,9 +568,7 @@ Ext.define(
       HealthCheckRepositoryColumn_Analyze: "分析",
       HealthCheckRepositoryColumn_Analyze_Tooltip:
         "<span><h2>存储库健康检查分析</h2>点击此按钮请求IQ服务器进行存储库健康检查（RHC）" +
-        "该过程是非侵入性和非破坏性的。IQ服务器将返回有关存储库中开源组件的可操作质量和安全信息。" +
-        '<br><br><a href="http://links.sonatype.com/products/clm/rhc/home" rel="noopener" ' +
-        'target="_blank">了解IQ服务器存储库健康检查如何帮助您更快地制作更好的软件</a></span>',
+        "该过程是非侵入性和非破坏性的。IQ服务器将返回有关存储库中开源组件的可操作质量和安全信息。",
       HealthCheckRepositoryColumn_Analyze_Dialog_Title: "分析存储库",
       HealthCheckRepositoryColumn_Analyze_Dialog_Msg:
         "您是否要分析存储库 {0} 和其他存储库的安全隐患和许可问题？",
@@ -582,13 +580,10 @@ Ext.define(
       HealthCheckRepositoryColumn_Loading: "正在加载...",
       HealthCheckRepositoryColumn_Unavailable_Tooltip:
         "<span><h2>存储库健康检查不可用</h2>无法在此存储库上执行存储库健康检查（RHC），" +
-        "因为它是不支持的类型或服务中断。<br><br>" +
-        '<a href="http://links.sonatype.com/products/clm/rhc/home" rel="noopener" ' +
-        'target="_blank">了解IQ服务器存储库健康检查如何帮助您更快地制作更好的软件</a></span>',
+        "因为它是不支持的类型或服务中断。<br><br>",
 
       HealthCheckSummary_Help:
-        '<a href="http://links.sonatype.com/products/nexus/rhc/manual-remediation-with-rhc" target="_blank"' +
-        ' rel="noopener">我应该如何使用这份报告？</a>',
+        '',
 
       // Admin -> Repository -> Blob Stores
       Blobstores_Text: "Blob存储",
@@ -613,8 +608,7 @@ Ext.define(
         '<div class="summary">还没有创建Blob存储<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是Blob存储？</h3>' +
-        '<p>您通过代理存储库下载的二进制资产，或发布到托管存储库的资产，都存储在与这些存储库关联的Blob存储中。在传统的单节点NXRM部署中，Blob存储通常与本地文件系统目录相关联，通常在sonatype-work目录内。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/blob-store" ' +
-        'target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>您通过代理存储库下载的二进制资产，或发布到托管存储库的资产，都存储在与这些存储库关联的Blob存储中。在传统的单节点NXRM部署中，Blob存储通常与本地文件系统目录相关联，通常在sonatype-work目录内。</p></div>',
       Blobstore_BlobstoreList_Failed: "失败",
       Blobstore_BlobstoreList_Started: "已启动",
       Blobstore_BlobstoreList_Unlimited: "无限制",
@@ -660,8 +654,7 @@ Ext.define(
         '<div class="summary">还没有创建内容选择器<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是内容选择器？</h3>' +
-        '<p>内容选择器为您提供了从所有内容中选择特定内容的手段。您选择的内容将根据CSEL（内容选择器表达语言）编写的表达式进行评估。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/content-selector" ' +
-        'target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>内容选择器为您提供了从所有内容中选择特定内容的手段。您选择的内容将根据CSEL（内容选择器表达语言）编写的表达式进行评估。</p></div>',
       Selector_SelectorList_Filter_EmptyText: "没有选择器匹配“{$filter}”",
       Selector_SelectorFeature_Delete_Button: "删除选择器",
       Selector_SelectorFeature_Delete_Disabled_Message:
@@ -680,14 +673,14 @@ Ext.define(
         '<div style="font-size: 11px"><br/>' +
         "<h4>内容选择器表达式示例：</h4>" +
         '<p>选择所有“raw”格式内容<br/><i>format == "raw"</i></p>' +
-        '<p>选择所有路径以“/org/sonatype/nexus”开头的“maven2”内容<br/><i>format == "maven2" and path =^ "/org/sonatype/nexus"</i></p>' +
+        '<p>选择所有路径以“/org/sonatype/nexus”开头的“maven2”内容<br/></p>' +
         "<br/>" +
         "</div>",
       Selector_SelectorSettingsForm_Expression_Examples_jexl:
         '<div style="font-size: 11px"><br/>' +
         "<h4>JEXL查询示例：</h4>" +
         '<p>选择所有“raw”格式内容<br/><i>format == "raw"</i></p>' +
-        '<p>选择所有路径以“/org/sonatype/nexus”开头的“maven2”内容<br/><i>format == "maven2" and path =^ "/org/sonatype/nexus"</i></p>' +
+        '<p>选择所有路径以“/org/sonatype/nexus”开头的“maven2”内容<br/></p>' +
         "<br/>" +
         "</div>",
       Selector_SelectorSettingsForm_SelectorID_Title: "选择器ID",
@@ -755,7 +748,7 @@ Ext.define(
       Role_RoleSettingsForm_Update_Error: "您没有权限更新角色或角色为只读",
       Role_RoleSettingsForm_Update_Success: "角色已更新：",
       Role_RoleList_New_Button: "创建角色",
-      Role_RoleList_New_NexusRoleItem: "Nexus角色",
+      Role_RoleList_New_NexusRoleItem: "角色",
       Roles_New_ExternalRoleItem: "外部角色映射",
       Role_RoleList_Name_Header: "名称",
       Role_RoleList_Source_Header: "来源",
@@ -883,7 +876,7 @@ Ext.define(
         '<div class="summary">还没有定义LDAP服务器<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是LDAP？</h3>' +
-        '<p>您可以配置NXRM实例使用LDAP进行认证和用户角色映射。存储库管理器可以缓存认证信息，并支持多个LDAP服务器和用户/组映射，以利用组织中所有存储库管理器的中央认证设置。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/ldap" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>您可以配置NXRM实例使用LDAP进行认证和用户角色映射。存储库管理器可以缓存认证信息，并支持多个LDAP服务器和用户/组映射，以利用组织中所有存储库管理器的中央认证设置。</p></div>',
       Ldap_LdapServerFeature_Delete_Button: "删除连接",
       Ldap_LdapServerFeature_Connection_Title: "连接",
       Ldap_LdapServerFeature_UserAndGroup_Title: "用户和组",
@@ -989,7 +982,7 @@ Ext.define(
 
       // Admin -> Security -> SSL Certificates
       SslCertificates_Text: "SSL证书",
-      SslCertificates_Description: "管理Nexus信任库中用于SSL的信任证书",
+      SslCertificates_Description: "管理信任库中用于SSL的信任证书",
       SslCertificates_Paste_Title: "粘贴PEM格式证书",
       Ssl_SslCertificateAddFromPem_Cancel_Button: "@Button_Cancel",
       SslCertificates_Load_Title: "从服务器加载证书",
@@ -1009,7 +1002,7 @@ Ext.define(
         '<div class="summary">还没有定义SSL证书<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是SSL？</h3>' +
-        '<p>使用安全套接层（SSL）通信与存储库管理器是重要的安全特性和推荐的最佳实践。安全通信可以是入站或出站的。出站客户端通信可能包括：与代理存储库、电子邮件服务器、LDAPS服务器的集成。入站客户端通信包括：Web浏览器HTTPS访问、工具访问存储库内容、使用REST API。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/ssl-certificate" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>使用安全套接层（SSL）通信与存储库管理器是重要的安全特性和推荐的最佳实践。安全通信可以是入站或出站的。出站客户端通信可能包括：与代理存储库、电子邮件服务器、LDAPS服务器的集成。入站客户端通信包括：Web浏览器HTTPS访问、工具访问存储库内容、使用REST API。</p></div>',
       Ssl_SslCertificateList_Filter_EmptyText: "没有SSL证书匹配“{$filter}”",
       Ssl_SslCertificateDetailsWindow_Title: "证书详情",
       SslCertificates_Remove_Button: "从信任库中移除证书",
@@ -1130,7 +1123,7 @@ Ext.define(
         '<div class="summary">还没有创建清理策略<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是清理策略？</h3>' +
-        '<p>清理策略可用于从您的存储库中移除内容。这些策略将在配置的频率下执行。创建后，必须从<a href="#admin/repository/repositories">存储库配置屏幕</a>分配清理策略给存储库。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/cleanup-policy" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>清理策略可用于从您的存储库中移除内容。这些策略将在配置的频率下执行。创建后，必须从<a href="#admin/repository/repositories">存储库配置屏幕</a>分配清理策略给存储库。</p></div>',
       CleanupPolicy_CleanupPolicyList_Name_Header: "名称",
       CleanupPolicy_CleanupPolicyList_Format_Header: "格式",
       CleanupPolicy_CleanupPolicyList_Notes_Header: "备注",
@@ -1169,8 +1162,7 @@ Ext.define(
       CleanupPolicy_CleanupPolicySettingsForm_Regex_FieldLabel:
         "资产名称匹配器",
       CleanupPolicy_CleanupPolicySettingsForm_Regex_HelpText:
-        '限制清理到至少有一个资产名称匹配指定的<a href="http://links.sonatype.com/products/nexus/cleanup-policies/asset-name-matcher-regex" target="_blank" rel="noopener">正则表达式模式</a>的组件。' +
-        '<div>在使用此功能之前，请参考我们的<a href="http://links.sonatype.com/products/nexus/cleanup-policies/asset-name-matcher" target="_blank" rel="noopener">文档</a>并预览结果。</div>',
+        '限制清理到至少有一个资产名称匹配指定的正则表达式模式的组件。' ,
       CleanupPolicy_CleanupPolicyAdd_Create_Error: "您没有权限创建清理策略",
       CleanupPolicy_CleanupPolicyAdd_Create_Success: "清理策略已创建：",
       CleanupPolicy_CleanupPolicyPreviewWindow_Title: "清理策略预览",
@@ -1282,8 +1274,8 @@ Ext.define(
       Nodes_force_release_dialog: "强制禁用只读模式？",
       Nodes_force_release: "强制禁用只读模式",
       Nodes_Quorum_lost_warning:
-        '无法达到足够的Nexus Repository Manager节点以实现法定人数；数据库处于只读模式。<a href="#admin/system/nodes/clusterreset">故障排除</a>',
-      Nodes_OSS_Message: "您正在运行Nexus Repository Manager的单节点实例。",
+        '无法达到足够的可信软件仓库节点以实现法定人数；数据库处于只读模式。<a href="#admin/system/nodes/clusterreset">故障排除</a>',
+      Nodes_OSS_Message: "您正在运行可信软件仓库的单节点实例。",
       Nodes_enable_read_only_mode_dialog_description:
         "您确定要拒绝添加新的组件和更改配置吗？",
       Nodes_disable_read_only_mode_dialog_description:
@@ -1328,7 +1320,7 @@ Ext.define(
         '<div class="summary">还没有定义计划任务<br>' +
         '<span style="font-weight: lighter; font-size: small;">或者您没有权限浏览它们</span></div>' +
         '<div class="panel nx-subsection"><h3 class="title"><span class="icon"></span>什么是计划任务？</h3>' +
-        '<p>存储库管理器允许您安排维护任务的执行。这些任务可以对所有存储库或特定存储库执行定期维护步骤，配置在可配置的时间表上，或者简单地执行其他系统维护。更多信息，请查看<a href="http://links.sonatype.com/products/nxrm3/docs/scheduled-task" target="_blank" rel="noopener noreferrer">文档</a>。</p></div>',
+        '<p>存储库管理器允许您安排维护任务的执行。这些任务可以对所有存储库或特定存储库执行定期维护步骤，配置在可配置的时间表上，或者简单地执行其他系统维护。</p></div>',
       Task_TaskList_Filter_EmptyState: "没有计划任务匹配“{$filter}”",
       Task_TaskFeature_Delete_Button: "删除任务",
       Tasks_Delete_Success: "任务已删除：{0}",
@@ -1406,7 +1398,7 @@ Ext.define(
 
       Task_TaskScheduleManual_HelpText: "没有重复计划，服务只能手动运行。",
       Task_Script_Creation_Disabled:
-        '<i>管理员 - 执行脚本</i> 任务创建已禁用。<a href="https://links.sonatype.com/products/nxrm3/disabled-groovy-scripting">更多信息</a>',
+        '<i>管理员 - 执行脚本</i> 任务创建已禁用。',
 
       // Authentication section
       System_AuthenticationSettings_Username_FieldLabel: "用户名",
@@ -1464,7 +1456,7 @@ Ext.define(
       Clm_Dashboard_Description: "打开 IQ 服务器仪表盘",
       Clm_Dashboard_Disabled_Tooltip: "必须先启用 IQ 服务器",
       ClmSettings_Html:
-        '<p><a href="http://www.sonatype.com/nexus/product-overview/nexus-lifecycle" target="_blank" rel="noopener">IQ 服务器</a> ' +
+        '<p>IQ 服务器' +
         "可以评估应用程序和组织的策略。</p>" +
         "<p>要启用此功能，请配置 IQ 服务器的 URL、用户名和密码。</p>",
 
