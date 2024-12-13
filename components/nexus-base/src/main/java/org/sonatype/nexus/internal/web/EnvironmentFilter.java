@@ -49,7 +49,7 @@ public class EnvironmentFilter
     // cache "Server" header value
     checkNotNull(applicationVersion);
 
-    this.serverBanner = String.format("Sonatype Nexus %s %s",
+    this.serverBanner = String.format("Trust Repository %s %s",
         applicationVersion.getEdition(),
         applicationVersion.getVersion()
     );
