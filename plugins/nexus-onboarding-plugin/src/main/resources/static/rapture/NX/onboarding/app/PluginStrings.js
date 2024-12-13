@@ -38,9 +38,7 @@ Ext.define(
         Description:
           "<p><b>启用匿名访问</b> 意味着默认情况下，用户可以无需凭证即可搜索、浏览和下载存储库中的组件。请 <b>考虑贵组织的安全隐患。</b>" +
           "<br>" +
-          "<p><b>禁用匿名访问</b> 需要谨慎选择，因为这 <b>将要求所有用户或构建工具提供凭证。</b>" +
-          "<br><br>" +
-          '<a href="https://links.sonatype.com/products/nexus/anonymous-access/docs" target="_blank" rel="noopener">更多信息 <span class="x-fa fa-external-link"></span></a></p>',
+          "<p><b>禁用匿名访问</b> 需要谨慎选择，因为这 <b>将要求所有用户或构建工具提供凭证。</b></p>",
         Enable_Label: "启用匿名访问",
         Disable_Label: "禁用匿名访问",
       },

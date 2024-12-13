@@ -106,9 +106,9 @@ Ext.define(
       State_Installed_Message: "许可证已安装",
       State_Uninstalled_Message: "许可证已卸载",
       State_License_Expiry:
-        '您的许可证将在 {0} 天后过期。<a href="http://links.sonatype.com/products/nexus/pro/store">联系我们续订。</a>',
+        '您的许可证将在 {0} 天后过期。',
       State_License_Expired:
-        '您的许可证已过期。<a href="http://links.sonatype.com/products/nexus/pro/store">联系我们续订。</a>',
+        '您的许可证已过期。',
       State_License_Invalid_Message:
         "您的许可证已被检测为丢失或无效。请上传有效的许可证以继续操作。",
 
