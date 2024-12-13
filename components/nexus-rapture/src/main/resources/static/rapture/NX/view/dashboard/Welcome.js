@@ -259,7 +259,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                 render: function (container) {
                   container.getEl().on("click", function () {
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/browse:maven-central")
+                      NX.Bookmarks.fromToken("browse/search/maven")
                     );
                   });
                 },
@@ -293,7 +293,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                 render: function (container) {
                   container.getEl().on("click", function () {
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/browse")
+                      NX.Bookmarks.fromToken("browse/search/pypi")
                     );
                   });
                 },
@@ -327,7 +327,7 @@ Ext.define("NX.view.dashboard.Welcome", {
                   container.getEl().on("click", function () {
                     console.log("browse/browse");
                     NX.Bookmarks.navigateTo(
-                      NX.Bookmarks.fromToken("browse/browse")
+                      NX.Bookmarks.fromToken("browse/search/npm")
                     );
                   });
                 },
