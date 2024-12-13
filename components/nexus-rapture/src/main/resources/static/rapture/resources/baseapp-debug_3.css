@@ -6002,6 +6002,13 @@ tr.x-grid-subtable-row {
     background-color: #286bff;
 }
 
+.x-btn-over.x-btn-nx-mode-medium .x-btn-nx-admin-btn {
+    border-color: #575757;
+    background-image: none;
+    background-color: transparent;
+    cursor: default;
+}
+
 .x-keyboard-mode .x-btn-focus.x-btn-over.x-btn-nx-mode-medium {
     background-image: none;
     background-color: #286bff;
