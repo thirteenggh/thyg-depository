@@ -56,12 +56,15 @@ Ext.define('NX.coreui.view.component.ComponentDetails', {
             action: 'browseComponent',
             hidden: true
           },
-          // {
-          //   xtype: 'nx-button',
-          //   text: NX.I18n.get('ComponentDetails_Analyze_Button'),
-          //   iconCls: 'x-fa fa-cog',
-          //   action: 'analyzeApplication'
-          // }
+          {
+            xtype: 'nx-button',
+            text: NX.I18n.get('ComponentDetails_Analyze_Button'),
+            iconCls: 'x-fa fa-cog',
+            action: 'analyzeApplication',
+            style:{
+              display: "none"
+            }
+          }
         ]
       },
 
