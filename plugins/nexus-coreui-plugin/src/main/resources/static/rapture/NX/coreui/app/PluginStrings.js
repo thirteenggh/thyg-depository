@@ -1162,7 +1162,7 @@ Ext.define(
       CleanupPolicy_CleanupPolicySettingsForm_Regex_FieldLabel:
         "资产名称匹配器",
       CleanupPolicy_CleanupPolicySettingsForm_Regex_HelpText:
-        '限制清理到至少有一个资产名称匹配指定的正则表达式模式的组件。' ,
+        '限制清理到至少有一个资产名称匹配指定的正则表达式模式的组件。',
       CleanupPolicy_CleanupPolicyAdd_Create_Error: "您没有权限创建清理策略",
       CleanupPolicy_CleanupPolicyAdd_Create_Success: "清理策略已创建：",
       CleanupPolicy_CleanupPolicyPreviewWindow_Title: "清理策略预览",

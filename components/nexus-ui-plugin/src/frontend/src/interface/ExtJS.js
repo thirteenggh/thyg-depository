@@ -63,7 +63,7 @@ export default class {
     };
   }
 
-  static requestConfirmation({title, message, yesButtonText = 'Yes', noButtonText = 'No'}) {
+  static requestConfirmation({title, message, yesButtonText = '是', noButtonText = '否'}) {
     const options = {
       buttonText: {
         yes: yesButtonText,

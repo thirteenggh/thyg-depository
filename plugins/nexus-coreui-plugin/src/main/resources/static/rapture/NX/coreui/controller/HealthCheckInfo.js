@@ -144,24 +144,24 @@ Ext.define('NX.coreui.controller.HealthCheckInfo', {
         infoPanel,
         info = {};
 
-    if (me.healthCheckAllowed) {
-      if (model) {
-        if (panel.setInfo) {
-          panel.setInfo('healthCheckInfo', NX.I18n.get('HealthCheckInfo_Most_Popular_Version_Label'), me.renderMostPopularVersion(model));
-          panel.setInfo('healthCheckInfo', NX.I18n.get('HealthCheckInfo_Age_Label'), me.renderAge(model));
-          panel.setInfo('healthCheckInfo', NX.I18n.get('HealthCheckInfo_Popularity_Label'), me.renderPopularity(model));
-          panel.showInfo();
-        }
-        else {
-          infoPanel = me.getOrAddInfoPanel(panel);
-          info[NX.I18n.get('HealthCheckInfo_Most_Popular_Version_Label')] = me.renderMostPopularVersion(model);
-          info[NX.I18n.get('HealthCheckInfo_Age_Label')] = me.renderAge(model);
-          info[NX.I18n.get('HealthCheckInfo_Popularity_Label')] = me.renderPopularity(model);
-          infoPanel.showInfo(info);
-        }
-      }
-      panel.fireEvent('healthCheckLoaded', panel, model);
-    }
+    // if (me.healthCheckAllowed) {
+    //   if (model) {
+    //     if (panel.setInfo) {
+    //       panel.setInfo('healthCheckInfo', NX.I18n.get('HealthCheckInfo_Most_Popular_Version_Label'), me.renderMostPopularVersion(model));
+    //       panel.setInfo('healthCheckInfo', NX.I18n.get('HealthCheckInfo_Age_Label'), me.renderAge(model));
+    //       panel.setInfo('healthCheckInfo', NX.I18n.get('HealthCheckInfo_Popularity_Label'), me.renderPopularity(model));
+    //       panel.showInfo();
+    //     }
+    //     else {
+    //       infoPanel = me.getOrAddInfoPanel(panel);
+    //       info[NX.I18n.get('HealthCheckInfo_Most_Popular_Version_Label')] = me.renderMostPopularVersion(model);
+    //       info[NX.I18n.get('HealthCheckInfo_Age_Label')] = me.renderAge(model);
+    //       info[NX.I18n.get('HealthCheckInfo_Popularity_Label')] = me.renderPopularity(model);
+    //       infoPanel.showInfo(info);
+    //     }
+    //   }
+    //   panel.fireEvent('healthCheckLoaded', panel, model);
+    // }
   },
 
   getOrAddInfoPanel: function(panel) {
