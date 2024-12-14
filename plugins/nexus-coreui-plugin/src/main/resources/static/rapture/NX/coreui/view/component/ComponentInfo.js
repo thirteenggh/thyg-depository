@@ -34,12 +34,12 @@ Ext.define('NX.coreui.view.component.ComponentInfo', {
         action: 'deleteComponent',
         hidden: true
       },
-      {
-        xtype: 'nx-button',
-        text: NX.I18n.get('ComponentDetails_Analyze_Button'),
-        iconCls: 'x-fa fa-cog',
-        action: 'analyzeApplication'
-      }
+      // {
+      //   xtype: 'nx-button',
+      //   text: NX.I18n.get('ComponentDetails_Analyze_Button'),
+      //   iconCls: 'x-fa fa-cog',
+      //   action: 'analyzeApplication'
+      // }
     ]
   },
 
