@@ -89,18 +89,18 @@ Ext.define('NX.view.Main', {
         autoHide: true,
         collapseMenu: true
       },
-      // {
-      //   xtype: 'nx-header-mode',
-      //   name: 'admin',
-      //   title: "",
-      //   cls: "x-btn-nx-admin-btn",
-      //   // title: NX.I18n.get('Header_AdminMode_Title'),
-      //   // tooltip: NX.I18n.get('Header_AdminMode_Tooltip'),
-      //   // iconCls: 'x-fa fa-cog',
-      //   minWidth: 5,
-      //   autoHide: true,
-      //   collapseMenu: false
-      // },
+      {
+        xtype: 'nx-header-mode',
+        name: 'admin',
+        title: "",
+        cls: "x-btn-nx-admin-btn",
+        // title: NX.I18n.get('Header_AdminMode_Title'),
+        // tooltip: NX.I18n.get('Header_AdminMode_Tooltip'),
+        // iconCls: 'x-fa fa-cog',
+        minWidth: 5,
+        autoHide: true,
+        collapseMenu: false
+      },
       ' ',
       {xtype: 'nx-header-quicksearch', hidden: true},
       '->',
